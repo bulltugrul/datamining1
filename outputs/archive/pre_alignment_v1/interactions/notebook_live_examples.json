@@ -1,0 +1,150 @@
+[
+  {
+    "modality": "text",
+    "recognized_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+    "intent": {
+      "accepted": true,
+      "label": "fractions",
+      "classifier_score": 0.930448358678811,
+      "nearest_training_similarity": 0.7251669241629087,
+      "skill": {
+        "raw_skill_id": "280",
+        "name": "Kesirlerde toplama ve çıkarma",
+        "encoded_skill": 84
+      },
+      "reason": "Bilinen beceri isteği tanındı.",
+      "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+    },
+    "response_is_assessed_answer": false,
+    "student_history_answers": 25,
+    "recommendation": {
+      "available": true,
+      "question": 7998,
+      "skill": 84,
+      "difficulty": 0.21739129722118378,
+      "predicted_probability": 0.6504672765731812,
+      "target_probability": 0.65,
+      "reference_probability": 0.576357364654541,
+      "repeat_question": false,
+      "action": "mevcut düzeyde alıştırma",
+      "reason": "Kesirlerde toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %57.6. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+      "behavior_group": 1,
+      "rule_is_learned_policy": false,
+      "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+      "original_problem_id": 86320,
+      "skill_name": "Kesirlerde toplama ve çıkarma"
+    },
+    "reply": "İsteğini kesirlerde toplama ve çıkarma olarak algıladım. Mevcut sorulardan 86320 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %65.0.",
+    "reference_success_percent": 57.6357364654541,
+    "observed_skill": {
+      "answers": 7,
+      "ratio": 0.0
+    },
+    "history_unchanged": true
+  },
+  {
+    "modality": "audio",
+    "recognition": {
+      "text": "10 dalık sayılarda toplama ve çıkarmak çalışmak istiyorum.",
+      "engine": "openai/whisper-base",
+      "revision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+      "language": "turkish",
+      "source_sample_rate": 16000,
+      "model_sample_rate": 16000,
+      "source_channels": 1,
+      "duration_seconds": 4.065
+    },
+    "recognized_text": "10 dalık sayılarda toplama ve çıkarmak çalışmak istiyorum.",
+    "intent": {
+      "accepted": true,
+      "label": "decimals",
+      "classifier_score": 0.6662325480113701,
+      "nearest_training_similarity": 0.6082783919239313,
+      "skill": {
+        "raw_skill_id": "278",
+        "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+        "encoded_skill": 82
+      },
+      "reason": "Bilinen beceri isteği tanındı.",
+      "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+    },
+    "response_is_assessed_answer": false,
+    "student_history_answers": 25,
+    "recommendation": {
+      "available": true,
+      "question": 5287,
+      "skill": 82,
+      "difficulty": 0.1666666716337204,
+      "predicted_probability": 0.6548947095870972,
+      "target_probability": 0.65,
+      "reference_probability": 0.5254298448562622,
+      "repeat_question": false,
+      "action": "mevcut düzeyde alıştırma",
+      "reason": "Pozitif ondalık sayılarda toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %52.5. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.5, hedef %65.",
+      "behavior_group": 1,
+      "rule_is_learned_policy": false,
+      "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+      "original_problem_id": 73161,
+      "skill_name": "Pozitif ondalık sayılarda toplama ve çıkarma"
+    },
+    "reply": "İsteğini pozitif ondalık sayılarda toplama ve çıkarma olarak algıladım. Mevcut sorulardan 73161 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %65.5.",
+    "reference_success_percent": 52.54298448562622,
+    "observed_skill": {
+      "answers": 1,
+      "ratio": 1.0
+    },
+    "history_unchanged": true
+  },
+  {
+    "modality": "image",
+    "recognition": {
+      "text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+      "language": "tr",
+      "engine": "Windows.Media.Ocr.OcrEngine",
+      "lines": [
+        "Negatif ve pozitif tam sayılarda toplama ve",
+        "çıkarma alıştırması yapalım."
+      ]
+    },
+    "recognized_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+    "intent": {
+      "accepted": true,
+      "label": "integers",
+      "classifier_score": 0.7977032591649954,
+      "nearest_training_similarity": 0.6644449844270237,
+      "skill": {
+        "raw_skill_id": "277",
+        "name": "Tam sayılarda toplama ve çıkarma",
+        "encoded_skill": 81
+      },
+      "reason": "Bilinen beceri isteği tanındı.",
+      "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+    },
+    "response_is_assessed_answer": false,
+    "student_history_answers": 25,
+    "recommendation": {
+      "available": true,
+      "question": 1498,
+      "skill": 81,
+      "difficulty": 0.20000000298023224,
+      "predicted_probability": 0.6477982401847839,
+      "target_probability": 0.65,
+      "reference_probability": 0.5164005756378174,
+      "repeat_question": false,
+      "action": "mevcut düzeyde alıştırma",
+      "reason": "Tam sayılarda toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %51.6. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %64.8, hedef %65.",
+      "behavior_group": 1,
+      "rule_is_learned_policy": false,
+      "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+      "original_problem_id": 53833,
+      "skill_name": "Tam sayılarda toplama ve çıkarma"
+    },
+    "reply": "İsteğini tam sayılarda toplama ve çıkarma olarak algıladım. Mevcut sorulardan 53833 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %64.8.",
+    "reference_success_percent": 51.64005756378174,
+    "observed_skill": {
+      "answers": 7,
+      "ratio": 0.2857142857142857
+    },
+    "history_unchanged": true
+  }
+]

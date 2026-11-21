@@ -1,0 +1,113 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:white;color:#111;font-family:Arial,sans-serif}
+#capture{width:1000px;padding:26px 28px;background:white}
+.heading{font-size:20px;line-height:27px;margin:0 0 10px;font-weight:700}
+.sub{font-size:17px;line-height:25px;margin:0 0 14px;color:#444}
+.line{display:grid;grid-template-columns:52px 1fr;align-items:start}
+.line-number{font:17px/27px Consolas,monospace;color:#666;text-align:right;padding-right:14px}
+.code,.plain{font:20px/27px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all}
+.code:empty::before{content:' '}.plain{margin:0}img,svg{display:block;max-width:100%;height:auto;margin:0 auto}
+table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:23px}
+th,td{border:1px solid #ddd;padding:7px 8px;overflow-wrap:anywhere;vertical-align:middle;text-align:left}
+th{background:#edf0f4;font-weight:700}td{background:white}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.code .hll { background-color: #ffffcc }
+.code { background: #f8f8f8; }
+.code .c { color: #3D7B7B; font-style: italic } /* Comment */
+.code .err { border: 1px solid #F00 } /* Error */
+.code .k { color: #008000; font-weight: bold } /* Keyword */
+.code .o { color: #666 } /* Operator */
+.code .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.code .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.code .cp { color: #9C6500 } /* Comment.Preproc */
+.code .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.code .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.code .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.code .gd { color: #A00000 } /* Generic.Deleted */
+.code .ge { font-style: italic } /* Generic.Emph */
+.code .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.code .gr { color: #E40000 } /* Generic.Error */
+.code .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code .gi { color: #008400 } /* Generic.Inserted */
+.code .go { color: #717171 } /* Generic.Output */
+.code .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code .gs { font-weight: bold } /* Generic.Strong */
+.code .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code .gt { color: #04D } /* Generic.Traceback */
+.code .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code .kp { color: #008000 } /* Keyword.Pseudo */
+.code .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code .kt { color: #B00040 } /* Keyword.Type */
+.code .m { color: #666 } /* Literal.Number */
+.code .s { color: #BA2121 } /* Literal.String */
+.code .na { color: #687822 } /* Name.Attribute */
+.code .nb { color: #008000 } /* Name.Builtin */
+.code .nc { color: #00F; font-weight: bold } /* Name.Class */
+.code .no { color: #800 } /* Name.Constant */
+.code .nd { color: #A2F } /* Name.Decorator */
+.code .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.code .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.code .nf { color: #00F } /* Name.Function */
+.code .nl { color: #767600 } /* Name.Label */
+.code .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.code .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code .nv { color: #19177C } /* Name.Variable */
+.code .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.code .w { color: #BBB } /* Text.Whitespace */
+.code .mb { color: #666 } /* Literal.Number.Bin */
+.code .mf { color: #666 } /* Literal.Number.Float */
+.code .mh { color: #666 } /* Literal.Number.Hex */
+.code .mi { color: #666 } /* Literal.Number.Integer */
+.code .mo { color: #666 } /* Literal.Number.Oct */
+.code .sa { color: #BA2121 } /* Literal.String.Affix */
+.code .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code .sc { color: #BA2121 } /* Literal.String.Char */
+.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code .s2 { color: #BA2121 } /* Literal.String.Double */
+.code .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.code .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.code .sx { color: #008000 } /* Literal.String.Other */
+.code .sr { color: #A45A77 } /* Literal.String.Regex */
+.code .s1 { color: #BA2121 } /* Literal.String.Single */
+.code .ss { color: #19177C } /* Literal.String.Symbol */
+.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code .fm { color: #00F } /* Name.Function.Magic */
+.code .vc { color: #19177C } /* Name.Variable.Class */
+.code .vg { color: #19177C } /* Name.Variable.Global */
+.code .vi { color: #19177C } /* Name.Variable.Instance */
+.code .vm { color: #19177C } /* Name.Variable.Magic */
+.code .il { color: #666 } /* Literal.Number.Integer.Long */</style></head><body><main id="capture"><div class="heading">09_Gercek_Zamanli_Oturum_Takibi.ipynb</div><div class="sub">Satır 1–26 · Hücre 2</div><div class="line"><div class="line-number">1</div><div class="code"><span data-line="1"><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+</span></div></div><div class="line"><div class="line-number">2</div><div class="code"><span data-line="2"><span class="kn">import</span><span class="w"> </span><span class="nn">inspect</span>
+</span></div></div><div class="line"><div class="line-number">3</div><div class="code"><span data-line="3"><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+</span></div></div><div class="line"><div class="line-number">4</div><div class="code"><span data-line="4"><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span></div></div><div class="line"><div class="line-number">5</div><div class="code"><span data-line="5"><span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+</span></div></div><div class="line"><div class="line-number">6</div><div class="code"><span data-line="6"><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span></div></div><div class="line"><div class="line-number">7</div><div class="code"><span data-line="7"><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span></div></div><div class="line"><div class="line-number">8</div><div class="code"><span data-line="8"><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">Code</span>
+</span></div></div><div class="line"><div class="line-number">9</div><div class="code"><span data-line="9">
+</span></div></div><div class="line"><div class="line-number">10</div><div class="code"><span data-line="10"><span class="n">ROOT</span><span class="o">=</span><span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">11</div><div class="code"><span data-line="11"><span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">ROOT</span> <span class="o">/</span> <span class="s2">"src/kt_project"</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+</span></div></div><div class="line"><div class="line-number">12</div><div class="code"><span data-line="12">    <span class="n">ROOT</span><span class="o">=</span><span class="n">ROOT</span><span class="o">.</span><span class="n">parent</span>
+</span></div></div><div class="line"><div class="line-number">13</div><div class="code"><span data-line="13"><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">ROOT</span><span class="o">/</span><span class="s2">"src"</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">14</div><div class="code"><span data-line="14"><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">"MPLCONFIGDIR"</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">ROOT</span><span class="o">/</span><span class="s2">".runtime/matplotlib"</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">15</div><div class="code"><span data-line="15"><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">"PYTHONUTF8"</span><span class="p">,</span><span class="s2">"1"</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">16</div><div class="code"><span data-line="16"><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+</span></div></div><div class="line"><div class="line-number">17</div><div class="code"><span data-line="17"><span class="n">torch</span><span class="o">.</span><span class="n">set_num_threads</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">18</div><div class="code"><span data-line="18"><span class="k">def</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">19</div><div class="code"><span data-line="19">    <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">20</div><div class="code"><span data-line="20"><span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">ROOT</span><span class="o">/</span><span class="s2">"outputs/live/demo_session.json"</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+</span></div></div><div class="line"><div class="line-number">21</div><div class="code"><span data-line="21">    <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">ROOT</span><span class="o">/</span><span class="s2">"scripts/run_live_session_demo.py"</span><span class="p">)],</span><span class="n">cwd</span><span class="o">=</span><span class="n">ROOT</span><span class="p">,</span><span class="n">check</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">22</div><div class="code"><span data-line="22"><span class="n">record</span><span class="o">=</span><span class="n">read</span><span class="p">(</span><span class="n">ROOT</span><span class="o">/</span><span class="s2">"outputs/live/demo_session.json"</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">23</div><div class="code"><span data-line="23"><span class="k">assert</span> <span class="n">record</span><span class="p">[</span><span class="s2">"response_origin"</span><span class="p">]</span><span class="o">==</span><span class="s2">"automated_smoke_test"</span>
+</span></div></div><div class="line"><div class="line-number">24</div><div class="code"><span data-line="24"><span class="nb">print</span><span class="p">(</span><span class="s2">"Örnek kaydın türü:"</span><span class="p">,</span><span class="n">record</span><span class="p">[</span><span class="s2">"response_origin"</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">25</div><div class="code"><span data-line="25"><span class="nb">print</span><span class="p">(</span><span class="s2">"Başlangıç geçmişi:"</span><span class="p">,</span><span class="n">record</span><span class="p">[</span><span class="s2">"initial_history_count"</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">26</div><div class="code"><span data-line="26"><span class="nb">print</span><span class="p">(</span><span class="s2">"Başlangıç zamanı UTC:"</span><span class="p">,</span><span class="n">record</span><span class="p">[</span><span class="s2">"created_at"</span><span class="p">])</span>
+</span></div></div></main></body></html>

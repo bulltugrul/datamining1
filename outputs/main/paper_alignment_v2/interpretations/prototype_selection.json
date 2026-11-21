@@ -1,0 +1,17 @@
+{
+  "format": "plkt_method_v2",
+  "method": "kmpt",
+  "variant": "kmpt",
+  "layout": "paper_tail",
+  "inference_policy": "same_target_step_block",
+  "seed": 17,
+  "best_epoch": 1,
+  "validation_bce": 0.5549617719345423,
+  "criterion": "minimum block-policy validation BCE among three fixed strict-selected KMPT snapshots",
+  "checkpoint": "outputs/main/paper_alignment_v2/seed_17/kmpt_best.pt",
+  "checkpoint_sha256": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+  "inference_implementation_sha256": "b04aebe91b6e065081736a9cfa605e629c8f9673e4dd5169ee72ba222b546419",
+  "test_metrics_used_for_selection": false,
+  "author_code_verified": false,
+  "note": "Explicit same-step mask interpretation for working prompt access; strict-token reference retained."
+}

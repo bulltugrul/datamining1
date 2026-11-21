@@ -1,0 +1,13 @@
+{
+  "purpose": "fixed_checkpoint_attention_interpretation_control",
+  "methods": ["kpt","kmpt"],
+  "seeds": [17,42,2026],
+  "policy": "same_target_step_block",
+  "weights": "unchanged snapshots selected by strict-token validation BCE in main v2",
+  "interpretation": "known target template tokens share a time step; history stays causal; not verified author code",
+  "prototype_method": "kmpt",
+  "prototype_policy": "same_target_step_block",
+  "prototype_seed_criterion": "minimum block-policy validation BCE among the three fixed KMPT snapshots",
+  "test_role": "diagnostic evaluation only, never policy or seed selection",
+  "author_code_verified": false
+}

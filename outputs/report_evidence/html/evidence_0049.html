@@ -1,0 +1,113 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:white;color:#111;font-family:Arial,sans-serif}
+#capture{width:1000px;padding:26px 28px;background:white}
+.heading{font-size:20px;line-height:27px;margin:0 0 10px;font-weight:700}
+.sub{font-size:17px;line-height:25px;margin:0 0 14px;color:#444}
+.line{display:grid;grid-template-columns:52px 1fr;align-items:start}
+.line-number{font:17px/27px Consolas,monospace;color:#666;text-align:right;padding-right:14px}
+.code,.plain{font:20px/27px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all}
+.code:empty::before{content:' '}.plain{margin:0}img,svg{display:block;max-width:100%;height:auto;margin:0 auto}
+table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:23px}
+th,td{border:1px solid #ddd;padding:7px 8px;overflow-wrap:anywhere;vertical-align:middle;text-align:left}
+th{background:#edf0f4;font-weight:700}td{background:white}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.code .hll { background-color: #ffffcc }
+.code { background: #f8f8f8; }
+.code .c { color: #3D7B7B; font-style: italic } /* Comment */
+.code .err { border: 1px solid #F00 } /* Error */
+.code .k { color: #008000; font-weight: bold } /* Keyword */
+.code .o { color: #666 } /* Operator */
+.code .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.code .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.code .cp { color: #9C6500 } /* Comment.Preproc */
+.code .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.code .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.code .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.code .gd { color: #A00000 } /* Generic.Deleted */
+.code .ge { font-style: italic } /* Generic.Emph */
+.code .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.code .gr { color: #E40000 } /* Generic.Error */
+.code .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code .gi { color: #008400 } /* Generic.Inserted */
+.code .go { color: #717171 } /* Generic.Output */
+.code .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code .gs { font-weight: bold } /* Generic.Strong */
+.code .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code .gt { color: #04D } /* Generic.Traceback */
+.code .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code .kp { color: #008000 } /* Keyword.Pseudo */
+.code .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code .kt { color: #B00040 } /* Keyword.Type */
+.code .m { color: #666 } /* Literal.Number */
+.code .s { color: #BA2121 } /* Literal.String */
+.code .na { color: #687822 } /* Name.Attribute */
+.code .nb { color: #008000 } /* Name.Builtin */
+.code .nc { color: #00F; font-weight: bold } /* Name.Class */
+.code .no { color: #800 } /* Name.Constant */
+.code .nd { color: #A2F } /* Name.Decorator */
+.code .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.code .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.code .nf { color: #00F } /* Name.Function */
+.code .nl { color: #767600 } /* Name.Label */
+.code .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.code .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code .nv { color: #19177C } /* Name.Variable */
+.code .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.code .w { color: #BBB } /* Text.Whitespace */
+.code .mb { color: #666 } /* Literal.Number.Bin */
+.code .mf { color: #666 } /* Literal.Number.Float */
+.code .mh { color: #666 } /* Literal.Number.Hex */
+.code .mi { color: #666 } /* Literal.Number.Integer */
+.code .mo { color: #666 } /* Literal.Number.Oct */
+.code .sa { color: #BA2121 } /* Literal.String.Affix */
+.code .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code .sc { color: #BA2121 } /* Literal.String.Char */
+.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code .s2 { color: #BA2121 } /* Literal.String.Double */
+.code .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.code .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.code .sx { color: #008000 } /* Literal.String.Other */
+.code .sr { color: #A45A77 } /* Literal.String.Regex */
+.code .s1 { color: #BA2121 } /* Literal.String.Single */
+.code .ss { color: #19177C } /* Literal.String.Symbol */
+.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code .fm { color: #00F } /* Name.Function.Magic */
+.code .vc { color: #19177C } /* Name.Variable.Class */
+.code .vg { color: #19177C } /* Name.Variable.Global */
+.code .vi { color: #19177C } /* Name.Variable.Instance */
+.code .vm { color: #19177C } /* Name.Variable.Magic */
+.code .il { color: #666 } /* Literal.Number.Integer.Long */</style></head><body><main id="capture"><div class="heading">scripts/evaluate_attention_interpretation.py</div><div class="sub">Satır 91–116</div><div class="line"><div class="line-number">91</div><div class="code"><span data-line="91">    <span class="n">test_batches</span><span class="o">=</span><span class="n">prefix_batches</span><span class="p">(</span><span class="n">test</span><span class="p">,</span><span class="n">config</span><span class="p">[</span><span class="s2">"evaluation_batch_size"</span><span class="p">],</span><span class="n">device</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="n">config</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">92</div><div class="code"><span data-line="92">    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">93</div><div class="code"><span data-line="93">        <span class="n">model</span><span class="o">=</span><span class="n">load</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">94</div><div class="code"><span data-line="94">        <span class="n">metrics</span><span class="p">,</span><span class="n">predictions</span><span class="o">=</span><span class="n">evaluate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="n">test_batches</span><span class="p">,</span><span class="n">device</span><span class="p">,</span><span class="n">precision</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">95</div><div class="code"><span data-line="95">        <span class="n">folder</span><span class="o">=</span><span class="n">OUT</span><span class="o">/</span><span class="sa">f</span><span class="s2">"seed_</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'seed'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
+</span></div></div><div class="line"><div class="line-number">96</div><div class="code"><span data-line="96">        <span class="n">np</span><span class="o">.</span><span class="n">savez_compressed</span><span class="p">(</span><span class="n">folder</span><span class="o">/</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'variant'</span><span class="p">]</span><span class="si">}</span><span class="s2">_test_predictions.npz"</span><span class="p">,</span><span class="o">**</span><span class="n">predictions</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">97</div><div class="code"><span data-line="97">        <span class="k">with</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">RUN</span><span class="o">/</span><span class="sa">f</span><span class="s2">"seed_</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'seed'</span><span class="p">]</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'variant'</span><span class="p">]</span><span class="si">}</span><span class="s2">_test_predictions.npz"</span><span class="p">)</span> <span class="k">as</span> <span class="n">strict</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">98</div><div class="code"><span data-line="98">            <span class="n">np</span><span class="o">.</span><span class="n">testing</span><span class="o">.</span><span class="n">assert_array_equal</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="s2">"row_index"</span><span class="p">],</span><span class="n">strict</span><span class="p">[</span><span class="s2">"row_index"</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">99</div><div class="code"><span data-line="99">            <span class="n">np</span><span class="o">.</span><span class="n">testing</span><span class="o">.</span><span class="n">assert_array_equal</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="s2">"label"</span><span class="p">],</span><span class="n">strict</span><span class="p">[</span><span class="s2">"label"</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">100</div><div class="code"><span data-line="100">        <span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="s2">"label"</span><span class="p">],</span><span class="n">predictions</span><span class="p">[</span><span class="s2">"probability"</span><span class="p">]),</span><span class="n">metrics</span><span class="p">[</span><span class="s2">"auc"</span><span class="p">],</span><span class="n">atol</span><span class="o">=</span><span class="mf">1e-10</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">101</div><div class="code"><span data-line="101">        <span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="s2">"label"</span><span class="p">],</span><span class="n">predictions</span><span class="p">[</span><span class="s2">"probability"</span><span class="p">]</span><span class="o">&gt;=</span><span class="mf">.5</span><span class="p">),</span><span class="n">metrics</span><span class="p">[</span><span class="s2">"accuracy"</span><span class="p">],</span><span class="n">atol</span><span class="o">=</span><span class="mf">1e-10</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">102</div><div class="code"><span data-line="102">        <span class="n">row</span><span class="p">[</span><span class="s2">"test"</span><span class="p">]</span><span class="o">=</span><span class="n">metrics</span>
+</span></div></div><div class="line"><div class="line-number">103</div><div class="code"><span data-line="103">        <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s2">"phase"</span><span class="p">:</span><span class="s2">"temporal_block_test"</span><span class="p">,</span><span class="s2">"seed"</span><span class="p">:</span><span class="n">row</span><span class="p">[</span><span class="s2">"seed"</span><span class="p">],</span><span class="s2">"method"</span><span class="p">:</span><span class="n">row</span><span class="p">[</span><span class="s2">"method"</span><span class="p">],</span><span class="s2">"auc"</span><span class="p">:</span><span class="n">metrics</span><span class="p">[</span><span class="s2">"auc"</span><span class="p">]}),</span><span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">104</div><div class="code"><span data-line="104">    <span class="n">sample</span><span class="o">=</span><span class="n">to_device</span><span class="p">(</span><span class="n">collate_prefix</span><span class="p">([</span><span class="n">validation</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">validation</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)]),</span><span class="n">device</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">105</div><div class="code"><span data-line="105">    <span class="n">model</span><span class="o">=</span><span class="n">load</span><span class="p">(</span><span class="n">selected</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">106</div><div class="code"><span data-line="106">    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">inference_mode</span><span class="p">():</span>
+</span></div></div><div class="line"><div class="line-number">107</div><div class="code"><span data-line="107">        <span class="n">before</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">model</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">108</div><div class="code"><span data-line="108">        <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">2026</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">109</div><div class="code"><span data-line="109">        <span class="n">model</span><span class="o">.</span><span class="n">prompt_encoder</span><span class="o">.</span><span class="n">soft_prompt</span><span class="o">.</span><span class="n">add_</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">randn_like</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">prompt_encoder</span><span class="o">.</span><span class="n">soft_prompt</span><span class="p">)</span><span class="o">*</span><span class="mf">.5</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">110</div><div class="code"><span data-line="110">        <span class="n">after</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">model</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">111</div><div class="code"><span data-line="111">    <span class="n">delta</span><span class="o">=</span><span class="nb">float</span><span class="p">((</span><span class="n">before</span><span class="o">-</span><span class="n">after</span><span class="p">)</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+</span></div></div><div class="line"><div class="line-number">112</div><div class="code"><span data-line="112">    <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">sha</span><span class="p">(</span><span class="n">RUN</span><span class="o">/</span><span class="n">name</span><span class="p">)</span><span class="o">==</span><span class="n">digest</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span><span class="n">digest</span> <span class="ow">in</span> <span class="n">checkpoints</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></div></div><div class="line"><div class="line-number">113</div><div class="code"><span data-line="113">    <span class="n">summary</span><span class="o">=</span><span class="p">{}</span>
+</span></div></div><div class="line"><div class="line-number">114</div><div class="code"><span data-line="114">    <span class="k">for</span> <span class="n">method</span> <span class="ow">in</span> <span class="n">policy</span><span class="p">[</span><span class="s2">"methods"</span><span class="p">]:</span>
+</span></div></div><div class="line"><div class="line-number">115</div><div class="code"><span data-line="115">        <span class="n">chosen</span><span class="o">=</span><span class="p">[</span><span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span> <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="s2">"method"</span><span class="p">]</span><span class="o">==</span><span class="n">method</span><span class="p">]</span>
+</span></div></div><div class="line"><div class="line-number">116</div><div class="code"><span data-line="116">        <span class="n">summary</span><span class="p">[</span><span class="n">method</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="n">metric</span><span class="p">:{</span><span class="s2">"mean"</span><span class="p">:</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">([</span><span class="n">row</span><span class="p">[</span><span class="s2">"test"</span><span class="p">][</span><span class="n">metric</span><span class="p">]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">chosen</span><span class="p">])),</span>
+</span></div></div></main></body></html>

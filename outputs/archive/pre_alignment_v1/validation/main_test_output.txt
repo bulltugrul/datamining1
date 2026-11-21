@@ -1,0 +1,24 @@
+test_multiple_skills_are_one_event_and_conflicts_are_excluded (test_data_preparation.PreparationTests.test_multiple_skills_are_one_event_and_conflicts_are_excluded) ... ok
+test_test_answers_do_not_change_training_difficulty_or_references (test_data_preparation.PreparationTests.test_test_answers_do_not_change_training_difficulty_or_references) ... ok
+test_missing_or_duplicated_run_is_rejected (test_experiment_results.ExperimentResultsTests.test_missing_or_duplicated_run_is_rejected) ... ok
+test_prototype_selection_is_unchanged_when_test_scores_change (test_experiment_results.ExperimentResultsTests.test_prototype_selection_is_unchanged_when_test_scores_change) ... ok
+test_sample_standard_deviation_uses_three_independent_seeds (test_experiment_results.ExperimentResultsTests.test_sample_standard_deviation_uses_three_independent_seeds) ... ok
+test_complete_fixture_is_verified (test_experiment_results.SavedExperimentAuditTests.test_complete_fixture_is_verified) ... ok
+test_nonfinite_saved_weights_are_rejected (test_experiment_results.SavedExperimentAuditTests.test_nonfinite_saved_weights_are_rejected) ... ok
+test_wrong_ground_truth_is_rejected (test_experiment_results.SavedExperimentAuditTests.test_wrong_ground_truth_is_rejected) ... ok
+test_different_accounts_never_share_runtime_in_the_same_profile (test_jupyter_launcher.LauncherTests.test_different_accounts_never_share_runtime_in_the_same_profile) ... ok
+test_launch_remains_local_with_the_original_notebook (test_jupyter_launcher.LauncherTests.test_launch_remains_local_with_the_original_notebook) ... ok
+test_old_project_runtime_is_overridden_and_project_kernel_is_preserved (test_jupyter_launcher.LauncherTests.test_old_project_runtime_is_overridden_and_project_kernel_is_preserved) ... ok
+test_auxiliary_answer_is_only_allowed_during_kmpt_training (test_model_integrity.ModelIntegrityTests.test_auxiliary_answer_is_only_allowed_during_kmpt_training) ... ok
+test_device_batches_preserve_context_and_hide_target_or_future_values (test_model_integrity.ModelIntegrityTests.test_device_batches_preserve_context_and_hide_target_or_future_values) ... ok
+test_encoder_layers_start_with_distinct_attention_weights (test_model_integrity.ModelIntegrityTests.test_encoder_layers_start_with_distinct_attention_weights) ... ok
+test_future_interaction_cannot_change_earlier_hidden_state (test_model_integrity.ModelIntegrityTests.test_future_interaction_cannot_change_earlier_hidden_state) ... ok
+test_padding_does_not_change_same_students_prediction (test_model_integrity.ModelIntegrityTests.test_padding_does_not_change_same_students_prediction) ... ok
+test_pretraining_excludes_test_students_and_updates_all_heads (test_model_integrity.ModelIntegrityTests.test_pretraining_excludes_test_students_and_updates_all_heads) ... ok
+test_prompt_receives_gradient_and_changes_in_optimizer_step (test_model_integrity.ModelIntegrityTests.test_prompt_receives_gradient_and_changes_in_optimizer_step) ... ok
+test_target_label_never_changes_prediction (test_model_integrity.ModelIntegrityTests.test_target_label_never_changes_prediction) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 2.887s
+
+OK

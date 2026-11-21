@@ -1,0 +1,68 @@
+{
+  "baseline": {
+    "seeds": 3,
+    "test": {
+      "auc": {
+        "mean": 0.7672355704373176,
+        "sample_sd": 0.002910228208369784
+      },
+      "accuracy": {
+        "mean": 0.7326620675284469,
+        "sample_sd": 0.0026344893487737367
+      },
+      "bce": {
+        "mean": 0.5461300643690721,
+        "sample_sd": 0.003602058910706626
+      }
+    },
+    "auc_difference_from_baseline": {
+      "mean": 0.0,
+      "sample_sd": 0.0
+    },
+    "mean_training_seconds": 148.396662766662
+  },
+  "kpt": {
+    "seeds": 3,
+    "test": {
+      "auc": {
+        "mean": 0.7586318755092956,
+        "sample_sd": 0.002264297468761975
+      },
+      "accuracy": {
+        "mean": 0.7256517306304094,
+        "sample_sd": 0.0038916528924098225
+      },
+      "bce": {
+        "mean": 0.5505761452030913,
+        "sample_sd": 0.0030487401567054363
+      }
+    },
+    "auc_difference_from_baseline": {
+      "mean": -0.008603694928022007,
+      "sample_sd": 0.0024814231274724375
+    },
+    "mean_training_seconds": 160.47398723332057
+  },
+  "kmpt": {
+    "seeds": 3,
+    "test": {
+      "auc": {
+        "mean": 0.7557874407574463,
+        "sample_sd": 0.002489850723932084
+      },
+      "accuracy": {
+        "mean": 0.7236796082546345,
+        "sample_sd": 0.0022370892306154268
+      },
+      "bce": {
+        "mean": 0.5631955763615761,
+        "sample_sd": 0.003953391334843795
+      }
+    },
+    "auc_difference_from_baseline": {
+      "mean": -0.011448129679871374,
+      "sample_sd": 0.0011196760186501376
+    },
+    "mean_training_seconds": 191.98346899999888
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "purpose": "controlled examples of topic requests, not new assessment questions",
+  "audio_origin": "Microsoft Tolga TTS; synthetic, not recorded student speech",
+  "image_origin": "Pillow rendered printed Turkish text; not handwriting or diagram recognition",
+  "samples": [
+    {
+      "id": "text_integers",
+      "modality": "text",
+      "path": "data/interactions/text_integers.txt",
+      "expected_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+      "expected_label": "integers",
+      "synthetic": true,
+      "sha256": "6b440fdd1398e4e2bd4564dfdd201186ef090368b502cb4a563c9c11387b7a93"
+    },
+    {
+      "id": "text_decimals",
+      "modality": "text",
+      "path": "data/interactions/text_decimals.txt",
+      "expected_text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+      "expected_label": "decimals",
+      "synthetic": true,
+      "sha256": "1063900ea8aa07e786110c3013eec3303b657d19ac168437aec34c38883e11ce"
+    },
+    {
+      "id": "text_fractions",
+      "modality": "text",
+      "path": "data/interactions/text_fractions.txt",
+      "expected_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+      "expected_label": "fractions",
+      "synthetic": true,
+      "sha256": "a563697f5f591f88428542f472b875680133b75a3a14b2cabe67ee50a0c7dfc2"
+    },
+    {
+      "id": "audio_integers",
+      "modality": "audio",
+      "path": "data/interactions/audio_integers.wav",
+      "expected_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+      "expected_label": "integers",
+      "synthetic": true,
+      "sha256": "d4433d38a279dbaff6be52c521e50843160398bc84291f6bf9a81b2ac2fe8c74"
+    },
+    {
+      "id": "audio_decimals",
+      "modality": "audio",
+      "path": "data/interactions/audio_decimals.wav",
+      "expected_text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+      "expected_label": "decimals",
+      "synthetic": true,
+      "sha256": "f922975181789a740d4d61220bc147eb383b5febfd8d6bc69a2c486d0a8faa82"
+    },
+    {
+      "id": "audio_fractions",
+      "modality": "audio",
+      "path": "data/interactions/audio_fractions.wav",
+      "expected_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+      "expected_label": "fractions",
+      "synthetic": true,
+      "sha256": "380c07a32aa29a029634ec89c174f0528f00deae55f96b3a7b6d4796eb7b701a"
+    },
+    {
+      "id": "image_integers",
+      "modality": "image",
+      "path": "data/interactions/image_integers.png",
+      "expected_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+      "expected_label": "integers",
+      "synthetic": true,
+      "sha256": "cf6263dfcddf5e59fb40abd95c700f31ba1a7ed44a8d321df6a57cc0d9128b5e"
+    },
+    {
+      "id": "image_decimals",
+      "modality": "image",
+      "path": "data/interactions/image_decimals.png",
+      "expected_text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+      "expected_label": "decimals",
+      "synthetic": true,
+      "sha256": "2f43127e69f4b63c46f7d1db2042ccd1b30e4b3ecfee7288ffb7b673aeeae381"
+    },
+    {
+      "id": "image_fractions",
+      "modality": "image",
+      "path": "data/interactions/image_fractions.png",
+      "expected_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+      "expected_label": "fractions",
+      "synthetic": true,
+      "sha256": "2230bdac678591181de0fe765327e43b380e7b7a1e2af0dd4d3d2ea9ef04082a"
+    }
+  ]
+}

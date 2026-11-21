@@ -1,0 +1,13 @@
+{
+  "input_hashes_verified": true,
+  "asr_weights_and_revision_verified": true,
+  "corpus_and_demo_expressions_disjoint": true,
+  "test_metrics_recomputed": true,
+  "recognition_error_metrics_recomputed": true,
+  "routing_from_actual_recognized_text_verified": true,
+  "recommendations_are_known_training_questions": true,
+  "requests_do_not_append_answers": true,
+  "unchanged_state_hashes_verified": true,
+  "main_experiment_sources_unchanged": true,
+  "examples_checked": 9
+}

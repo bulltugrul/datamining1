@@ -1,0 +1,13 @@
+test_demo_student_selection_is_independent_of_response_outcomes (test_student_tracking.StudentTrackingTests.test_demo_student_selection_is_independent_of_response_outcomes) ... ok
+test_displayed_observed_ratio_uses_only_skill_answers_in_history (test_student_tracking.StudentTrackingTests.test_displayed_observed_ratio_uses_only_skill_answers_in_history) ... ok
+test_future_answers_do_not_change_reference_prediction (test_student_tracking.StudentTrackingTests.test_future_answers_do_not_change_reference_prediction) ... ok
+test_invalid_history_boundaries_are_rejected (test_student_tracking.StudentTrackingTests.test_invalid_history_boundaries_are_rejected) ... ok
+test_observation_features_and_limits_exclude_future_and_validation (test_student_tracking.StudentTrackingTests.test_observation_features_and_limits_exclude_future_and_validation) ... ok
+test_recommendation_avoids_seen_questions_and_uses_success_rule (test_student_tracking.StudentTrackingTests.test_recommendation_avoids_seen_questions_and_uses_success_rule) ... ok
+test_reference_bank_is_fixed_and_score_is_mean_of_same_questions (test_student_tracking.StudentTrackingTests.test_reference_bank_is_fixed_and_score_is_mean_of_same_questions) ... ok
+test_snapshots_and_catalog_only_use_training (test_student_tracking.StudentTrackingTests.test_snapshots_and_catalog_only_use_training) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.348s
+
+OK

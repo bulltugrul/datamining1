@@ -1,0 +1,26 @@
+{
+  "purpose": "training_data_only_performance_probe",
+  "runs": [
+    {
+      "batch_size": 128,
+      "measured_steps": 8,
+      "seconds_per_step": 0.02339536250110541,
+      "targets_per_second": 5471.1697668267425,
+      "peak_allocated_gpu_mb": 381.17822265625
+    },
+    {
+      "batch_size": 512,
+      "measured_steps": 8,
+      "seconds_per_step": 0.07553759999973408,
+      "targets_per_second": 6778.081379363422,
+      "peak_allocated_gpu_mb": 1264.5634765625
+    },
+    {
+      "batch_size": 1024,
+      "measured_steps": 8,
+      "seconds_per_step": 0.14728290000130073,
+      "targets_per_second": 6952.60617485775,
+      "peak_allocated_gpu_mb": 2452.3193359375
+    }
+  ]
+}

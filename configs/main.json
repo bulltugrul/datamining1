@@ -1,0 +1,25 @@
+{
+  "purpose": "main_three_seed_comparison",
+  "seeds": [17, 42, 2026],
+  "model": {
+    "hidden_size": 128, "layers": 2, "attention_heads": 4,
+    "feedforward_size": 512, "max_history": 128,
+    "prompt_length": 8, "prompt_layers": 1, "dropout": 0.2
+  },
+  "train_student_limit": null,
+  "validation_student_limit": null,
+  "train_target_limit": null,
+  "validation_target_limit": null,
+  "pretraining_epochs": 10,
+  "finetuning_epochs": 15,
+  "pretraining_batch_size": 64,
+  "batch_size": 512,
+  "evaluation_batch_size": 512,
+  "pretraining_lr": 0.0005,
+  "finetuning_lr": 0.0005,
+  "weight_decay": 0.01,
+  "patience": 4,
+  "evaluate_test": true,
+  "mixed_precision": true,
+  "device_batches": true
+}

@@ -1,0 +1,243 @@
+{
+  "complete": true,
+  "policy_lock": {
+    "created_utc": "2026-11-15T15:16:43.686336+00:00",
+    "config_sha256": "e823f1e1dc2f44a2a2749bcd19122969766264d4fb267773821558ec79991658",
+    "implementation_sha256": "b04aebe91b6e065081736a9cfa605e629c8f9673e4dd5169ee72ba222b546419",
+    "rule_locked_before_new_v2_test_evaluation": true
+  },
+  "runs": [
+    {
+      "seed": 17,
+      "method": "kpt",
+      "variant": "kpt",
+      "fixed_epoch": 1,
+      "validation": {
+        "samples": 38792,
+        "bce": 0.578506063003839,
+        "accuracy": 0.6962260259847391,
+        "auc": 0.7493911487765791
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5714293220140007,
+        "accuracy": 0.7022169632292201,
+        "auc": 0.7549842279016158
+      },
+      "strict_validation": {
+        "samples": 38792,
+        "bce": 0.5787154540103056,
+        "accuracy": 0.7016910703237781,
+        "auc": 0.7448335298809622
+      },
+      "strict_test": {
+        "samples": 44791,
+        "bce": 0.5707065297563441,
+        "accuracy": 0.7058784130740551,
+        "auc": 0.7500041349245379
+      }
+    },
+    {
+      "seed": 17,
+      "method": "kmpt",
+      "variant": "kmpt",
+      "fixed_epoch": 1,
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5549617719345423,
+        "accuracy": 0.7184471024953598,
+        "auc": 0.7455303311950559
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5490447033279608,
+        "accuracy": 0.7218637672746757,
+        "auc": 0.7522370646879142
+      },
+      "strict_validation": {
+        "samples": 38792,
+        "bce": 0.5540185717116387,
+        "accuracy": 0.7205093833780161,
+        "auc": 0.7458304707492932
+      },
+      "strict_test": {
+        "samples": 44791,
+        "bce": 0.5483147604824089,
+        "accuracy": 0.7226675001674443,
+        "auc": 0.7523590972956227
+      }
+    },
+    {
+      "seed": 42,
+      "method": "kpt",
+      "variant": "kpt",
+      "fixed_epoch": 1,
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5640031492422477,
+        "accuracy": 0.7065116518869871,
+        "auc": 0.7475608885441237
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5608544419187649,
+        "accuracy": 0.7085575227166172,
+        "auc": 0.7514194018151317
+      },
+      "strict_validation": {
+        "samples": 38792,
+        "bce": 0.5591462128037987,
+        "accuracy": 0.7134202928438853,
+        "auc": 0.7456336586988996
+      },
+      "strict_test": {
+        "samples": 44791,
+        "bce": 0.5559029745769762,
+        "accuracy": 0.7179567323792726,
+        "auc": 0.748579521760335
+      }
+    },
+    {
+      "seed": 42,
+      "method": "kmpt",
+      "variant": "kmpt",
+      "fixed_epoch": 1,
+      "validation": {
+        "samples": 38792,
+        "bce": 0.560209734510161,
+        "accuracy": 0.7162817075685708,
+        "auc": 0.7419692616865139
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5559266495296383,
+        "accuracy": 0.7186711616172892,
+        "auc": 0.7480464514315598
+      },
+      "strict_validation": {
+        "samples": 38792,
+        "bce": 0.5595071328057533,
+        "accuracy": 0.7191173437822231,
+        "auc": 0.7418750736510906
+      },
+      "strict_test": {
+        "samples": 44791,
+        "bce": 0.5549081530388621,
+        "accuracy": 0.7198544350427541,
+        "auc": 0.7477688077202356
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "kpt",
+      "variant": "kpt",
+      "fixed_epoch": 1,
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5530332890607126,
+        "accuracy": 0.7182666529181274,
+        "auc": 0.747850499313002
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5485431882100251,
+        "accuracy": 0.7228907593043246,
+        "auc": 0.7523795791094137
+      },
+      "strict_validation": {
+        "samples": 38792,
+        "bce": 0.5566627256991716,
+        "accuracy": 0.714013198597649,
+        "auc": 0.7435202235905457
+      },
+      "strict_test": {
+        "samples": 44791,
+        "bce": 0.5520591690701545,
+        "accuracy": 0.7202339755754504,
+        "auc": 0.7481812424794889
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "kmpt",
+      "variant": "kmpt",
+      "fixed_epoch": 2,
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5672215048517977,
+        "accuracy": 0.7220045370179419,
+        "auc": 0.753119139417057
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5617909866765314,
+        "accuracy": 0.7267308164586636,
+        "auc": 0.7587191268608291
+      },
+      "strict_validation": {
+        "samples": 38792,
+        "bce": 0.5610851375165244,
+        "accuracy": 0.7194524644256548,
+        "auc": 0.7491041194292162
+      },
+      "strict_test": {
+        "samples": 44791,
+        "bce": 0.5534921329170656,
+        "accuracy": 0.7256145207742627,
+        "auc": 0.7564260572477604
+      }
+    }
+  ],
+  "summary": {
+    "kpt": {
+      "auc": {
+        "mean": 0.752927736275387,
+        "sample_sd": 0.001844546954044649
+      },
+      "accuracy": {
+        "mean": 0.7112217484167207,
+        "sample_sd": 0.010591271641052818
+      },
+      "bce": {
+        "mean": 0.5602756507142636,
+        "sample_sd": 0.01145403987976181
+      }
+    },
+    "kmpt": {
+      "auc": {
+        "mean": 0.7530008809934343,
+        "sample_sd": 0.005377179717664834
+      },
+      "accuracy": {
+        "mean": 0.7224219151168761,
+        "sample_sd": 0.004058713564768663
+      },
+      "bce": {
+        "mean": 0.5555874465113768,
+        "sample_sd": 0.006379908213776266
+      }
+    }
+  },
+  "prototype_selection": {
+    "format": "plkt_method_v2",
+    "method": "kmpt",
+    "variant": "kmpt",
+    "layout": "paper_tail",
+    "inference_policy": "same_target_step_block",
+    "seed": 17,
+    "best_epoch": 1,
+    "validation_bce": 0.5549617719345423,
+    "criterion": "minimum block-policy validation BCE among three fixed strict-selected KMPT snapshots",
+    "checkpoint": "outputs/main/paper_alignment_v2/seed_17/kmpt_best.pt",
+    "checkpoint_sha256": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+    "inference_implementation_sha256": "b04aebe91b6e065081736a9cfa605e629c8f9673e4dd5169ee72ba222b546419",
+    "test_metrics_used_for_selection": false,
+    "author_code_verified": false,
+    "note": "Explicit same-step mask interpretation for working prompt access; strict-token reference retained."
+  },
+  "selected_model_prompt_probability_delta": 0.22996896505355835,
+  "checkpoint_weights_unchanged": true,
+  "same_test_targets_verified": true,
+  "selection_uses_test": false,
+  "scope": "diagnostic inference policies on frozen strict-selected snapshots, no per-policy epoch retuning or new training"
+}

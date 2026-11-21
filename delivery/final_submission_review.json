@@ -1,0 +1,19 @@
+{
+  "review_date": "2026-11-16",
+  "archive_files_checked": 1005,
+  "archive_crc_and_manifest_hash_issues": [],
+  "workspace_differs_from_archive": [],
+  "fresh_unit_tests_passed": 59,
+  "group_members_verified": 5,
+  "current_model_mask_and_downstream_artifacts_consistent": true,
+  "real_replay_steps": 20,
+  "modality_examples": 9,
+  "archived_student_calendar_history_present": false,
+  "actual_new_event_timestamps_present": true,
+  "teacher_continuous_time_requirement_status": "functional live event recording with actual timestamps and last-estimate-held timeline; no human longitudinal learning study",
+  "percentage_interpretation": "prediction-based proxy with observed ratio shown separately; not validated mastery measurement",
+  "diagram_review_note": "main learning rectangles are supervised/unsupervised tasks; pretrained weights are input data and pretraining is explained separately",
+  "live_feature_added_after_review": true,
+  "trained_weights_changed": false,
+  "live_api_and_browser_checks_verified": true
+}

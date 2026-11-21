@@ -1,0 +1,113 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:white;color:#111;font-family:Arial,sans-serif}
+#capture{width:1000px;padding:26px 28px;background:white}
+.heading{font-size:20px;line-height:27px;margin:0 0 10px;font-weight:700}
+.sub{font-size:17px;line-height:25px;margin:0 0 14px;color:#444}
+.line{display:grid;grid-template-columns:52px 1fr;align-items:start}
+.line-number{font:17px/27px Consolas,monospace;color:#666;text-align:right;padding-right:14px}
+.code,.plain{font:20px/27px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all}
+.code:empty::before{content:' '}.plain{margin:0}img,svg{display:block;max-width:100%;height:auto;margin:0 auto}
+table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:23px}
+th,td{border:1px solid #ddd;padding:7px 8px;overflow-wrap:anywhere;vertical-align:middle;text-align:left}
+th{background:#edf0f4;font-weight:700}td{background:white}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.code .hll { background-color: #ffffcc }
+.code { background: #f8f8f8; }
+.code .c { color: #3D7B7B; font-style: italic } /* Comment */
+.code .err { border: 1px solid #F00 } /* Error */
+.code .k { color: #008000; font-weight: bold } /* Keyword */
+.code .o { color: #666 } /* Operator */
+.code .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.code .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.code .cp { color: #9C6500 } /* Comment.Preproc */
+.code .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.code .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.code .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.code .gd { color: #A00000 } /* Generic.Deleted */
+.code .ge { font-style: italic } /* Generic.Emph */
+.code .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.code .gr { color: #E40000 } /* Generic.Error */
+.code .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code .gi { color: #008400 } /* Generic.Inserted */
+.code .go { color: #717171 } /* Generic.Output */
+.code .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code .gs { font-weight: bold } /* Generic.Strong */
+.code .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code .gt { color: #04D } /* Generic.Traceback */
+.code .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code .kp { color: #008000 } /* Keyword.Pseudo */
+.code .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code .kt { color: #B00040 } /* Keyword.Type */
+.code .m { color: #666 } /* Literal.Number */
+.code .s { color: #BA2121 } /* Literal.String */
+.code .na { color: #687822 } /* Name.Attribute */
+.code .nb { color: #008000 } /* Name.Builtin */
+.code .nc { color: #00F; font-weight: bold } /* Name.Class */
+.code .no { color: #800 } /* Name.Constant */
+.code .nd { color: #A2F } /* Name.Decorator */
+.code .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.code .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.code .nf { color: #00F } /* Name.Function */
+.code .nl { color: #767600 } /* Name.Label */
+.code .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.code .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code .nv { color: #19177C } /* Name.Variable */
+.code .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.code .w { color: #BBB } /* Text.Whitespace */
+.code .mb { color: #666 } /* Literal.Number.Bin */
+.code .mf { color: #666 } /* Literal.Number.Float */
+.code .mh { color: #666 } /* Literal.Number.Hex */
+.code .mi { color: #666 } /* Literal.Number.Integer */
+.code .mo { color: #666 } /* Literal.Number.Oct */
+.code .sa { color: #BA2121 } /* Literal.String.Affix */
+.code .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code .sc { color: #BA2121 } /* Literal.String.Char */
+.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code .s2 { color: #BA2121 } /* Literal.String.Double */
+.code .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.code .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.code .sx { color: #008000 } /* Literal.String.Other */
+.code .sr { color: #A45A77 } /* Literal.String.Regex */
+.code .s1 { color: #BA2121 } /* Literal.String.Single */
+.code .ss { color: #19177C } /* Literal.String.Symbol */
+.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code .fm { color: #00F } /* Name.Function.Magic */
+.code .vc { color: #19177C } /* Name.Variable.Class */
+.code .vg { color: #19177C } /* Name.Variable.Global */
+.code .vi { color: #19177C } /* Name.Variable.Instance */
+.code .vm { color: #19177C } /* Name.Variable.Magic */
+.code .il { color: #666 } /* Literal.Number.Integer.Long */</style></head><body><main id="capture"><div class="heading">src/kt_project/replay.py</div><div class="sub">Satır 125–150</div><div class="line"><div class="line-number">125</div><div class="code"><span data-line="125">        <span class="c1"># Gerçek cevap burada henüz okunmaz; istek hiçbir cevap etiketi içermez.</span>
+</span></div></div><div class="line"><div class="line-number">126</div><div class="code"><span data-line="126">        <span class="n">probability</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">tracer</span><span class="o">.</span><span class="n">predict_requests</span><span class="p">([(</span><span class="n">snapshot</span><span class="p">,</span> <span class="n">question</span><span class="p">)],</span> <span class="n">config</span><span class="p">[</span><span class="s2">"prediction_batch_size"</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">127</div><div class="code"><span data-line="127">        <span class="n">actual</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">store</span><span class="o">.</span><span class="n">arrays</span><span class="p">[</span><span class="s2">"correct"</span><span class="p">][</span><span class="n">target</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">128</div><div class="code"><span data-line="128">        <span class="n">history_stop_before</span> <span class="o">=</span> <span class="n">snapshot</span><span class="o">.</span><span class="n">stop</span>
+</span></div></div><div class="line"><div class="line-number">129</div><div class="code"><span data-line="129">        <span class="n">snapshot</span> <span class="o">=</span> <span class="n">snapshot_for</span><span class="p">(</span><span class="n">store</span><span class="p">,</span> <span class="n">student</span><span class="p">,</span> <span class="n">target</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">130</div><div class="code"><span data-line="130">        <span class="k">for</span> <span class="n">skill</span> <span class="ow">in</span> <span class="n">question</span><span class="p">[</span><span class="s2">"skills"</span><span class="p">]:</span>
+</span></div></div><div class="line"><div class="line-number">131</div><div class="code"><span data-line="131">            <span class="k">if</span> <span class="n">skill</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">bank</span><span class="o">.</span><span class="n">has_skill</span><span class="p">(</span><span class="n">skill</span><span class="p">)</span> <span class="ow">and</span> <span class="n">skill</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">tracked</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">tracked</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">132</div><div class="code"><span data-line="132">                <span class="n">tracked</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">skill</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">133</div><div class="code"><span data-line="133">        <span class="n">state</span> <span class="o">=</span> <span class="n">current_state</span><span class="p">(</span><span class="n">store</span><span class="p">,</span> <span class="n">snapshot</span><span class="p">,</span> <span class="n">tracked</span><span class="p">,</span> <span class="n">tracer</span><span class="p">,</span> <span class="n">bank</span><span class="p">,</span> <span class="n">pattern_model</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">134</div><div class="code"><span data-line="134">                              <span class="n">catalog</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">names</span><span class="p">,</span> <span class="n">inverse_questions</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">135</div><div class="code"><span data-line="135">        <span class="n">timestamp</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">"Europe/Istanbul"</span><span class="p">))</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="n">timespec</span><span class="o">=</span><span class="s2">"milliseconds"</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">136</div><div class="code"><span data-line="136">        <span class="n">event</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"step"</span><span class="p">:</span> <span class="n">step</span><span class="p">,</span> <span class="s2">"target_row_index"</span><span class="p">:</span> <span class="n">target</span><span class="p">,</span> <span class="s2">"history_stop_before"</span><span class="p">:</span> <span class="n">history_stop_before</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">137</div><div class="code"><span data-line="137">                 <span class="s2">"source_order_id"</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">store</span><span class="o">.</span><span class="n">arrays</span><span class="p">[</span><span class="s2">"order"</span><span class="p">][</span><span class="n">target</span><span class="p">]),</span> <span class="s2">"source_timestamp"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">138</div><div class="code"><span data-line="138">                 <span class="s2">"display_timestamp"</span><span class="p">:</span> <span class="n">timestamp</span><span class="p">,</span> <span class="s2">"question"</span><span class="p">:</span> <span class="n">question</span><span class="p">[</span><span class="s2">"question"</span><span class="p">],</span>
+</span></div></div><div class="line"><div class="line-number">139</div><div class="code"><span data-line="139">                 <span class="s2">"original_problem_id"</span><span class="p">:</span> <span class="n">inverse_questions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">question</span><span class="p">[</span><span class="s2">"question"</span><span class="p">]),</span>
+</span></div></div><div class="line"><div class="line-number">140</div><div class="code"><span data-line="140">                 <span class="s2">"predicted_before_response"</span><span class="p">:</span> <span class="n">probability</span><span class="p">,</span> <span class="s2">"observed_correct"</span><span class="p">:</span> <span class="n">actual</span><span class="p">,</span> <span class="s2">"after"</span><span class="p">:</span> <span class="n">state</span><span class="p">}</span>
+</span></div></div><div class="line"><div class="line-number">141</div><div class="code"><span data-line="141">        <span class="n">events</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">142</div><div class="code"><span data-line="142">        <span class="k">if</span> <span class="n">progress</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">143</div><div class="code"><span data-line="143">            <span class="n">progress</span><span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="n">config</span><span class="p">[</span><span class="s2">"replay_steps"</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">144</div><div class="code"><span data-line="144">    <span class="n">integrity</span> <span class="o">=</span> <span class="p">{</span>
+</span></div></div><div class="line"><div class="line-number">145</div><div class="code"><span data-line="145">        <span class="s2">"model_weights_unchanged"</span><span class="p">:</span> <span class="n">model_before</span> <span class="o">==</span> <span class="n">state_digest</span><span class="p">(</span><span class="n">cpu_state</span><span class="p">(</span><span class="n">tracer</span><span class="o">.</span><span class="n">model</span><span class="p">)),</span>
+</span></div></div><div class="line"><div class="line-number">146</div><div class="code"><span data-line="146">        <span class="s2">"behavior_model_unchanged"</span><span class="p">:</span> <span class="n">pattern_before</span> <span class="o">==</span> <span class="n">pattern_state_digest</span><span class="p">(</span><span class="n">pattern_model</span><span class="p">),</span>
+</span></div></div><div class="line"><div class="line-number">147</div><div class="code"><span data-line="147">        <span class="s2">"reference_bank_unchanged"</span><span class="p">:</span> <span class="n">bank_before</span> <span class="o">==</span> <span class="n">bank</span><span class="o">.</span><span class="n">content_sha256</span><span class="p">(),</span>
+</span></div></div><div class="line"><div class="line-number">148</div><div class="code"><span data-line="148">        <span class="s2">"each_prediction_precedes_target_response"</span><span class="p">:</span> <span class="nb">all</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">"history_stop_before"</span><span class="p">]</span> <span class="o">==</span> <span class="n">row</span><span class="p">[</span><span class="s2">"target_row_index"</span><span class="p">]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">events</span><span class="p">),</span>
+</span></div></div><div class="line"><div class="line-number">149</div><div class="code"><span data-line="149">        <span class="s2">"source_calendar_times_fabricated"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">150</div><div class="code"><span data-line="150">    <span class="p">}</span>
+</span></div></div></main></body></html>

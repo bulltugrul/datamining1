@@ -1,0 +1,6 @@
+{
+  "epochs": 30,
+  "best_epoch": 30,
+  "criterion": "training objective relative improvement, not heldout/test performance",
+  "reason": "epoch_budget_reached"
+}

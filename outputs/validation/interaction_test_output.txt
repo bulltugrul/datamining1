@@ -1,0 +1,13 @@
+test_acceptance_threshold_is_selected_by_validation_only (test_interactions.InteractionTests.test_acceptance_threshold_is_selected_by_validation_only) ... ok
+test_accepted_request_selects_requested_existing_skill_without_adding_answer (test_interactions.InteractionTests.test_accepted_request_selects_requested_existing_skill_without_adding_answer) ... ok
+test_rejected_request_does_not_call_recommender (test_interactions.InteractionTests.test_rejected_request_does_not_call_recommender) ... ok
+test_silent_or_short_audio_is_rejected_before_asr (test_interactions.InteractionTests.test_silent_or_short_audio_is_rejected_before_asr) ... ok
+test_stereo_audio_is_mixed_and_resampled_to_model_rate (test_interactions.InteractionTests.test_stereo_audio_is_mixed_and_resampled_to_model_rate) ... ok
+test_unclear_multiple_or_unsupported_requests_are_not_forced_into_skill (test_interactions.InteractionTests.test_unclear_multiple_or_unsupported_requests_are_not_forced_into_skill) ... ok
+test_vocabulary_and_idf_fit_training_only_with_disjoint_demo (test_interactions.InteractionTests.test_vocabulary_and_idf_fit_training_only_with_disjoint_demo) ... ok
+test_word_error_metric_counts_substitutions_deletions_and_insertions (test_interactions.InteractionTests.test_word_error_metric_counts_substitutions_deletions_and_insertions) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.194s
+
+OK

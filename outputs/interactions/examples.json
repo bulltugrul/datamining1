@@ -1,0 +1,674 @@
+{
+  "purpose": "small working modality examples, not multimodal KT training or natural speech benchmark",
+  "student_context": "existing replay final history; no response or correctness appended",
+  "model_selection": {
+    "format": "plkt_method_v2",
+    "method": "kmpt",
+    "variant": "kmpt",
+    "layout": "paper_tail",
+    "inference_policy": "same_target_step_block",
+    "seed": 17,
+    "best_epoch": 1,
+    "validation_bce": 0.5549617719345423,
+    "criterion": "minimum block-policy validation BCE among three fixed strict-selected KMPT snapshots",
+    "checkpoint": "outputs/main/paper_alignment_v2/seed_17/kmpt_best.pt",
+    "checkpoint_sha256": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+    "inference_implementation_sha256": "b04aebe91b6e065081736a9cfa605e629c8f9673e4dd5169ee72ba222b546419",
+    "test_metrics_used_for_selection": false,
+    "author_code_verified": false,
+    "note": "Explicit same-step mask interpretation for working prompt access; strict-token reference retained."
+  },
+  "results": [
+    {
+      "sample_id": "text_integers",
+      "modality": "text",
+      "input_path": "data/interactions/text_integers.txt",
+      "input_sha256": "6b440fdd1398e4e2bd4564dfdd201186ef090368b502cb4a563c9c11387b7a93",
+      "recognition": {
+        "text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+        "engine": "UTF-8 text input"
+      },
+      "recognized_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+      "intent": {
+        "accepted": true,
+        "label": "integers",
+        "classifier_score": 0.7977032591649954,
+        "nearest_training_similarity": 0.6644449844270237,
+        "skill": {
+          "raw_skill_id": "277",
+          "name": "Tam sayılarda toplama ve çıkarma",
+          "encoded_skill": 81
+        },
+        "reason": "Bilinen beceri isteği tanındı.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": {
+        "available": true,
+        "question": 17025,
+        "skill": 81,
+        "difficulty": 0.0,
+        "predicted_probability": 0.6584175229072571,
+        "target_probability": 0.65,
+        "reference_probability": 0.43923282623291016,
+        "repeat_question": false,
+        "action": "mevcut düzeyde alıştırma",
+        "reason": "Tam sayılarda toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %43.9. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.8, hedef %65.",
+        "behavior_group": 1,
+        "rule_is_learned_policy": false,
+        "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+        "original_problem_id": 189214,
+        "skill_name": "Tam sayılarda toplama ve çıkarma"
+      },
+      "reply": "İsteğini tam sayılarda toplama ve çıkarma olarak algıladım. Mevcut sorulardan 189214 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %65.8.",
+      "reference_success_percent": 43.923282623291016,
+      "observed_skill": {
+        "answers": 7,
+        "ratio": 0.2857142857142857
+      },
+      "history_unchanged": true,
+      "evaluation": {
+        "expected_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+        "expected_label": "integers",
+        "label_correct": true,
+        "exact_text_match": true,
+        "reference_word_count": 10,
+        "normalized_word_error_rate": 0.0
+      }
+    },
+    {
+      "sample_id": "text_decimals",
+      "modality": "text",
+      "input_path": "data/interactions/text_decimals.txt",
+      "input_sha256": "1063900ea8aa07e786110c3013eec3303b657d19ac168437aec34c38883e11ce",
+      "recognition": {
+        "text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+        "engine": "UTF-8 text input"
+      },
+      "recognized_text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+      "intent": {
+        "accepted": true,
+        "label": "decimals",
+        "classifier_score": 0.8772202168561398,
+        "nearest_training_similarity": 0.6566969037764018,
+        "skill": {
+          "raw_skill_id": "278",
+          "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+          "encoded_skill": 82
+        },
+        "reason": "Bilinen beceri isteği tanındı.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": {
+        "available": true,
+        "question": 15700,
+        "skill": 82,
+        "difficulty": 0.0,
+        "predicted_probability": 0.6548947095870972,
+        "target_probability": 0.65,
+        "reference_probability": 0.3260780870914459,
+        "repeat_question": false,
+        "action": "mevcut düzeyde alıştırma",
+        "reason": "Pozitif ondalık sayılarda toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %32.6. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.5, hedef %65.",
+        "behavior_group": 1,
+        "rule_is_learned_policy": false,
+        "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+        "original_problem_id": 147305,
+        "skill_name": "Pozitif ondalık sayılarda toplama ve çıkarma"
+      },
+      "reply": "İsteğini pozitif ondalık sayılarda toplama ve çıkarma olarak algıladım. Mevcut sorulardan 147305 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %65.5.",
+      "reference_success_percent": 32.60780870914459,
+      "observed_skill": {
+        "answers": 1,
+        "ratio": 1.0
+      },
+      "history_unchanged": true,
+      "evaluation": {
+        "expected_text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+        "expected_label": "decimals",
+        "label_correct": true,
+        "exact_text_match": true,
+        "reference_word_count": 7,
+        "normalized_word_error_rate": 0.0
+      }
+    },
+    {
+      "sample_id": "text_fractions",
+      "modality": "text",
+      "input_path": "data/interactions/text_fractions.txt",
+      "input_sha256": "a563697f5f591f88428542f472b875680133b75a3a14b2cabe67ee50a0c7dfc2",
+      "recognition": {
+        "text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+        "engine": "UTF-8 text input"
+      },
+      "recognized_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+      "intent": {
+        "accepted": true,
+        "label": "fractions",
+        "classifier_score": 0.930448358678811,
+        "nearest_training_similarity": 0.7251669241629087,
+        "skill": {
+          "raw_skill_id": "280",
+          "name": "Kesirlerde toplama ve çıkarma",
+          "encoded_skill": 84
+        },
+        "reason": "Bilinen beceri isteği tanındı.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": {
+        "available": true,
+        "question": 3204,
+        "skill": 84,
+        "difficulty": 0.1388888955116272,
+        "predicted_probability": 0.6001883149147034,
+        "target_probability": 0.65,
+        "reference_probability": 0.22735512256622314,
+        "repeat_question": false,
+        "action": "mevcut düzeyde alıştırma",
+        "reason": "Kesirlerde toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %22.7. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %60.0, hedef %65.",
+        "behavior_group": 1,
+        "rule_is_learned_policy": false,
+        "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+        "original_problem_id": 58809,
+        "skill_name": "Kesirlerde toplama ve çıkarma"
+      },
+      "reply": "İsteğini kesirlerde toplama ve çıkarma olarak algıladım. Mevcut sorulardan 58809 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %60.0.",
+      "reference_success_percent": 22.735512256622314,
+      "observed_skill": {
+        "answers": 7,
+        "ratio": 0.0
+      },
+      "history_unchanged": true,
+      "evaluation": {
+        "expected_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+        "expected_label": "fractions",
+        "label_correct": true,
+        "exact_text_match": true,
+        "reference_word_count": 8,
+        "normalized_word_error_rate": 0.0
+      }
+    },
+    {
+      "sample_id": "audio_integers",
+      "modality": "audio",
+      "input_path": "data/interactions/audio_integers.wav",
+      "input_sha256": "d4433d38a279dbaff6be52c521e50843160398bc84291f6bf9a81b2ac2fe8c74",
+      "recognition": {
+        "text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırmasın yapalım.",
+        "engine": "openai/whisper-base",
+        "revision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+        "language": "turkish",
+        "source_sample_rate": 16000,
+        "model_sample_rate": 16000,
+        "source_channels": 1,
+        "duration_seconds": 4.895
+      },
+      "recognized_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırmasın yapalım.",
+      "intent": {
+        "accepted": true,
+        "label": "integers",
+        "classifier_score": 0.8032809228638746,
+        "nearest_training_similarity": 0.6407976690909235,
+        "skill": {
+          "raw_skill_id": "277",
+          "name": "Tam sayılarda toplama ve çıkarma",
+          "encoded_skill": 81
+        },
+        "reason": "Bilinen beceri isteği tanındı.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": {
+        "available": true,
+        "question": 17025,
+        "skill": 81,
+        "difficulty": 0.0,
+        "predicted_probability": 0.6584175229072571,
+        "target_probability": 0.65,
+        "reference_probability": 0.43923282623291016,
+        "repeat_question": false,
+        "action": "mevcut düzeyde alıştırma",
+        "reason": "Tam sayılarda toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %43.9. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.8, hedef %65.",
+        "behavior_group": 1,
+        "rule_is_learned_policy": false,
+        "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+        "original_problem_id": 189214,
+        "skill_name": "Tam sayılarda toplama ve çıkarma"
+      },
+      "reply": "İsteğini tam sayılarda toplama ve çıkarma olarak algıladım. Mevcut sorulardan 189214 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %65.8.",
+      "reference_success_percent": 43.923282623291016,
+      "observed_skill": {
+        "answers": 7,
+        "ratio": 0.2857142857142857
+      },
+      "history_unchanged": true,
+      "evaluation": {
+        "expected_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+        "expected_label": "integers",
+        "label_correct": true,
+        "exact_text_match": false,
+        "reference_word_count": 10,
+        "normalized_word_error_rate": 0.1
+      }
+    },
+    {
+      "sample_id": "audio_decimals",
+      "modality": "audio",
+      "input_path": "data/interactions/audio_decimals.wav",
+      "input_sha256": "f922975181789a740d4d61220bc147eb383b5febfd8d6bc69a2c486d0a8faa82",
+      "recognition": {
+        "text": "10 dalık sayılarda toplama ve çıkarmak çalışmak istiyorum.",
+        "engine": "openai/whisper-base",
+        "revision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+        "language": "turkish",
+        "source_sample_rate": 16000,
+        "model_sample_rate": 16000,
+        "source_channels": 1,
+        "duration_seconds": 4.065
+      },
+      "recognized_text": "10 dalık sayılarda toplama ve çıkarmak çalışmak istiyorum.",
+      "intent": {
+        "accepted": true,
+        "label": "decimals",
+        "classifier_score": 0.6662325480113701,
+        "nearest_training_similarity": 0.6082783919239313,
+        "skill": {
+          "raw_skill_id": "278",
+          "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+          "encoded_skill": 82
+        },
+        "reason": "Bilinen beceri isteği tanındı.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": {
+        "available": true,
+        "question": 15700,
+        "skill": 82,
+        "difficulty": 0.0,
+        "predicted_probability": 0.6548947095870972,
+        "target_probability": 0.65,
+        "reference_probability": 0.3260780870914459,
+        "repeat_question": false,
+        "action": "mevcut düzeyde alıştırma",
+        "reason": "Pozitif ondalık sayılarda toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %32.6. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.5, hedef %65.",
+        "behavior_group": 1,
+        "rule_is_learned_policy": false,
+        "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+        "original_problem_id": 147305,
+        "skill_name": "Pozitif ondalık sayılarda toplama ve çıkarma"
+      },
+      "reply": "İsteğini pozitif ondalık sayılarda toplama ve çıkarma olarak algıladım. Mevcut sorulardan 147305 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %65.5.",
+      "reference_success_percent": 32.60780870914459,
+      "observed_skill": {
+        "answers": 1,
+        "ratio": 1.0
+      },
+      "history_unchanged": true,
+      "evaluation": {
+        "expected_text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+        "expected_label": "decimals",
+        "label_correct": true,
+        "exact_text_match": false,
+        "reference_word_count": 7,
+        "normalized_word_error_rate": 0.42857142857142855
+      }
+    },
+    {
+      "sample_id": "audio_fractions",
+      "modality": "audio",
+      "input_path": "data/interactions/audio_fractions.wav",
+      "input_sha256": "380c07a32aa29a029634ec89c174f0528f00deae55f96b3a7b6d4796eb7b701a",
+      "recognition": {
+        "text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+        "engine": "openai/whisper-base",
+        "revision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+        "language": "turkish",
+        "source_sample_rate": 16000,
+        "model_sample_rate": 16000,
+        "source_channels": 1,
+        "duration_seconds": 4.74
+      },
+      "recognized_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+      "intent": {
+        "accepted": true,
+        "label": "fractions",
+        "classifier_score": 0.930448358678811,
+        "nearest_training_similarity": 0.7251669241629087,
+        "skill": {
+          "raw_skill_id": "280",
+          "name": "Kesirlerde toplama ve çıkarma",
+          "encoded_skill": 84
+        },
+        "reason": "Bilinen beceri isteği tanındı.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": {
+        "available": true,
+        "question": 3204,
+        "skill": 84,
+        "difficulty": 0.1388888955116272,
+        "predicted_probability": 0.6001883149147034,
+        "target_probability": 0.65,
+        "reference_probability": 0.22735512256622314,
+        "repeat_question": false,
+        "action": "mevcut düzeyde alıştırma",
+        "reason": "Kesirlerde toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %22.7. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %60.0, hedef %65.",
+        "behavior_group": 1,
+        "rule_is_learned_policy": false,
+        "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+        "original_problem_id": 58809,
+        "skill_name": "Kesirlerde toplama ve çıkarma"
+      },
+      "reply": "İsteğini kesirlerde toplama ve çıkarma olarak algıladım. Mevcut sorulardan 58809 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %60.0.",
+      "reference_success_percent": 22.735512256622314,
+      "observed_skill": {
+        "answers": 7,
+        "ratio": 0.0
+      },
+      "history_unchanged": true,
+      "evaluation": {
+        "expected_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+        "expected_label": "fractions",
+        "label_correct": true,
+        "exact_text_match": true,
+        "reference_word_count": 8,
+        "normalized_word_error_rate": 0.0
+      }
+    },
+    {
+      "sample_id": "image_integers",
+      "modality": "image",
+      "input_path": "data/interactions/image_integers.png",
+      "input_sha256": "cf6263dfcddf5e59fb40abd95c700f31ba1a7ed44a8d321df6a57cc0d9128b5e",
+      "recognition": {
+        "text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+        "language": "tr",
+        "engine": "Windows.Media.Ocr.OcrEngine",
+        "lines": [
+          "Negatif ve pozitif tam sayılarda toplama ve",
+          "çıkarma alıştırması yapalım."
+        ]
+      },
+      "recognized_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+      "intent": {
+        "accepted": true,
+        "label": "integers",
+        "classifier_score": 0.7977032591649954,
+        "nearest_training_similarity": 0.6644449844270237,
+        "skill": {
+          "raw_skill_id": "277",
+          "name": "Tam sayılarda toplama ve çıkarma",
+          "encoded_skill": 81
+        },
+        "reason": "Bilinen beceri isteği tanındı.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": {
+        "available": true,
+        "question": 17025,
+        "skill": 81,
+        "difficulty": 0.0,
+        "predicted_probability": 0.6584175229072571,
+        "target_probability": 0.65,
+        "reference_probability": 0.43923282623291016,
+        "repeat_question": false,
+        "action": "mevcut düzeyde alıştırma",
+        "reason": "Tam sayılarda toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %43.9. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.8, hedef %65.",
+        "behavior_group": 1,
+        "rule_is_learned_policy": false,
+        "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+        "original_problem_id": 189214,
+        "skill_name": "Tam sayılarda toplama ve çıkarma"
+      },
+      "reply": "İsteğini tam sayılarda toplama ve çıkarma olarak algıladım. Mevcut sorulardan 189214 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %65.8.",
+      "reference_success_percent": 43.923282623291016,
+      "observed_skill": {
+        "answers": 7,
+        "ratio": 0.2857142857142857
+      },
+      "history_unchanged": true,
+      "evaluation": {
+        "expected_text": "Negatif ve pozitif tam sayılarda toplama ve çıkarma alıştırması yapalım.",
+        "expected_label": "integers",
+        "label_correct": true,
+        "exact_text_match": true,
+        "reference_word_count": 10,
+        "normalized_word_error_rate": 0.0
+      }
+    },
+    {
+      "sample_id": "image_decimals",
+      "modality": "image",
+      "input_path": "data/interactions/image_decimals.png",
+      "input_sha256": "2f43127e69f4b63c46f7d1db2042ccd1b30e4b3ecfee7288ffb7b673aeeae381",
+      "recognition": {
+        "text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+        "language": "tr",
+        "engine": "Windows.Media.Ocr.OcrEngine",
+        "lines": [
+          "Ondalık sayılarda toplama ve çıkarma çalışmak",
+          "istiyorum."
+        ]
+      },
+      "recognized_text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+      "intent": {
+        "accepted": true,
+        "label": "decimals",
+        "classifier_score": 0.8772202168561398,
+        "nearest_training_similarity": 0.6566969037764018,
+        "skill": {
+          "raw_skill_id": "278",
+          "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+          "encoded_skill": 82
+        },
+        "reason": "Bilinen beceri isteği tanındı.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": {
+        "available": true,
+        "question": 15700,
+        "skill": 82,
+        "difficulty": 0.0,
+        "predicted_probability": 0.6548947095870972,
+        "target_probability": 0.65,
+        "reference_probability": 0.3260780870914459,
+        "repeat_question": false,
+        "action": "mevcut düzeyde alıştırma",
+        "reason": "Pozitif ondalık sayılarda toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %32.6. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.5, hedef %65.",
+        "behavior_group": 1,
+        "rule_is_learned_policy": false,
+        "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+        "original_problem_id": 147305,
+        "skill_name": "Pozitif ondalık sayılarda toplama ve çıkarma"
+      },
+      "reply": "İsteğini pozitif ondalık sayılarda toplama ve çıkarma olarak algıladım. Mevcut sorulardan 147305 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %65.5.",
+      "reference_success_percent": 32.60780870914459,
+      "observed_skill": {
+        "answers": 1,
+        "ratio": 1.0
+      },
+      "history_unchanged": true,
+      "evaluation": {
+        "expected_text": "Ondalık sayılarda toplama ve çıkarma çalışmak istiyorum.",
+        "expected_label": "decimals",
+        "label_correct": true,
+        "exact_text_match": true,
+        "reference_word_count": 7,
+        "normalized_word_error_rate": 0.0
+      }
+    },
+    {
+      "sample_id": "image_fractions",
+      "modality": "image",
+      "input_path": "data/interactions/image_fractions.png",
+      "input_sha256": "2230bdac678591181de0fe765327e43b380e7b7a1e2af0dd4d3d2ea9ef04082a",
+      "recognition": {
+        "text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+        "language": "tr",
+        "engine": "Windows.Media.Ocr.OcrEngine",
+        "lines": [
+          "Paydaları farklı kesirlerde toplama ve çıkarma",
+          "yaparken zorlanıyorum."
+        ]
+      },
+      "recognized_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+      "intent": {
+        "accepted": true,
+        "label": "fractions",
+        "classifier_score": 0.930448358678811,
+        "nearest_training_similarity": 0.7251669241629087,
+        "skill": {
+          "raw_skill_id": "280",
+          "name": "Kesirlerde toplama ve çıkarma",
+          "encoded_skill": 84
+        },
+        "reason": "Bilinen beceri isteği tanındı.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": {
+        "available": true,
+        "question": 3204,
+        "skill": 84,
+        "difficulty": 0.1388888955116272,
+        "predicted_probability": 0.6001883149147034,
+        "target_probability": 0.65,
+        "reference_probability": 0.22735512256622314,
+        "repeat_question": false,
+        "action": "mevcut düzeyde alıştırma",
+        "reason": "Kesirlerde toplama ve çıkarma: öğrencinin ifade ettiği beceri önceliklendirildi; sabit referans başarı tahmini %22.7. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %60.0, hedef %65.",
+        "behavior_group": 1,
+        "rule_is_learned_policy": false,
+        "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+        "original_problem_id": 58809,
+        "skill_name": "Kesirlerde toplama ve çıkarma"
+      },
+      "reply": "İsteğini kesirlerde toplama ve çıkarma olarak algıladım. Mevcut sorulardan 58809 kimlikli soruyu öneriyorum. Bu soru için tahmini doğru cevap olasılığı %60.0.",
+      "reference_success_percent": 22.735512256622314,
+      "observed_skill": {
+        "answers": 7,
+        "ratio": 0.0
+      },
+      "history_unchanged": true,
+      "evaluation": {
+        "expected_text": "Paydaları farklı kesirlerde toplama ve çıkarma yaparken zorlanıyorum.",
+        "expected_label": "fractions",
+        "label_correct": true,
+        "exact_text_match": true,
+        "reference_word_count": 8,
+        "normalized_word_error_rate": 0.0
+      }
+    }
+  ],
+  "rejection_examples": [
+    {
+      "recognized_text": "Matematik çalışmak istiyorum.",
+      "intent": {
+        "accepted": false,
+        "label": "out_of_scope",
+        "classifier_score": 0.43076605980161997,
+        "nearest_training_similarity": 0.42800973849200696,
+        "skill": null,
+        "reason": "Lütfen beceriyi ve toplama veya çıkarma işlemini açıkça belirt.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": null,
+      "reply": "Lütfen beceriyi ve toplama veya çıkarma işlemini açıkça belirt.",
+      "history_unchanged": true
+    },
+    {
+      "recognized_text": "Kesirlerde çarpma yapmak istiyorum.",
+      "intent": {
+        "accepted": false,
+        "label": "out_of_scope",
+        "classifier_score": 0.9296741764647388,
+        "nearest_training_similarity": 0.9272048275439103,
+        "skill": null,
+        "reason": "Bu örnek yalnızca üç beceride toplama ve çıkarma isteklerini kapsıyor.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": null,
+      "reply": "Bu örnek yalnızca üç beceride toplama ve çıkarma isteklerini kapsıyor.",
+      "history_unchanged": true
+    },
+    {
+      "recognized_text": "Kesirler ve tam sayılarda toplama çalışalım.",
+      "intent": {
+        "accepted": false,
+        "label": "out_of_scope",
+        "classifier_score": 0.535555044752803,
+        "nearest_training_similarity": 0.5702680298837838,
+        "skill": null,
+        "reason": "Birden fazla beceri belirttin; önce hangisini çalışmak istediğini seçelim.",
+        "score_note": "Sınıflandırma skoru kalibre edilmiş güven veya öğrenci başarı yüzdesi değildir."
+      },
+      "response_is_assessed_answer": false,
+      "student_history_answers": 25,
+      "recommendation": null,
+      "reply": "Birden fazla beceri belirttin; önce hangisini çalışmak istediğini seçelim.",
+      "history_unchanged": true
+    }
+  ],
+  "integrity": {
+    "knowledge_model_unchanged": true,
+    "patterns_unchanged": true,
+    "references_unchanged": true,
+    "history_unchanged": true,
+    "main_experiment_source_hashes_unchanged": true,
+    "rejected_requests_have_no_recommendation": true
+  },
+  "state_sha256_before": {
+    "knowledge_model": "2251aadefb28b07b4e971b155612aaf368ce67f09d29b9c4223a9b3f6a6ce2cb",
+    "patterns": "deb96eda74100f30839fd6f7adb28b50a02d074d702d8491ab0f49a3267a7e6e",
+    "references": "87556e2d712739380ab6fb1cb343702bd3254bc77909d45bc1204c5acd72735d",
+    "history": "38d93315d4a92b08667f7e29c24f2ae4a55dfa00833aca466c88beab5058f6fc"
+  },
+  "state_sha256_after": {
+    "knowledge_model": "2251aadefb28b07b4e971b155612aaf368ce67f09d29b9c4223a9b3f6a6ce2cb",
+    "patterns": "deb96eda74100f30839fd6f7adb28b50a02d074d702d8491ab0f49a3267a7e6e",
+    "references": "87556e2d712739380ab6fb1cb343702bd3254bc77909d45bc1204c5acd72735d",
+    "history": "38d93315d4a92b08667f7e29c24f2ae4a55dfa00833aca466c88beab5058f6fc"
+  },
+  "modality_summary": [
+    {
+      "modality": "text",
+      "examples": 3,
+      "correct_skill_routes": 3,
+      "mean_normalized_word_error_rate": 0.0,
+      "pooled_normalized_word_error_rate": 0.0
+    },
+    {
+      "modality": "audio",
+      "examples": 3,
+      "correct_skill_routes": 3,
+      "mean_normalized_word_error_rate": 0.1761904761904762,
+      "pooled_normalized_word_error_rate": 0.16
+    },
+    {
+      "modality": "image",
+      "examples": 3,
+      "correct_skill_routes": 3,
+      "mean_normalized_word_error_rate": 0.0,
+      "pooled_normalized_word_error_rate": 0.0
+    }
+  ]
+}

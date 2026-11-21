@@ -1,0 +1,139 @@
+{
+  "fitted_on": "training students only",
+  "training_students": 2550,
+  "training_snapshots": 9598,
+  "selected_clusters": 2,
+  "selected_silhouette": 0.4255434535280037,
+  "feature_names": [
+    "recent_correct_ratio",
+    "active_skill_reference_probability",
+    "log_median_response_seconds",
+    "mean_hint_count"
+  ],
+  "expanded_feature_names": [
+    "recent_correct_ratio",
+    "active_skill_reference_probability",
+    "log_median_response_seconds",
+    "mean_hint_count"
+  ],
+  "reference_bank_sha256": "6cdef89ae761d0301631e1eb5c29ecd23e0e90d6b77e89fa620935a590d17caa",
+  "model_method": "kmpt",
+  "model_seed": 17,
+  "configuration": {
+    "window_size": 20,
+    "minimum_history": 5,
+    "training_snapshots_per_student": 4,
+    "reference_skills_per_snapshot": 3,
+    "cluster_candidates": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "minimum_cluster_fraction": 0.05,
+    "silhouette_sample_size": 2000,
+    "random_seed": 2026,
+    "prediction_batch_size": 512,
+    "replay_split": 1,
+    "replay_initial_history": 5,
+    "replay_steps": 20,
+    "recommended_probability": 0.65,
+    "probability_after_repeated_errors": 0.8,
+    "probability_after_repeated_successes": 0.55
+  },
+  "limits": {
+    "duration_lower_seconds": 1.409,
+    "duration_upper_seconds": 365.2825199999995,
+    "hint_upper": 5.0,
+    "fitted_on": "training students only"
+  },
+  "candidates": [
+    {
+      "clusters": 2,
+      "silhouette": 0.4255434535280037,
+      "min_cluster_fraction": 0.26224213377787037,
+      "cluster_sizes": [
+        7081,
+        2517
+      ],
+      "size_constraint_passed": true
+    },
+    {
+      "clusters": 3,
+      "silhouette": 0.31584962958610185,
+      "min_cluster_fraction": 0.11054386330485517,
+      "cluster_sizes": [
+        5128,
+        3409,
+        1061
+      ],
+      "size_constraint_passed": true
+    },
+    {
+      "clusters": 4,
+      "silhouette": 0.2868642667031763,
+      "min_cluster_fraction": 0.08793498645551157,
+      "cluster_sizes": [
+        2819,
+        3170,
+        844,
+        2765
+      ],
+      "size_constraint_passed": true
+    },
+    {
+      "clusters": 5,
+      "silhouette": 0.2694872093890258,
+      "min_cluster_fraction": 0.0788705980412586,
+      "cluster_sizes": [
+        3061,
+        1454,
+        1945,
+        757,
+        2381
+      ],
+      "size_constraint_passed": true
+    },
+    {
+      "clusters": 6,
+      "silhouette": 0.27202517403297577,
+      "min_cluster_fraction": 0.05449051885809544,
+      "cluster_sizes": [
+        1293,
+        2141,
+        859,
+        2770,
+        523,
+        2012
+      ],
+      "size_constraint_passed": true
+    }
+  ],
+  "source_sha256": "162ef8d2d28bcbfea6591a282994062bd8d5eaa00636544292a0d268dca6e5da",
+  "checkpoint_sha256": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+  "inference_policy": "same_target_step_block",
+  "profiles": [
+    {
+      "cluster": 0,
+      "snapshots": 7081,
+      "students_with_snapshot_in_group": 2204,
+      "mean_observed_accuracy": 0.7554155739166054,
+      "mean_reference_probability": 0.7141204600995815,
+      "median_response_seconds": 23.594499999999996,
+      "mean_hints": 0.19952861541546954,
+      "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun"
+    },
+    {
+      "cluster": 1,
+      "snapshots": 2517,
+      "students_with_snapshot_in_group": 1059,
+      "mean_observed_accuracy": 0.29424196128560015,
+      "mean_reference_probability": 0.3964662064402632,
+      "median_response_seconds": 17.794999999999998,
+      "mean_hints": 1.3506639823923319,
+      "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa"
+    }
+  ],
+  "interpretation": "Gruplar yakın dönem pencerelerini açıklar; öğrencinin değişmez niteliği değildir."
+}

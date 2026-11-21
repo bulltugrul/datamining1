@@ -1,0 +1,77 @@
+[
+  {
+    "epoch": 1,
+    "train_mixed_objective": 0.5110101984952372,
+    "train_response_bce": 0.5110101984952372,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5636037176332417,
+      "accuracy": 0.7228036708599711,
+      "auc": 0.751948726728555
+    },
+    "seconds": 32.49713380000321
+  },
+  {
+    "epoch": 2,
+    "train_mixed_objective": 0.46980073305338105,
+    "train_response_bce": 0.46980073305338105,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6015296758241471,
+      "accuracy": 0.716178593524438,
+      "auc": 0.7489409806537763
+    },
+    "seconds": 31.671870399994077
+  },
+  {
+    "epoch": 3,
+    "train_mixed_objective": 0.45331494035075515,
+    "train_response_bce": 0.45331494035075515,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6067467628741761,
+      "accuracy": 0.7172355124767993,
+      "auc": 0.7406591505307095
+    },
+    "seconds": 32.57698419998633
+  },
+  {
+    "epoch": 4,
+    "train_mixed_objective": 0.4382416563305762,
+    "train_response_bce": 0.4382416563305762,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6458153428675392,
+      "accuracy": 0.7164106001237368,
+      "auc": 0.7374197711780286
+    },
+    "seconds": 32.51954809999734
+  },
+  {
+    "epoch": 5,
+    "train_mixed_objective": 0.41980512815988874,
+    "train_response_bce": 0.41980512815988874,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6655408682639291,
+      "accuracy": 0.7132914002887193,
+      "auc": 0.7289201597378924
+    },
+    "seconds": 32.19601659999171
+  }
+]

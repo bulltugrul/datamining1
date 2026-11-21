@@ -1,0 +1,7 @@
+{
+  "jupyterlab_http_status": 200,
+  "api_status": 200,
+  "project_kernel_available": true,
+  "unauthenticated_access_rejected": true,
+  "bind_address": "127.0.0.1"
+}

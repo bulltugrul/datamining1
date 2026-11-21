@@ -1,0 +1,20 @@
+[
+  {
+    "batch_size": 64,
+    "seconds_per_step": 0.023704457142490094,
+    "targets_per_second": 2699.914181341044,
+    "peak_gpu_mb": 294.12158203125
+  },
+  {
+    "batch_size": 256,
+    "seconds_per_step": 0.05019274285794901,
+    "targets_per_second": 5100.338921993329,
+    "peak_gpu_mb": 900.53759765625
+  },
+  {
+    "batch_size": 512,
+    "seconds_per_step": 0.09869967143250895,
+    "targets_per_second": 5187.453945579816,
+    "peak_gpu_mb": 1699.60986328125
+  }
+]

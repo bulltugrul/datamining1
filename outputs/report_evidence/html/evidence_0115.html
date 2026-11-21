@@ -1,0 +1,112 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:white;color:#111;font-family:Arial,sans-serif}
+#capture{width:1000px;padding:26px 28px;background:white}
+.heading{font-size:20px;line-height:27px;margin:0 0 10px;font-weight:700}
+.sub{font-size:17px;line-height:25px;margin:0 0 14px;color:#444}
+.line{display:grid;grid-template-columns:52px 1fr;align-items:start}
+.line-number{font:17px/27px Consolas,monospace;color:#666;text-align:right;padding-right:14px}
+.code,.plain{font:20px/27px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all}
+.code:empty::before{content:' '}.plain{margin:0}img,svg{display:block;max-width:100%;height:auto;margin:0 auto}
+table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:23px}
+th,td{border:1px solid #ddd;padding:7px 8px;overflow-wrap:anywhere;vertical-align:middle;text-align:left}
+th{background:#edf0f4;font-weight:700}td{background:white}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.code .hll { background-color: #ffffcc }
+.code { background: #f8f8f8; }
+.code .c { color: #3D7B7B; font-style: italic } /* Comment */
+.code .err { border: 1px solid #F00 } /* Error */
+.code .k { color: #008000; font-weight: bold } /* Keyword */
+.code .o { color: #666 } /* Operator */
+.code .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.code .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.code .cp { color: #9C6500 } /* Comment.Preproc */
+.code .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.code .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.code .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.code .gd { color: #A00000 } /* Generic.Deleted */
+.code .ge { font-style: italic } /* Generic.Emph */
+.code .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.code .gr { color: #E40000 } /* Generic.Error */
+.code .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code .gi { color: #008400 } /* Generic.Inserted */
+.code .go { color: #717171 } /* Generic.Output */
+.code .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code .gs { font-weight: bold } /* Generic.Strong */
+.code .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code .gt { color: #04D } /* Generic.Traceback */
+.code .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code .kp { color: #008000 } /* Keyword.Pseudo */
+.code .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code .kt { color: #B00040 } /* Keyword.Type */
+.code .m { color: #666 } /* Literal.Number */
+.code .s { color: #BA2121 } /* Literal.String */
+.code .na { color: #687822 } /* Name.Attribute */
+.code .nb { color: #008000 } /* Name.Builtin */
+.code .nc { color: #00F; font-weight: bold } /* Name.Class */
+.code .no { color: #800 } /* Name.Constant */
+.code .nd { color: #A2F } /* Name.Decorator */
+.code .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.code .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.code .nf { color: #00F } /* Name.Function */
+.code .nl { color: #767600 } /* Name.Label */
+.code .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.code .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code .nv { color: #19177C } /* Name.Variable */
+.code .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.code .w { color: #BBB } /* Text.Whitespace */
+.code .mb { color: #666 } /* Literal.Number.Bin */
+.code .mf { color: #666 } /* Literal.Number.Float */
+.code .mh { color: #666 } /* Literal.Number.Hex */
+.code .mi { color: #666 } /* Literal.Number.Integer */
+.code .mo { color: #666 } /* Literal.Number.Oct */
+.code .sa { color: #BA2121 } /* Literal.String.Affix */
+.code .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code .sc { color: #BA2121 } /* Literal.String.Char */
+.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code .s2 { color: #BA2121 } /* Literal.String.Double */
+.code .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.code .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.code .sx { color: #008000 } /* Literal.String.Other */
+.code .sr { color: #A45A77 } /* Literal.String.Regex */
+.code .s1 { color: #BA2121 } /* Literal.String.Single */
+.code .ss { color: #19177C } /* Literal.String.Symbol */
+.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code .fm { color: #00F } /* Name.Function.Magic */
+.code .vc { color: #19177C } /* Name.Variable.Class */
+.code .vg { color: #19177C } /* Name.Variable.Global */
+.code .vi { color: #19177C } /* Name.Variable.Instance */
+.code .vm { color: #19177C } /* Name.Variable.Magic */
+.code .il { color: #666 } /* Literal.Number.Integer.Long */</style></head><body><main id="capture"><div class="heading">scripts/run_live_session_demo.py</div><div class="sub">Satır 37–61</div><div class="line"><div class="line-number">37</div><div class="code"><span data-line="37">        <span class="k">assert</span> <span class="n">event</span><span class="p">[</span><span class="s1">'history_count_before'</span><span class="p">]</span><span class="o">==</span><span class="n">index</span>
+</span></div></div><div class="line"><div class="line-number">38</div><div class="code"><span data-line="38">        <span class="k">assert</span> <span class="n">parse_time</span><span class="p">(</span><span class="n">event</span><span class="p">[</span><span class="s1">'predicted_at'</span><span class="p">])</span><span class="o">&lt;=</span><span class="n">parse_time</span><span class="p">(</span><span class="n">event</span><span class="p">[</span><span class="s1">'answer_received_at'</span><span class="p">])</span><span class="o">&lt;=</span><span class="n">parse_time</span><span class="p">(</span><span class="n">event</span><span class="p">[</span><span class="s1">'state_updated_at'</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">39</div><div class="code"><span data-line="39">        <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s1">'event'</span><span class="p">:</span><span class="n">event</span><span class="p">[</span><span class="s1">'sequence'</span><span class="p">],</span><span class="s1">'answer_received_at'</span><span class="p">:</span><span class="n">event</span><span class="p">[</span><span class="s1">'answer_received_at'</span><span class="p">],</span>
+</span></div></div><div class="line"><div class="line-number">40</div><div class="code"><span data-line="40">            <span class="s1">'correct'</span><span class="p">:</span><span class="n">correct</span><span class="p">,</span><span class="s1">'response_duration_seconds'</span><span class="p">:</span><span class="n">event</span><span class="p">[</span><span class="s1">'response_duration_seconds'</span><span class="p">]}),</span><span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">41</div><div class="code"><span data-line="41">    <span class="n">record</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">42</div><div class="code"><span data-line="42">    <span class="n">checks</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">verify_frozen_resources</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">43</div><div class="code"><span data-line="43">    <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">checks</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</span></div></div><div class="line"><div class="line-number">44</div><div class="code"><span data-line="44">    <span class="n">restored</span><span class="o">=</span><span class="n">LiveSession</span><span class="o">.</span><span class="n">resume</span><span class="p">(</span><span class="n">resources</span><span class="p">,</span><span class="n">record</span><span class="p">[</span><span class="s1">'session_id'</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">45</div><div class="code"><span data-line="45">    <span class="k">assert</span> <span class="n">restored</span><span class="o">.</span><span class="n">snapshot</span><span class="p">()</span><span class="o">==</span><span class="n">record</span>
+</span></div></div><div class="line"><div class="line-number">46</div><div class="code"><span data-line="46">    <span class="n">out</span><span class="o">=</span><span class="n">ROOT</span><span class="o">/</span><span class="s1">'outputs/live'</span>
+</span></div></div><div class="line"><div class="line-number">47</div><div class="code"><span data-line="47">    <span class="n">out</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">48</div><div class="code"><span data-line="48">    <span class="p">(</span><span class="n">out</span><span class="o">/</span><span class="s1">'demo_session.json'</span><span class="p">)</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">session</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">),</span><span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">49</div><div class="code"><span data-line="49">    <span class="n">figure</span><span class="o">=</span><span class="n">timeline_figure</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">50</div><div class="code"><span data-line="50">    <span class="k">for</span> <span class="n">suffix</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">'png'</span><span class="p">,</span><span class="s1">'svg'</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">51</div><div class="code"><span data-line="51">        <span class="n">figure</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">out</span><span class="o">/</span><span class="sa">f</span><span class="s1">'live_timeline.</span><span class="si">{</span><span class="n">suffix</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span><span class="n">dpi</span><span class="o">=</span><span class="mi">180</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">52</div><div class="code"><span data-line="52">    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">figure</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">53</div><div class="code"><span data-line="53">    <span class="n">report</span><span class="o">=</span><span class="p">{</span><span class="s1">'source'</span><span class="p">:</span><span class="s1">'actual local wall-clock calls with explicitly automated response inputs'</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">54</div><div class="code"><span data-line="54">        <span class="s1">'human_learning_study'</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span><span class="s1">'record_file'</span><span class="p">:</span><span class="n">session</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">ROOT</span><span class="p">)</span><span class="o">.</span><span class="n">as_posix</span><span class="p">(),</span>
+</span></div></div><div class="line"><div class="line-number">55</div><div class="code"><span data-line="55">        <span class="s1">'events'</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">'events'</span><span class="p">]),</span><span class="s1">'initial_history_count'</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s1">'resume_verified'</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">56</div><div class="code"><span data-line="56">        <span class="s1">'source_event_times_fabricated'</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span><span class="s1">'timestamped_response_recording_implemented'</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">57</div><div class="code"><span data-line="57">        <span class="s1">'elapsed_session_seconds'</span><span class="p">:(</span><span class="n">parse_time</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">'closed_at'</span><span class="p">])</span><span class="o">-</span><span class="n">parse_time</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">'created_at'</span><span class="p">]))</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">(),</span>
+</span></div></div><div class="line"><div class="line-number">58</div><div class="code"><span data-line="58">        <span class="s1">'each_prediction_precedes_answer'</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s1">'all_resource_checks'</span><span class="p">:</span><span class="n">checks</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">59</div><div class="code"><span data-line="59">        <span class="s1">'time_used_as_model_feature'</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span><span class="s1">'between_event_semantics'</span><span class="p">:</span><span class="s1">'last estimate held; no interpolated learning'</span><span class="p">}</span>
+</span></div></div><div class="line"><div class="line-number">60</div><div class="code"><span data-line="60">    <span class="n">report</span><span class="p">[</span><span class="s1">'implementation_sha256'</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">((</span><span class="n">ROOT</span><span class="o">/</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">61</div><div class="code"><span data-line="61">        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">'src/kt_project/live_session.py'</span><span class="p">,</span><span class="s1">'src/kt_project/live_ui.py'</span><span class="p">,</span><span class="s1">'scripts/run_live_session_demo.py'</span><span class="p">)}</span>
+</span></div></div></main></body></html>

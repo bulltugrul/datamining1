@@ -1,0 +1,241 @@
+{
+  "method": "character TF-IDF (3..5) + logistic regression with explicit scope guards",
+  "origin": "authored small example corpus, not real student statements",
+  "training_records": 48,
+  "validation_records": 20,
+  "test_records": 20,
+  "tfidf_fitted_on": "train only",
+  "threshold_selected_on": "validation only",
+  "threshold": 0.65,
+  "threshold_candidates": [
+    {
+      "threshold": 0.4,
+      "validation_macro_f1": 1.0
+    },
+    {
+      "threshold": 0.45,
+      "validation_macro_f1": 1.0
+    },
+    {
+      "threshold": 0.5,
+      "validation_macro_f1": 1.0
+    },
+    {
+      "threshold": 0.55,
+      "validation_macro_f1": 1.0
+    },
+    {
+      "threshold": 0.6,
+      "validation_macro_f1": 1.0
+    },
+    {
+      "threshold": 0.65,
+      "validation_macro_f1": 1.0
+    },
+    {
+      "threshold": 0.7,
+      "validation_macro_f1": 0.9495798319327731
+    },
+    {
+      "threshold": 0.75,
+      "validation_macro_f1": 0.8533834586466165
+    },
+    {
+      "threshold": 0.8,
+      "validation_macro_f1": 0.6627705627705627
+    }
+  ],
+  "labels": [
+    "integers",
+    "decimals",
+    "fractions",
+    "out_of_scope"
+  ],
+  "test_accuracy": 0.95,
+  "test_macro_f1": 0.9495798319327731,
+  "test_confusion_matrix": [
+    [
+      3,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      8
+    ]
+  ],
+  "test_predictions": [
+    {
+      "id": "integers_test_01",
+      "text": "Eksi ve artı tam sayılarda toplama pratiği yapalım.",
+      "actual": "integers",
+      "predicted": "integers"
+    },
+    {
+      "id": "integers_test_02",
+      "text": "Tam sayıların çıkarma işlemi için alıştırma seç.",
+      "actual": "integers",
+      "predicted": "integers"
+    },
+    {
+      "id": "integers_test_03",
+      "text": "Negatif tam sayılarda toplama konusunu pekiştirelim.",
+      "actual": "integers",
+      "predicted": "integers"
+    },
+    {
+      "id": "integers_test_04",
+      "text": "Tam sayılarla çıkarma işlemini tekrar etmek isterim.",
+      "actual": "integers",
+      "predicted": "out_of_scope"
+    },
+    {
+      "id": "decimals_test_01",
+      "text": "Virgüllü sayıların toplama işlemini pekiştirelim.",
+      "actual": "decimals",
+      "predicted": "decimals"
+    },
+    {
+      "id": "decimals_test_02",
+      "text": "Ondalık sayılarla çıkarma alıştırması seçer misin?",
+      "actual": "decimals",
+      "predicted": "decimals"
+    },
+    {
+      "id": "decimals_test_03",
+      "text": "Pozitif ondalıklarla toplama konusunu yeniden çalışalım.",
+      "actual": "decimals",
+      "predicted": "decimals"
+    },
+    {
+      "id": "decimals_test_04",
+      "text": "Ondalık sayı çıkarma işlemi için yardım istiyorum.",
+      "actual": "decimals",
+      "predicted": "decimals"
+    },
+    {
+      "id": "fractions_test_01",
+      "text": "Farklı paydalı kesirlerle toplama örneği çözelim.",
+      "actual": "fractions",
+      "predicted": "fractions"
+    },
+    {
+      "id": "fractions_test_02",
+      "text": "Kesirlerin çıkarma işlemini pekiştirelim.",
+      "actual": "fractions",
+      "predicted": "fractions"
+    },
+    {
+      "id": "fractions_test_03",
+      "text": "Kesirlerde toplama için yeni bir alıştırma seç.",
+      "actual": "fractions",
+      "predicted": "fractions"
+    },
+    {
+      "id": "fractions_test_04",
+      "text": "Kesir çıkarma yaparken paydaları eşitlemede zorlanıyorum.",
+      "actual": "fractions",
+      "predicted": "fractions"
+    },
+    {
+      "id": "out_of_scope_test_01",
+      "text": "Daire çevresi hesaplama alıştırması öner.",
+      "actual": "out_of_scope",
+      "predicted": "out_of_scope"
+    },
+    {
+      "id": "out_of_scope_test_02",
+      "text": "Kesirlerle bölme pratiği yapalım.",
+      "actual": "out_of_scope",
+      "predicted": "out_of_scope"
+    },
+    {
+      "id": "out_of_scope_test_03",
+      "text": "Tarih sınavına hazırlanmak istiyorum.",
+      "actual": "out_of_scope",
+      "predicted": "out_of_scope"
+    },
+    {
+      "id": "out_of_scope_test_04",
+      "text": "Hangi konuyu anlamadığımı bilmiyorum.",
+      "actual": "out_of_scope",
+      "predicted": "out_of_scope"
+    },
+    {
+      "id": "out_of_scope_test_05",
+      "text": "Tam sayılarda çarpma konusunu anlat.",
+      "actual": "out_of_scope",
+      "predicted": "out_of_scope"
+    },
+    {
+      "id": "out_of_scope_test_06",
+      "text": "Kesirlerle ve ondalık sayılarla toplama yapmak isterim.",
+      "actual": "out_of_scope",
+      "predicted": "out_of_scope"
+    },
+    {
+      "id": "out_of_scope_test_07",
+      "text": "Negatif ondalık sayılarda çıkarma çalışmak istiyorum.",
+      "actual": "out_of_scope",
+      "predicted": "out_of_scope"
+    },
+    {
+      "id": "out_of_scope_test_08",
+      "text": "Bana bir müzik önerir misin?",
+      "actual": "out_of_scope",
+      "predicted": "out_of_scope"
+    }
+  ],
+  "corpus_sha256": "e0df71ad737536a0119b2a444e5ec9b0d8d0076b9666a8d4e34e38643a43310e",
+  "configuration": {
+    "random_seed": 2026,
+    "asr_model": "openai/whisper-base",
+    "asr_revision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+    "asr_language": "turkish",
+    "sample_rate": 16000,
+    "ocr_language": "tr",
+    "minimum_text_similarity": 0.15,
+    "classifier_C": 8.0,
+    "threshold_candidates": [
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8
+    ],
+    "skills": {
+      "integers": {
+        "raw_skill_id": "277",
+        "name": "Tam sayılarda toplama ve çıkarma"
+      },
+      "decimals": {
+        "raw_skill_id": "278",
+        "name": "Pozitif ondalık sayılarda toplama ve çıkarma"
+      },
+      "fractions": {
+        "raw_skill_id": "280",
+        "name": "Kesirlerde toplama ve çıkarma"
+      }
+    }
+  },
+  "interpretation": "Küçük yazılmış derlemde işlev kontrolüdür; gerçek öğrencilerde genelleme veya ASR/OCR başarısı değildir."
+}

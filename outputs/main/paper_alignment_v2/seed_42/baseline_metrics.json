@@ -1,0 +1,28 @@
+{
+  "variant": "baseline",
+  "method": "baseline",
+  "layout": "paper_tail",
+  "seed": 42,
+  "best_epoch": 1,
+  "initial_lkm_sha256": "62dfeea5cffec72584f545857e69726882527438448e92f3843c511d5086617f",
+  "initial_validation": {
+    "samples": 38792,
+    "bce": 0.6931562291934186,
+    "accuracy": 0.5058001649824706,
+    "auc": 0.5313662965162333
+  },
+  "validation": {
+    "samples": 38792,
+    "bce": 0.583005386324218,
+    "accuracy": 0.7241699319447309,
+    "auc": 0.7520080390823096
+  },
+  "test": null,
+  "training_target_count": 194663,
+  "validation_target_count": 38792,
+  "parameters": {
+    "total": 4845489,
+    "trainable": 2643201
+  },
+  "training_seconds": 471.19406399998115
+}

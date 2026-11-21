@@ -1,0 +1,31 @@
+Davran�� grubu i�in en az 5 cevap gerekir.
+�nerilen mevcut soru: 104
+Beceri 2: izlenen beceriler aras�nda referans ba�ar� tahmini en d���k olan beceri; sabit referans ba�ar� tahmini %52.6. orta d�zeyde zorlay�c� ba�ar� hedefi. Se�ilen soruda tahmin %52.6, hedef %65.
+Davran�� grubu i�in en az 5 cevap gerekir.
+�nerilen mevcut soru: 104
+Beceri 2: izlenen beceriler aras�nda referans ba�ar� tahmini en d���k olan beceri; sabit referans ba�ar� tahmini %52.6. orta d�zeyde zorlay�c� ba�ar� hedefi. Se�ilen soruda tahmin %52.6, hedef %65.
+Davran�� grubu i�in en az 5 cevap gerekir.
+�nerilen mevcut soru: 110
+Beceri 2: izlenen beceriler aras�nda referans ba�ar� tahmini en d���k olan beceri; sabit referans ba�ar� tahmini %52.4. orta d�zeyde zorlay�c� ba�ar� hedefi. Se�ilen soruda tahmin %52.5, hedef %65.
+Davran�� grubu i�in en az 5 cevap gerekir.
+�nerilen mevcut soru: 110
+Beceri 2: izlenen beceriler aras�nda referans ba�ar� tahmini en d���k olan beceri; sabit referans ba�ar� tahmini %52.4. orta d�zeyde zorlay�c� ba�ar� hedefi. Se�ilen soruda tahmin %52.5, hedef %65.
+Davran�� grubu i�in en az 5 cevap gerekir.
+�nerilen mevcut soru: 110
+Beceri 2: izlenen beceriler aras�nda referans ba�ar� tahmini en d���k olan beceri; sabit referans ba�ar� tahmini %52.4. orta d�zeyde zorlay�c� ba�ar� hedefi. Se�ilen soruda tahmin %52.5, hedef %65.
+test_actual_widget_callbacks_create_prepare_record_close_and_resume (test_live_session.LiveSessionTests.test_actual_widget_callbacks_create_prepare_record_close_and_resume) ... ok
+test_behavior_starts_after_five_answers_and_resources_stay_frozen (test_live_session.LiveSessionTests.test_behavior_starts_after_five_answers_and_resources_stay_frozen) ... ok
+test_clock_regression_and_second_pending_question_are_rejected (test_live_session.LiveSessionTests.test_clock_regression_and_second_pending_question_are_rejected) ... ok
+test_disk_failure_rolls_back_answer_and_stale_view_cannot_overwrite (test_live_session.LiveSessionTests.test_disk_failure_rolls_back_answer_and_stale_view_cannot_overwrite) ... ok
+test_duplicate_submission_is_idempotent_and_conflicting_result_rejected (test_live_session.LiveSessionTests.test_duplicate_submission_is_idempotent_and_conflicting_result_rejected) ... ok
+test_empty_start_has_no_fabricated_history_or_observed_percent (test_live_session.LiveSessionTests.test_empty_start_has_no_fabricated_history_or_observed_percent) ... ok
+test_persisted_tampering_is_detected_and_external_snapshot_cannot_mutate (test_live_session.LiveSessionTests.test_persisted_tampering_is_detected_and_external_snapshot_cannot_mutate) ... ok
+test_prediction_precedes_answer_and_pending_is_not_history (test_live_session.LiveSessionTests.test_prediction_precedes_answer_and_pending_is_not_history) ... ok
+test_resume_preserves_pending_and_uses_real_wall_time_for_interruption (test_live_session.LiveSessionTests.test_resume_preserves_pending_and_uses_real_wall_time_for_interruption) ... ok
+test_timeline_uses_actual_datetimes_and_step_holds_between_events (test_live_session.LiveSessionTests.test_timeline_uses_actual_datetimes_and_step_holds_between_events) ... ok
+test_unsupported_ids_outcomes_and_tokens_do_not_change_history (test_live_session.LiveSessionTests.test_unsupported_ids_outcomes_and_tokens_do_not_change_history) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.726s
+
+OK

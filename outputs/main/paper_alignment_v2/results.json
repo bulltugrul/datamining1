@@ -1,0 +1,431 @@
+{
+  "purpose": "paper_method_alignment_v2_scaled",
+  "source_sha256": "162ef8d2d28bcbfea6591a282994062bd8d5eaa00636544292a0d268dca6e5da",
+  "model_config": {
+    "question_vocabulary_size": 17070,
+    "skill_vocabulary_size": 125,
+    "hidden_size": 128,
+    "layers": 2,
+    "attention_heads": 4,
+    "feedforward_size": 512,
+    "max_history": 200,
+    "prompt_length": 8,
+    "prompt_layers": 1,
+    "dropout": 0.4
+  },
+  "implementation_sha256": {
+    "src/kt_project/plkt_models.py": "197bce0d47a9f2c79f28e7614a3572b7b6ca6260120cf1f3289cb94244b9e8f6",
+    "src/kt_project/plkt_sequences.py": "e0c9af4fff28db1f2a3c174f479f12de1bc22676f6767c8c2d5439207b5d921e",
+    "src/kt_project/plkt_training.py": "90f45fbd42c41ef840cb46214401724da1fa415149b236b5cdf1a251c8487173",
+    "src/kt_project/models.py": "ef9cc4a6db5b9328297a7ca4f5413da2e090e9004ded3183a5c6d56e8ff47019",
+    "src/kt_project/sequences.py": "87855ca7688c449cedfd61a1c4804c3aa772b01b3a7592a0d008ac228a145058",
+    "src/kt_project/training.py": "fa86398c4180b815759d667507255175c9a0be06cd6fe6716d625fb4bbc6c5eb",
+    "src/kt_project/prepare_data.py": "4f5ad98dc02f5b471d0ed32bba1df46bea55bcea39552faefb80f08941b084e5",
+    "configs/paper_alignment.json": "0045ed9c112390c56036e2a0536b9d17d228c4098a7e741c6e0fcde01e5c2040"
+  },
+  "device": "cuda",
+  "precision": "bfloat16",
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "runs": [
+    {
+      "variant": "baseline",
+      "method": "baseline",
+      "layout": "paper_tail",
+      "seed": 17,
+      "best_epoch": 1,
+      "initial_lkm_sha256": "34b469fde446c751aa5ed79763504e46470cb6c7155dadc581d2dff7159e53d8",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6934047698187912,
+        "accuracy": 0.5093318209940194,
+        "auc": 0.4082249402435505
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.593221195950216,
+        "accuracy": 0.7221076510620746,
+        "auc": 0.7498868862006227
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5837792222826834,
+        "accuracy": 0.7265745350628474,
+        "auc": 0.7594757883035864
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 4845489,
+        "trainable": 2643201
+      },
+      "training_seconds": 455.86092139997345
+    },
+    {
+      "variant": "kpt",
+      "method": "kpt",
+      "layout": "paper_tail",
+      "seed": 17,
+      "best_epoch": 1,
+      "initial_lkm_sha256": "34b469fde446c751aa5ed79763504e46470cb6c7155dadc581d2dff7159e53d8",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.8775215274797418,
+        "accuracy": 0.6676892142709837,
+        "auc": 0.6453778948695925
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5787154540103056,
+        "accuracy": 0.7016910703237781,
+        "auc": 0.7448335298809622
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5707065297563441,
+        "accuracy": 0.7058784130740551,
+        "auc": 0.7500041349245379
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 5029808,
+        "trainable": 2827649
+      },
+      "training_seconds": 478.012373199992
+    },
+    {
+      "variant": "kmpt",
+      "method": "kmpt",
+      "layout": "paper_tail",
+      "seed": 17,
+      "best_epoch": 1,
+      "initial_lkm_sha256": "34b469fde446c751aa5ed79763504e46470cb6c7155dadc581d2dff7159e53d8",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.8775215274797418,
+        "accuracy": 0.6676892142709837,
+        "auc": 0.6453778948695925
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5540185717116387,
+        "accuracy": 0.7205093833780161,
+        "auc": 0.7458304707492932
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5483147604824089,
+        "accuracy": 0.7226675001674443,
+        "auc": 0.7523590972956227
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 5029808,
+        "trainable": 5029679
+      },
+      "training_seconds": 492.9959783000086
+    },
+    {
+      "variant": "kmpt_prefix",
+      "method": "kmpt",
+      "layout": "prefix_control",
+      "seed": 17,
+      "best_epoch": 2,
+      "initial_lkm_sha256": "34b469fde446c751aa5ed79763504e46470cb6c7155dadc581d2dff7159e53d8",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.9920369449362949,
+        "accuracy": 0.6598525469168901,
+        "auc": 0.6397397891791018
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5488822726176729,
+        "accuracy": 0.7225201072386059,
+        "auc": 0.7528300555289671
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.542113710361583,
+        "accuracy": 0.7269987274229198,
+        "auc": 0.7596822546821327
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 5029808,
+        "trainable": 5029679
+      },
+      "training_seconds": 538.4273604999762
+    },
+    {
+      "variant": "baseline",
+      "method": "baseline",
+      "layout": "paper_tail",
+      "seed": 42,
+      "best_epoch": 1,
+      "initial_lkm_sha256": "62dfeea5cffec72584f545857e69726882527438448e92f3843c511d5086617f",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6931562291934186,
+        "accuracy": 0.5058001649824706,
+        "auc": 0.5313662965162333
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.583005386324218,
+        "accuracy": 0.7241699319447309,
+        "auc": 0.7520080390823096
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.573646585268126,
+        "accuracy": 0.728516889553705,
+        "auc": 0.7611805902565665
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 4845489,
+        "trainable": 2643201
+      },
+      "training_seconds": 471.19406399998115
+    },
+    {
+      "variant": "kpt",
+      "method": "kpt",
+      "layout": "paper_tail",
+      "seed": 42,
+      "best_epoch": 1,
+      "initial_lkm_sha256": "62dfeea5cffec72584f545857e69726882527438448e92f3843c511d5086617f",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6776435712018586,
+        "accuracy": 0.6745205196947824,
+        "auc": 0.6403367068470174
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5591462128037987,
+        "accuracy": 0.7134202928438853,
+        "auc": 0.7456336586988996
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5559029745769762,
+        "accuracy": 0.7179567323792726,
+        "auc": 0.748579521760335
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 5029808,
+        "trainable": 2827649
+      },
+      "training_seconds": 493.11817789998895
+    },
+    {
+      "variant": "kmpt",
+      "method": "kmpt",
+      "layout": "paper_tail",
+      "seed": 42,
+      "best_epoch": 1,
+      "initial_lkm_sha256": "62dfeea5cffec72584f545857e69726882527438448e92f3843c511d5086617f",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6776435712018586,
+        "accuracy": 0.6745205196947824,
+        "auc": 0.6403367068470174
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5595071328057533,
+        "accuracy": 0.7191173437822231,
+        "auc": 0.7418750736510906
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5549081530388621,
+        "accuracy": 0.7198544350427541,
+        "auc": 0.7477688077202356
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 5029808,
+        "trainable": 5029679
+      },
+      "training_seconds": 498.42490869996254
+    },
+    {
+      "variant": "kmpt_prefix",
+      "method": "kmpt",
+      "layout": "prefix_control",
+      "seed": 42,
+      "best_epoch": 2,
+      "initial_lkm_sha256": "62dfeea5cffec72584f545857e69726882527438448e92f3843c511d5086617f",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.8274570259759785,
+        "accuracy": 0.6704990719736028,
+        "auc": 0.6501516276076055
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5574924239278405,
+        "accuracy": 0.7200195916683853,
+        "auc": 0.7491566294282141
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5493222732068715,
+        "accuracy": 0.7251903284141904,
+        "auc": 0.7566499017677226
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 5029808,
+        "trainable": 5029679
+      },
+      "training_seconds": 546.0489055999788
+    },
+    {
+      "variant": "baseline",
+      "method": "baseline",
+      "layout": "paper_tail",
+      "seed": 2026,
+      "best_epoch": 1,
+      "initial_lkm_sha256": "d62f15e7608612ac9d8ca669e366e6e9dbe828c82dc395aa1505f4da2e13fa32",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6942862677657744,
+        "accuracy": 0.47878428541967416,
+        "auc": 0.39648862947842967
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5872470692866462,
+        "accuracy": 0.7171323984326665,
+        "auc": 0.7462941493906308
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5788748970397103,
+        "accuracy": 0.7225335446853163,
+        "auc": 0.7549126495263303
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 4845489,
+        "trainable": 2643201
+      },
+      "training_seconds": 462.90879650000716
+    },
+    {
+      "variant": "kpt",
+      "method": "kpt",
+      "layout": "paper_tail",
+      "seed": 2026,
+      "best_epoch": 1,
+      "initial_lkm_sha256": "d62f15e7608612ac9d8ca669e366e6e9dbe828c82dc395aa1505f4da2e13fa32",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.7997627281901712,
+        "accuracy": 0.6747783048051145,
+        "auc": 0.6455049055176914
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5566627256991716,
+        "accuracy": 0.714013198597649,
+        "auc": 0.7435202235905457
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5520591690701545,
+        "accuracy": 0.7202339755754504,
+        "auc": 0.7481812424794889
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 5029808,
+        "trainable": 2827649
+      },
+      "training_seconds": 485.1925116000202
+    },
+    {
+      "variant": "kmpt",
+      "method": "kmpt",
+      "layout": "paper_tail",
+      "seed": 2026,
+      "best_epoch": 2,
+      "initial_lkm_sha256": "d62f15e7608612ac9d8ca669e366e6e9dbe828c82dc395aa1505f4da2e13fa32",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.7997627281901712,
+        "accuracy": 0.6747783048051145,
+        "auc": 0.6455049055176914
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5610851375165244,
+        "accuracy": 0.7194524644256548,
+        "auc": 0.7491041194292162
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5534921329170656,
+        "accuracy": 0.7256145207742627,
+        "auc": 0.7564260572477604
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 5029808,
+        "trainable": 5029679
+      },
+      "training_seconds": 546.4119092000183
+    },
+    {
+      "variant": "kmpt_prefix",
+      "method": "kmpt",
+      "layout": "prefix_control",
+      "seed": 2026,
+      "best_epoch": 1,
+      "initial_lkm_sha256": "d62f15e7608612ac9d8ca669e366e6e9dbe828c82dc395aa1505f4da2e13fa32",
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6606865456286695,
+        "accuracy": 0.6762734584450402,
+        "auc": 0.6489246929730984
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.553045902185328,
+        "accuracy": 0.7179057537636626,
+        "auc": 0.7466958327070492
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5466350063071796,
+        "accuracy": 0.7218637672746757,
+        "auc": 0.7543242232120626
+      },
+      "training_target_count": 194663,
+      "validation_target_count": 38792,
+      "parameters": {
+        "total": 5029808,
+        "trainable": 5029679
+      },
+      "training_seconds": 495.2224137999874
+    }
+  ],
+  "test_evaluated": true,
+  "test_scope": "same holdout previously inspected in v1; methodological re-evaluation, not a new untouched confirmation set",
+  "total_seconds": 6550.3083482000075,
+  "peak_allocated_gpu_mb": 1687.53662109375
+}

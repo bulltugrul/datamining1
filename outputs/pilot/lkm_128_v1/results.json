@@ -1,0 +1,102 @@
+{
+  "purpose": "engineering_pilot_not_final_benchmark",
+  "device": "cuda",
+  "precision": "bfloat16",
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "source_sha256": "162ef8d2d28bcbfea6591a282994062bd8d5eaa00636544292a0d268dca6e5da",
+  "model_config": {
+    "question_vocabulary_size": 17070,
+    "skill_vocabulary_size": 125,
+    "hidden_size": 128,
+    "layers": 2,
+    "attention_heads": 4,
+    "feedforward_size": 512,
+    "max_history": 128,
+    "prompt_length": 8,
+    "prompt_layers": 1,
+    "dropout": 0.2
+  },
+  "test_evaluated": false,
+  "runs": [
+    {
+      "method": "baseline",
+      "seed": 17,
+      "parameters": {
+        "total": 4836529,
+        "trainable": 2634241
+      },
+      "initial_lkm_sha256": "a4fa6b0333e8e82f89f5b23a1c3f33868a644967a7e371db03a87d4d1a51cb6c",
+      "best_epoch": 2,
+      "initial_validation": {
+        "samples": 512,
+        "bce": 0.6943157017230988,
+        "accuracy": 0.478515625,
+        "auc": 0.5330132535546548
+      },
+      "validation": {
+        "samples": 512,
+        "bce": 0.6495786905288696,
+        "accuracy": 0.681640625,
+        "auc": 0.7324036543781767
+      },
+      "test": null,
+      "training_seconds": 1.7207957999780774,
+      "training_target_count": 2048,
+      "validation_target_count": 512
+    },
+    {
+      "method": "kpt",
+      "seed": 17,
+      "parameters": {
+        "total": 5021104,
+        "trainable": 2818945
+      },
+      "initial_lkm_sha256": "a4fa6b0333e8e82f89f5b23a1c3f33868a644967a7e371db03a87d4d1a51cb6c",
+      "best_epoch": 2,
+      "initial_validation": {
+        "samples": 512,
+        "bce": 0.7282805144786835,
+        "accuracy": 0.61328125,
+        "auc": 0.6163224602715048
+      },
+      "validation": {
+        "samples": 512,
+        "bce": 0.585918664932251,
+        "accuracy": 0.703125,
+        "auc": 0.7420543009714984
+      },
+      "test": null,
+      "training_seconds": 1.942620399990119,
+      "training_target_count": 2048,
+      "validation_target_count": 512
+    },
+    {
+      "method": "kmpt",
+      "seed": 17,
+      "parameters": {
+        "total": 5021104,
+        "trainable": 5020975
+      },
+      "initial_lkm_sha256": "a4fa6b0333e8e82f89f5b23a1c3f33868a644967a7e371db03a87d4d1a51cb6c",
+      "best_epoch": 2,
+      "initial_validation": {
+        "samples": 512,
+        "bce": 0.7282805144786835,
+        "accuracy": 0.61328125,
+        "auc": 0.6163224602715048
+      },
+      "validation": {
+        "samples": 512,
+        "bce": 0.6189393401145935,
+        "accuracy": 0.654296875,
+        "auc": 0.6939860387312616
+      },
+      "test": null,
+      "training_seconds": 3.273049399998854,
+      "training_target_count": 2048,
+      "validation_target_count": 512
+    }
+  ],
+  "total_seconds": 11.241926100003184,
+  "peak_allocated_gpu_mb": 422.73486328125
+}

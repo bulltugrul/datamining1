@@ -1,0 +1,36 @@
+{
+  "purpose": "paper_method_alignment_v2_scaled",
+  "seeds": [17, 42, 2026],
+  "variants": ["baseline", "kpt", "kmpt", "kmpt_prefix"],
+  "prototype_variant": "kmpt",
+  "prototype_seed_criterion": "minimum_validation_bce",
+  "model": {
+    "hidden_size": 128, "layers": 2, "attention_heads": 4,
+    "feedforward_size": 512, "max_history": 200,
+    "prompt_length": 8, "prompt_layers": 1, "dropout": 0.4
+  },
+  "pretraining_epochs": 30,
+  "pretraining_patience": 5,
+  "pretraining_min_relative_improvement": 0.001,
+  "finetuning_epochs": 20,
+  "pretraining_batch_size": 64,
+  "batch_size": 512,
+  "evaluation_batch_size": 512,
+  "pretraining_lr": 0.0005,
+  "finetuning_lr": 0.0005,
+  "optimizer": "Adam",
+  "weight_decay": 0.0,
+  "patience": 10,
+  "mixed_precision": true,
+  "device_batches": true,
+  "evaluate_test_after_all_training": true,
+  "retained_differences": [
+    "scaled LKM 2 layers/128 hidden/4 heads and PromEnc 1 layer rather than 8/256/8 and 4",
+    "downstream batch 512 rather than 64 for local throughput; same for every variant",
+    "student-disjoint 70/15/15 holdout rather than 80/20 with fivefold CV",
+    "one true multi-concept event retained with mean concept embedding; no duplicated answer events",
+    "difficulty calculated on training only to avoid heldout response leakage",
+    "bounded training budget with recorded stopping criterion",
+    "one dataset and three initialization seeds rather than the full paper benchmark"
+  ]
+}

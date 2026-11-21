@@ -1,0 +1,112 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:white;color:#111;font-family:Arial,sans-serif}
+#capture{width:1000px;padding:26px 28px;background:white}
+.heading{font-size:20px;line-height:27px;margin:0 0 10px;font-weight:700}
+.sub{font-size:17px;line-height:25px;margin:0 0 14px;color:#444}
+.line{display:grid;grid-template-columns:52px 1fr;align-items:start}
+.line-number{font:17px/27px Consolas,monospace;color:#666;text-align:right;padding-right:14px}
+.code,.plain{font:20px/27px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all}
+.code:empty::before{content:' '}.plain{margin:0}img,svg{display:block;max-width:100%;height:auto;margin:0 auto}
+table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:23px}
+th,td{border:1px solid #ddd;padding:7px 8px;overflow-wrap:anywhere;vertical-align:middle;text-align:left}
+th{background:#edf0f4;font-weight:700}td{background:white}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.code .hll { background-color: #ffffcc }
+.code { background: #f8f8f8; }
+.code .c { color: #3D7B7B; font-style: italic } /* Comment */
+.code .err { border: 1px solid #F00 } /* Error */
+.code .k { color: #008000; font-weight: bold } /* Keyword */
+.code .o { color: #666 } /* Operator */
+.code .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.code .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.code .cp { color: #9C6500 } /* Comment.Preproc */
+.code .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.code .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.code .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.code .gd { color: #A00000 } /* Generic.Deleted */
+.code .ge { font-style: italic } /* Generic.Emph */
+.code .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.code .gr { color: #E40000 } /* Generic.Error */
+.code .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code .gi { color: #008400 } /* Generic.Inserted */
+.code .go { color: #717171 } /* Generic.Output */
+.code .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code .gs { font-weight: bold } /* Generic.Strong */
+.code .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code .gt { color: #04D } /* Generic.Traceback */
+.code .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code .kp { color: #008000 } /* Keyword.Pseudo */
+.code .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code .kt { color: #B00040 } /* Keyword.Type */
+.code .m { color: #666 } /* Literal.Number */
+.code .s { color: #BA2121 } /* Literal.String */
+.code .na { color: #687822 } /* Name.Attribute */
+.code .nb { color: #008000 } /* Name.Builtin */
+.code .nc { color: #00F; font-weight: bold } /* Name.Class */
+.code .no { color: #800 } /* Name.Constant */
+.code .nd { color: #A2F } /* Name.Decorator */
+.code .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.code .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.code .nf { color: #00F } /* Name.Function */
+.code .nl { color: #767600 } /* Name.Label */
+.code .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.code .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code .nv { color: #19177C } /* Name.Variable */
+.code .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.code .w { color: #BBB } /* Text.Whitespace */
+.code .mb { color: #666 } /* Literal.Number.Bin */
+.code .mf { color: #666 } /* Literal.Number.Float */
+.code .mh { color: #666 } /* Literal.Number.Hex */
+.code .mi { color: #666 } /* Literal.Number.Integer */
+.code .mo { color: #666 } /* Literal.Number.Oct */
+.code .sa { color: #BA2121 } /* Literal.String.Affix */
+.code .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code .sc { color: #BA2121 } /* Literal.String.Char */
+.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code .s2 { color: #BA2121 } /* Literal.String.Double */
+.code .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.code .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.code .sx { color: #008000 } /* Literal.String.Other */
+.code .sr { color: #A45A77 } /* Literal.String.Regex */
+.code .s1 { color: #BA2121 } /* Literal.String.Single */
+.code .ss { color: #19177C } /* Literal.String.Symbol */
+.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code .fm { color: #00F } /* Name.Function.Magic */
+.code .vc { color: #19177C } /* Name.Variable.Class */
+.code .vg { color: #19177C } /* Name.Variable.Global */
+.code .vi { color: #19177C } /* Name.Variable.Instance */
+.code .vm { color: #19177C } /* Name.Variable.Magic */
+.code .il { color: #666 } /* Literal.Number.Integer.Long */</style></head><body><main id="capture"><div class="heading">src/kt_project/media.py</div><div class="sub">Satır 31–55</div><div class="line"><div class="line-number">31</div><div class="code"><span data-line="31">                     <span class="s2">"source_channels"</span><span class="p">:</span> <span class="n">channels</span><span class="p">,</span> <span class="s2">"duration_seconds"</span><span class="p">:</span> <span class="n">duration</span><span class="p">}</span>
+</span></div></div><div class="line"><div class="line-number">32</div><div class="code"><span data-line="32">
+</span></div></div><div class="line"><div class="line-number">33</div><div class="code"><span data-line="33">
+</span></div></div><div class="line"><div class="line-number">34</div><div class="code"><span data-line="34"><span class="k">class</span><span class="w"> </span><span class="nc">SpeechReader</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">35</div><div class="code"><span data-line="35">    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">36</div><div class="code"><span data-line="36">        <span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+</span></div></div><div class="line"><div class="line-number">37</div><div class="code"><span data-line="37">        <span class="kn">from</span><span class="w"> </span><span class="nn">transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">WhisperProcessor</span><span class="p">,</span> <span class="n">WhisperForConditionalGeneration</span>
+</span></div></div><div class="line"><div class="line-number">38</div><div class="code"><span data-line="38">        <span class="bp">self</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">((</span><span class="n">Path</span><span class="p">(</span><span class="n">root</span><span class="p">)</span> <span class="o">/</span> <span class="s2">"configs/interactions.json"</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">39</div><div class="code"><span data-line="39">        <span class="n">directory</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">root</span><span class="p">)</span> <span class="o">/</span> <span class="s2">"data/models/whisper-base"</span>
+</span></div></div><div class="line"><div class="line-number">40</div><div class="code"><span data-line="40">        <span class="bp">self</span><span class="o">.</span><span class="n">processor</span> <span class="o">=</span> <span class="n">WhisperProcessor</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">local_files_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">41</div><div class="code"><span data-line="41">        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">WhisperForConditionalGeneration</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">local_files_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">42</div><div class="code"><span data-line="42">        <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">"cuda"</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">"cpu"</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">43</div><div class="code"><span data-line="43">        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">device</span><span class="p">)</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span><span class="o">.</span><span class="n">requires_grad_</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">44</div><div class="code"><span data-line="44">
+</span></div></div><div class="line"><div class="line-number">45</div><div class="code"><span data-line="45">    <span class="k">def</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">46</div><div class="code"><span data-line="46">        <span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+</span></div></div><div class="line"><div class="line-number">47</div><div class="code"><span data-line="47">        <span class="n">samples</span><span class="p">,</span> <span class="n">metadata</span> <span class="o">=</span> <span class="n">load_audio</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">"sample_rate"</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">48</div><div class="code"><span data-line="48">        <span class="n">features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">processor</span><span class="p">(</span><span class="n">samples</span><span class="p">,</span> <span class="n">sampling_rate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">"sample_rate"</span><span class="p">],</span>
+</span></div></div><div class="line"><div class="line-number">49</div><div class="code"><span data-line="49">                                  <span class="n">return_tensors</span><span class="o">=</span><span class="s2">"pt"</span><span class="p">,</span> <span class="n">return_attention_mask</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">50</div><div class="code"><span data-line="50">        <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">inference_mode</span><span class="p">():</span>
+</span></div></div><div class="line"><div class="line-number">51</div><div class="code"><span data-line="51">            <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">input_features</span><span class="o">=</span><span class="n">features</span><span class="o">.</span><span class="n">input_features</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">device</span><span class="p">),</span>
+</span></div></div><div class="line"><div class="line-number">52</div><div class="code"><span data-line="52">                                      <span class="n">attention_mask</span><span class="o">=</span><span class="n">features</span><span class="o">.</span><span class="n">attention_mask</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">device</span><span class="p">),</span>
+</span></div></div><div class="line"><div class="line-number">53</div><div class="code"><span data-line="53">                                      <span class="n">language</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">"asr_language"</span><span class="p">],</span> <span class="n">task</span><span class="o">=</span><span class="s2">"transcribe"</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">54</div><div class="code"><span data-line="54">                                      <span class="n">do_sample</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">num_beams</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_new_tokens</span><span class="o">=</span><span class="mi">96</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">55</div><div class="code"><span data-line="55">        <span class="k">return</span> <span class="p">{</span><span class="s2">"text"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">processor</span><span class="o">.</span><span class="n">batch_decode</span><span class="p">(</span><span class="n">ids</span><span class="p">,</span> <span class="n">skip_special_tokens</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+</span></div></div></main></body></html>

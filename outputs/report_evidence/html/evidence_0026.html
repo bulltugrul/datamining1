@@ -1,0 +1,120 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:white;color:#111;font-family:Arial,sans-serif}
+#capture{width:1000px;padding:26px 28px;background:white}
+.heading{font-size:20px;line-height:27px;margin:0 0 10px;font-weight:700}
+.sub{font-size:17px;line-height:25px;margin:0 0 14px;color:#444}
+.line{display:grid;grid-template-columns:52px 1fr;align-items:start}
+.line-number{font:17px/27px Consolas,monospace;color:#666;text-align:right;padding-right:14px}
+.code,.plain{font:20px/27px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all}
+.code:empty::before{content:' '}.plain{margin:0}img,svg{display:block;max-width:100%;height:auto;margin:0 auto}
+table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:23px}
+th,td{border:1px solid #ddd;padding:7px 8px;overflow-wrap:anywhere;vertical-align:middle;text-align:left}
+th{background:#edf0f4;font-weight:700}td{background:white}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.code .hll { background-color: #ffffcc }
+.code { background: #f8f8f8; }
+.code .c { color: #3D7B7B; font-style: italic } /* Comment */
+.code .err { border: 1px solid #F00 } /* Error */
+.code .k { color: #008000; font-weight: bold } /* Keyword */
+.code .o { color: #666 } /* Operator */
+.code .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.code .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.code .cp { color: #9C6500 } /* Comment.Preproc */
+.code .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.code .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.code .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.code .gd { color: #A00000 } /* Generic.Deleted */
+.code .ge { font-style: italic } /* Generic.Emph */
+.code .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.code .gr { color: #E40000 } /* Generic.Error */
+.code .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code .gi { color: #008400 } /* Generic.Inserted */
+.code .go { color: #717171 } /* Generic.Output */
+.code .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code .gs { font-weight: bold } /* Generic.Strong */
+.code .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code .gt { color: #04D } /* Generic.Traceback */
+.code .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code .kp { color: #008000 } /* Keyword.Pseudo */
+.code .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code .kt { color: #B00040 } /* Keyword.Type */
+.code .m { color: #666 } /* Literal.Number */
+.code .s { color: #BA2121 } /* Literal.String */
+.code .na { color: #687822 } /* Name.Attribute */
+.code .nb { color: #008000 } /* Name.Builtin */
+.code .nc { color: #00F; font-weight: bold } /* Name.Class */
+.code .no { color: #800 } /* Name.Constant */
+.code .nd { color: #A2F } /* Name.Decorator */
+.code .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.code .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.code .nf { color: #00F } /* Name.Function */
+.code .nl { color: #767600 } /* Name.Label */
+.code .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.code .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code .nv { color: #19177C } /* Name.Variable */
+.code .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.code .w { color: #BBB } /* Text.Whitespace */
+.code .mb { color: #666 } /* Literal.Number.Bin */
+.code .mf { color: #666 } /* Literal.Number.Float */
+.code .mh { color: #666 } /* Literal.Number.Hex */
+.code .mi { color: #666 } /* Literal.Number.Integer */
+.code .mo { color: #666 } /* Literal.Number.Oct */
+.code .sa { color: #BA2121 } /* Literal.String.Affix */
+.code .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code .sc { color: #BA2121 } /* Literal.String.Char */
+.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code .s2 { color: #BA2121 } /* Literal.String.Double */
+.code .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.code .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.code .sx { color: #008000 } /* Literal.String.Other */
+.code .sr { color: #A45A77 } /* Literal.String.Regex */
+.code .s1 { color: #BA2121 } /* Literal.String.Single */
+.code .ss { color: #19177C } /* Literal.String.Symbol */
+.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code .fm { color: #00F } /* Name.Function.Magic */
+.code .vc { color: #19177C } /* Name.Variable.Class */
+.code .vg { color: #19177C } /* Name.Variable.Global */
+.code .vi { color: #19177C } /* Name.Variable.Instance */
+.code .vm { color: #19177C } /* Name.Variable.Magic */
+.code .il { color: #666 } /* Literal.Number.Integer.Long */</style></head><body><main id="capture"><div class="heading">src/kt_project/training.py</div><div class="sub">Satır 73–105</div><div class="line"><div class="line-number">73</div><div class="code"><span data-line="73"><span class="k">def</span><span class="w"> </span><span class="nf">optimizer_step</span><span class="p">(</span><span class="n">loss</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">scaler</span><span class="p">,</span> <span class="n">parameters</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">74</div><div class="code"><span data-line="74">    <span class="k">if</span> <span class="ow">not</span> <span class="n">torch</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">loss</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">75</div><div class="code"><span data-line="75">        <span class="k">raise</span> <span class="ne">FloatingPointError</span><span class="p">(</span><span class="s2">"Eğitim kaybı sonlu değil."</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">76</div><div class="code"><span data-line="76">    <span class="n">scaler</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">loss</span><span class="p">)</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">77</div><div class="code"><span data-line="77">    <span class="n">scaler</span><span class="o">.</span><span class="n">unscale_</span><span class="p">(</span><span class="n">optimizer</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">78</div><div class="code"><span data-line="78">    <span class="n">norm</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">clip_grad_norm_</span><span class="p">(</span><span class="n">parameters</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">error_if_nonfinite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">79</div><div class="code"><span data-line="79">    <span class="n">scaler</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">optimizer</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">80</div><div class="code"><span data-line="80">    <span class="n">scaler</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">81</div><div class="code"><span data-line="81">    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">norm</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">82</div><div class="code"><span data-line="82">
+</span></div></div><div class="line"><div class="line-number">83</div><div class="code"><span data-line="83">
+</span></div></div><div class="line"><div class="line-number">84</div><div class="code"><span data-line="84"><span class="nd">@torch</span><span class="o">.</span><span class="n">inference_mode</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">85</div><div class="code"><span data-line="85"><span class="k">def</span><span class="w"> </span><span class="nf">evaluate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">batches</span><span class="p">,</span> <span class="n">device</span><span class="p">,</span> <span class="n">precision</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">86</div><div class="code"><span data-line="86">    <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">87</div><div class="code"><span data-line="87">    <span class="n">labels</span><span class="p">,</span> <span class="n">probabilities</span><span class="p">,</span> <span class="n">row_indices</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+</span></div></div><div class="line"><div class="line-number">88</div><div class="code"><span data-line="88">    <span class="n">loss_sum</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mi">0</span>
+</span></div></div><div class="line"><div class="line-number">89</div><div class="code"><span data-line="89">    <span class="k">for</span> <span class="n">cpu_batch</span> <span class="ow">in</span> <span class="n">batches</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">90</div><div class="code"><span data-line="90">        <span class="n">batch</span> <span class="o">=</span> <span class="n">to_device</span><span class="p">(</span><span class="n">cpu_batch</span><span class="p">,</span> <span class="n">device</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">91</div><div class="code"><span data-line="91">        <span class="k">with</span> <span class="n">autocast_context</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">precision</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">92</div><div class="code"><span data-line="92">            <span class="n">logits</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">batch</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">93</div><div class="code"><span data-line="93">        <span class="n">logits</span> <span class="o">=</span> <span class="n">logits</span><span class="o">.</span><span class="n">float</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">94</div><div class="code"><span data-line="94">        <span class="k">if</span> <span class="ow">not</span> <span class="n">torch</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">logits</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+</span></div></div><div class="line"><div class="line-number">95</div><div class="code"><span data-line="95">            <span class="k">raise</span> <span class="ne">FloatingPointError</span><span class="p">(</span><span class="s2">"Değerlendirme logits sonlu değil."</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">96</div><div class="code"><span data-line="96">        <span class="n">loss_sum</span> <span class="o">+=</span> <span class="n">F</span><span class="o">.</span><span class="n">binary_cross_entropy_with_logits</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">batch</span><span class="p">[</span><span class="s2">"label"</span><span class="p">],</span> <span class="n">reduction</span><span class="o">=</span><span class="s2">"sum"</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">97</div><div class="code"><span data-line="97">        <span class="n">count</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">logits</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">98</div><div class="code"><span data-line="98">        <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">batch</span><span class="p">[</span><span class="s2">"label"</span><span class="p">]</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>
+</span></div></div><div class="line"><div class="line-number">99</div><div class="code"><span data-line="99">        <span class="n">probabilities</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">logits</span><span class="p">)</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>
+</span></div></div><div class="line"><div class="line-number">100</div><div class="code"><span data-line="100">        <span class="n">row_indices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cpu_batch</span><span class="p">[</span><span class="s2">"row_index"</span><span class="p">]</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>
+</span></div></div><div class="line"><div class="line-number">101</div><div class="code"><span data-line="101">    <span class="n">y</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span><span class="n">labels</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span><span class="n">probabilities</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span><span class="n">row_indices</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">102</div><div class="code"><span data-line="102">    <span class="n">metrics</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"samples"</span><span class="p">:</span> <span class="n">count</span><span class="p">,</span> <span class="s2">"bce"</span><span class="p">:</span> <span class="n">loss_sum</span><span class="o">/</span><span class="n">count</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">103</div><div class="code"><span data-line="103">               <span class="s2">"accuracy"</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">p</span> <span class="o">&gt;=</span> <span class="mf">.5</span><span class="p">)),</span>
+</span></div></div><div class="line"><div class="line-number">104</div><div class="code"><span data-line="104">               <span class="s2">"auc"</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y</span><span class="p">))</span> <span class="o">==</span> <span class="mi">2</span> <span class="k">else</span> <span class="kc">None</span><span class="p">}</span>
+</span></div></div><div class="line"><div class="line-number">105</div><div class="code"><span data-line="105">    <span class="k">return</span> <span class="n">metrics</span><span class="p">,</span> <span class="p">{</span><span class="s2">"label"</span><span class="p">:</span> <span class="n">y</span><span class="p">,</span> <span class="s2">"probability"</span><span class="p">:</span> <span class="n">p</span><span class="p">,</span> <span class="s2">"row_index"</span><span class="p">:</span> <span class="n">rows</span><span class="p">}</span>
+</span></div></div></main></body></html>

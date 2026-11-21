@@ -1,0 +1,18 @@
+{
+  "config_sha256": "5a433a65177d1939c8a7680f01190ceebd0ff489cf1fe84ddb14903204a0814f",
+  "test_not_used_for_epoch_or_variant_selection": true,
+  "checkpoints": {
+    "seed_17/baseline_best.pt": "1ca1388a82e6d46462e4184fe092aeb5ce5cb297b05da395529f88e7a8f8fb72",
+    "seed_17/kpt_best.pt": "dabece181df3cafed24fd9d01be0cd063a21066a31a4832260af21a115e6f249",
+    "seed_17/kmpt_best.pt": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+    "seed_17/kmpt_prefix_best.pt": "77a45600fd8e9ae2493ccb380660b9f2da571702c85baf7e0cb2fc8cc668a2c3",
+    "seed_42/baseline_best.pt": "89b16ec54bb4389bf1c6d2a4a6d65160d5bde825fa6feb2cd4381840617475c0",
+    "seed_42/kpt_best.pt": "dcb9e46ed8cb0cd706be51fe73b6ebb510e705892c43b1a38911ef25768043da",
+    "seed_42/kmpt_best.pt": "df72eb6ff73418271ae20ab3655ebeda523d8865b38032090c1c857ac4af6289",
+    "seed_42/kmpt_prefix_best.pt": "45f7d08d3121470e034d676fe20a28f0104660ff60fbbc9ae6736f7e2b5b5714",
+    "seed_2026/baseline_best.pt": "75e2f9b2d673d191841a1c7144ccbc3032f4e0e2d052b369880e116886a7450b",
+    "seed_2026/kpt_best.pt": "51c643a19ea9aa97fd2ce8609e74fb2dd8fd2f9e2b951dd4293a29626f3a4987",
+    "seed_2026/kmpt_best.pt": "54cb1e0a704a9862c42caedfaf4bb378e1787a836e3e8462ccb869e66320629e",
+    "seed_2026/kmpt_prefix_best.pt": "5357a11946b05a1efa011c13d617901517da2ae51df8f4a2dc79503b7874f0b2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "purpose": "engineering_pilot_not_final_benchmark",
+  "seeds": [17],
+  "model": {
+    "hidden_size": 128, "layers": 2, "attention_heads": 4,
+    "feedforward_size": 512, "max_history": 128,
+    "prompt_length": 8, "prompt_layers": 1, "dropout": 0.2
+  },
+  "train_student_limit": 96,
+  "validation_student_limit": 32,
+  "train_target_limit": 2048,
+  "validation_target_limit": 512,
+  "pretraining_epochs": 3,
+  "finetuning_epochs": 4,
+  "pretraining_batch_size": 64,
+  "batch_size": 128,
+  "evaluation_batch_size": 256,
+  "pretraining_lr": 0.0005,
+  "finetuning_lr": 0.0005,
+  "weight_decay": 0.01,
+  "patience": 3,
+  "evaluate_test": false,
+  "mixed_precision": true,
+  "device_batches": true
+}

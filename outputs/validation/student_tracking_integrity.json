@@ -1,0 +1,14 @@
+{
+  "training_only_pattern_snapshots_verified": true,
+  "snapshots_checked": 9598,
+  "selected_clusters": 2,
+  "feature_values_recomputed": true,
+  "scaler_training_statistics_verified": true,
+  "group_selection_verified": true,
+  "real_replay_outcomes_verified": true,
+  "replay_steps": 20,
+  "recommendation_rules_verified": true,
+  "model_and_reference_immutability_verified": true,
+  "source_calendar_timestamps_not_fabricated": true,
+  "main_experiment_source_hashes_unchanged": true
+}

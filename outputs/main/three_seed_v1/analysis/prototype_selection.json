@@ -1,0 +1,9 @@
+{
+  "method": "kmpt",
+  "seed": 2026,
+  "criterion": "minimum validation BCE within the preselected KMPT method",
+  "validation_bce": 0.5659620926586174,
+  "best_epoch": 2,
+  "test_metrics_used_for_selection": false,
+  "checkpoint": "outputs/main/three_seed_v1/seed_2026/kmpt_best.pt"
+}

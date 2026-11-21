@@ -1,0 +1,77 @@
+[
+  {
+    "epoch": 1,
+    "train_mixed_objective": 1.716778478002798,
+    "train_response_bce": 0.5151090525494956,
+    "train_auxiliary_question_ce": 6.4760839117818225,
+    "response_samples": 155421,
+    "auxiliary_samples": 39242,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5714964737816431,
+      "accuracy": 0.7200195916683853,
+      "auc": 0.7483244771491876
+    },
+    "seconds": 34.498397799994564
+  },
+  {
+    "epoch": 2,
+    "train_mixed_objective": 1.5241971596627117,
+    "train_response_bce": 0.4806430572560894,
+    "train_auxiliary_question_ce": 5.659914189784082,
+    "response_samples": 155441,
+    "auxiliary_samples": 39222,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5846510848007784,
+      "accuracy": 0.7130336151783873,
+      "auc": 0.7460235681429567
+    },
+    "seconds": 34.16784739999275
+  },
+  {
+    "epoch": 3,
+    "train_mixed_objective": 1.395911338971551,
+    "train_response_bce": 0.46266458663676796,
+    "train_auxiliary_question_ce": 5.137495733774352,
+    "response_samples": 155802,
+    "auxiliary_samples": 38861,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5931465639038463,
+      "accuracy": 0.7151216745720768,
+      "auc": 0.7409820872453067
+    },
+    "seconds": 34.05078620000859
+  },
+  {
+    "epoch": 4,
+    "train_mixed_objective": 1.3067953796578469,
+    "train_response_bce": 0.4444617995167136,
+    "train_auxiliary_question_ce": 4.763184728116758,
+    "response_samples": 155794,
+    "auxiliary_samples": 38869,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6216615184013758,
+      "accuracy": 0.7172355124767993,
+      "auc": 0.7406606090191483
+    },
+    "seconds": 33.4442252000008
+  },
+  {
+    "epoch": 5,
+    "train_mixed_objective": 1.2403022081464696,
+    "train_response_bce": 0.4212373103535295,
+    "train_auxiliary_question_ce": 4.490390525983668,
+    "response_samples": 155480,
+    "auxiliary_samples": 39183,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6469580807079112,
+      "accuracy": 0.7085481542586101,
+      "auc": 0.7331099216523853
+    },
+    "seconds": 35.014050300000235
+  }
+]

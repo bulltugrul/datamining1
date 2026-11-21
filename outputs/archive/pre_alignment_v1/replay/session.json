@@ -1,0 +1,1922 @@
+{
+  "student_alias": "Örnek öğrenci",
+  "encoded_student": 2893,
+  "source_split": "validation",
+  "selection_uses_response_outcomes": false,
+  "selection_rule": "fixed random seed among validation histories of sufficient length",
+  "display_started_at": "2026-11-15T14:17:37.839+03:00",
+  "source_calendar_timestamp_available": false,
+  "initial": {
+    "history_count": 5,
+    "recent_window_count": 5,
+    "observed_recent_correct_ratio": 0.2,
+    "skill_scores": [
+      {
+        "skill": 57,
+        "name": "Absolute Value",
+        "predicted_success_percent": 67.5661563873291,
+        "observed_correct_percent": 20.0,
+        "recent_skill_answers": 5,
+        "reference_question_count": 32
+      },
+      {
+        "skill": 47,
+        "name": "Beceri 74",
+        "predicted_success_percent": 54.70103621482849,
+        "observed_correct_percent": 33.33333333333333,
+        "recent_skill_answers": 3,
+        "reference_question_count": 32
+      },
+      {
+        "skill": 39,
+        "name": "Addition Whole Numbers",
+        "predicted_success_percent": 57.28048086166382,
+        "observed_correct_percent": 0.0,
+        "recent_skill_answers": 1,
+        "reference_question_count": 32
+      }
+    ],
+    "active_pattern_skills": [
+      57,
+      47,
+      39
+    ],
+    "behavior_features": {
+      "recent_correct_ratio": 0.2,
+      "active_skill_reference_probability": 0.5984922448794047,
+      "log_median_response_seconds": 2.34784522439891,
+      "mean_hint_count": 0.0
+    },
+    "behavior": {
+      "cluster": 1,
+      "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+      "distance_to_center": 2.212321234273224,
+      "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+    },
+    "recommendation": {
+      "available": true,
+      "question": 1462,
+      "skill": 47,
+      "difficulty": 0.2857142984867096,
+      "predicted_probability": 0.6477982401847839,
+      "target_probability": 0.65,
+      "reference_probability": 0.5470103621482849,
+      "repeat_question": false,
+      "action": "mevcut düzeyde alıştırma",
+      "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %54.7. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %64.8, hedef %65.",
+      "behavior_group": 1,
+      "rule_is_learned_policy": false,
+      "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+      "skill_name": "Beceri 74",
+      "original_problem_id": 53749
+    }
+  },
+  "events": [
+    {
+      "step": 1,
+      "target_row_index": 219269,
+      "history_stop_before": 219269,
+      "source_order_id": 32772361,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:37.897+03:00",
+      "question": 7376,
+      "original_problem_id": 85313,
+      "predicted_before_response": 0.6451199054718018,
+      "observed_correct": 1,
+      "after": {
+        "history_count": 6,
+        "recent_window_count": 6,
+        "observed_recent_correct_ratio": 0.3333333333333333,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 69.77667808532715,
+            "observed_correct_percent": 33.33333333333333,
+            "recent_skill_answers": 6,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 57.142943143844604,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 59.52644348144531,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          47,
+          39
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.3333333333333333,
+          "active_skill_reference_probability": 0.6214868823687235,
+          "log_median_response_seconds": 2.3189996342621404,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 2.163993521398486,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 7366,
+          "skill": 47,
+          "difficulty": 0.375,
+          "predicted_probability": 0.6495786309242249,
+          "target_probability": 0.65,
+          "reference_probability": 0.571429431438446,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %57.1. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 85283
+        }
+      }
+    },
+    {
+      "step": 2,
+      "target_row_index": 219270,
+      "history_stop_before": 219270,
+      "source_order_id": 32772415,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:37.941+03:00",
+      "question": 7090,
+      "original_problem_id": 84733,
+      "predicted_before_response": 0.7279754281044006,
+      "observed_correct": 1,
+      "after": {
+        "history_count": 7,
+        "recent_window_count": 7,
+        "observed_recent_correct_ratio": 0.42857142857142855,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 73.17408919334412,
+            "observed_correct_percent": 42.857142857142854,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 60.33817529678345,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 63.30376863479614,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          47,
+          39
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.42857142857142855,
+          "active_skill_reference_probability": 0.6560534437497457,
+          "log_median_response_seconds": 2.34784522439891,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 1.8086357757364695,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 265,
+          "skill": 47,
+          "difficulty": 0.3333333432674408,
+          "predicted_probability": 0.6504672765731812,
+          "target_probability": 0.65,
+          "reference_probability": 0.6033817529678345,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %60.3. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 48464
+        }
+      }
+    },
+    {
+      "step": 3,
+      "target_row_index": 219271,
+      "history_stop_before": 219271,
+      "source_order_id": 32772765,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:37.985+03:00",
+      "question": 1450,
+      "original_problem_id": 53701,
+      "predicted_before_response": 0.555917501449585,
+      "observed_correct": 1,
+      "after": {
+        "history_count": 8,
+        "recent_window_count": 8,
+        "observed_recent_correct_ratio": 0.5,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 75.75633525848389,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 63.672614097595215,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 66.38559103012085,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          47,
+          39
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.5,
+          "active_skill_reference_probability": 0.6860484679539999,
+          "log_median_response_seconds": 2.4865719291070616,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 1.4522001046366129,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 678,
+          "skill": 47,
+          "difficulty": 0.5384615659713745,
+          "predicted_probability": 0.547947883605957,
+          "target_probability": 0.55,
+          "reference_probability": 0.6367261409759521,
+          "repeat_question": false,
+          "action": "daha zorlayıcı soru ile ilerleme",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %63.7. son üç cevap doğru; daha zorlayıcı başarı hedefi. Seçilen soruda tahmin %54.8, hedef %55.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 49350
+        }
+      }
+    },
+    {
+      "step": 4,
+      "target_row_index": 219272,
+      "history_stop_before": 219272,
+      "source_order_id": 32772847,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.030+03:00",
+      "question": 10562,
+      "original_problem_id": 89713,
+      "predicted_before_response": 0.703345775604248,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 9,
+        "recent_window_count": 9,
+        "observed_recent_correct_ratio": 0.4444444444444444,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 62.548768520355225,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 50.939708948135376,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 53.184670209884644,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 49.11438226699829,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          47,
+          39
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.4444444444444444,
+          "active_skill_reference_probability": 0.5555771589279175,
+          "log_median_response_seconds": 2.6083771846181443,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 1.903820921115266,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 1452,
+          "skill": 47,
+          "difficulty": 0.1666666716337204,
+          "predicted_probability": 0.6504672765731812,
+          "target_probability": 0.65,
+          "reference_probability": 0.5093970894813538,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %50.9. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 53709
+        }
+      }
+    },
+    {
+      "step": 5,
+      "target_row_index": 219273,
+      "history_stop_before": 219273,
+      "source_order_id": 32773012,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.071+03:00",
+      "question": 10524,
+      "original_problem_id": 89665,
+      "predicted_before_response": 0.47816330194473267,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 10,
+        "recent_window_count": 10,
+        "observed_recent_correct_ratio": 0.4,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 61.08715534210205,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 49.518388509750366,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 51.88170671463013,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 48.01144599914551,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          47,
+          39
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.4,
+          "active_skill_reference_probability": 0.5416241685549418,
+          "log_median_response_seconds": 2.4865719291070616,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 2.1029949831860644,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 627,
+          "skill": 47,
+          "difficulty": 0.2083333283662796,
+          "predicted_probability": 0.6486889719963074,
+          "target_probability": 0.65,
+          "reference_probability": 0.49518388509750366,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %49.5. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %64.9, hedef %65.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 49299
+        }
+      }
+    },
+    {
+      "step": 6,
+      "target_row_index": 219274,
+      "history_stop_before": 219274,
+      "source_order_id": 32773384,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.114+03:00",
+      "question": 10522,
+      "original_problem_id": 89663,
+      "predicted_before_response": 0.6076632142066956,
+      "observed_correct": 1,
+      "after": {
+        "history_count": 11,
+        "recent_window_count": 11,
+        "observed_recent_correct_ratio": 0.45454545454545453,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 66.11682176589966,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 53.89123558998108,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 57.29249715805054,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 54.28028106689453,
+            "observed_correct_percent": 33.33333333333333,
+            "recent_skill_answers": 3,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          47,
+          81
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.45454545454545453,
+          "active_skill_reference_probability": 0.5809611280759176,
+          "log_median_response_seconds": 2.34784522439891,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 1.9573827849970926,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 638,
+          "skill": 47,
+          "difficulty": 0.24418604373931885,
+          "predicted_probability": 0.6495786309242249,
+          "target_probability": 0.65,
+          "reference_probability": 0.5389123558998108,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %53.9. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 49310
+        }
+      }
+    },
+    {
+      "step": 7,
+      "target_row_index": 219275,
+      "history_stop_before": 219275,
+      "source_order_id": 32773441,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.159+03:00",
+      "question": 10570,
+      "original_problem_id": 89721,
+      "predicted_before_response": 0.6388352513313293,
+      "observed_correct": 1,
+      "after": {
+        "history_count": 12,
+        "recent_window_count": 12,
+        "observed_recent_correct_ratio": 0.5,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 67.47701168060303,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 55.25961518287659,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 58.55233669281006,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 55.701035261154175,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          47,
+          81
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.5,
+          "active_skill_reference_probability": 0.5947922070821127,
+          "log_median_response_seconds": 2.3189996342621404,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 1.8399112542926452,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 1467,
+          "skill": 47,
+          "difficulty": 0.3030303120613098,
+          "predicted_probability": 0.6504672765731812,
+          "target_probability": 0.65,
+          "reference_probability": 0.5525961518287659,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %55.3. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 53769
+        }
+      }
+    },
+    {
+      "step": 8,
+      "target_row_index": 219276,
+      "history_stop_before": 219276,
+      "source_order_id": 32773496,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.201+03:00",
+      "question": 10558,
+      "original_problem_id": 89709,
+      "predicted_before_response": 0.6379335522651672,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 13,
+        "recent_window_count": 13,
+        "observed_recent_correct_ratio": 0.46153846153846156,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 62.65977621078491,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 50.36550760269165,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 53.978168964385986,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 50.431156158447266,
+            "observed_correct_percent": 40.0,
+            "recent_skill_answers": 5,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          81,
+          47
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.46153846153846156,
+          "active_skill_reference_probability": 0.5448547999064127,
+          "log_median_response_seconds": 2.2892971986671102,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 2.1163391973187156,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 620,
+          "skill": 47,
+          "difficulty": 0.1807228922843933,
+          "predicted_probability": 0.6504672765731812,
+          "target_probability": 0.65,
+          "reference_probability": 0.5036550760269165,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %50.4. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 49292
+        }
+      }
+    },
+    {
+      "step": 9,
+      "target_row_index": 219277,
+      "history_stop_before": 219277,
+      "source_order_id": 32773789,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.241+03:00",
+      "question": 10600,
+      "original_problem_id": 89752,
+      "predicted_before_response": 0.44890937209129333,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 14,
+        "recent_window_count": 14,
+        "observed_recent_correct_ratio": 0.42857142857142855,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 60.912156105041504,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 48.57944846153259,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 52.398377656936646,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 48.71775507926941,
+            "observed_correct_percent": 33.33333333333333,
+            "recent_skill_answers": 6,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          81,
+          47
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.42857142857142855,
+          "active_skill_reference_probability": 0.5273645321528116,
+          "log_median_response_seconds": 2.2587899329943744,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 2.190604052797526,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 1463,
+          "skill": 47,
+          "difficulty": 0.1515151560306549,
+          "predicted_probability": 0.6477982401847839,
+          "target_probability": 0.65,
+          "reference_probability": 0.4857944846153259,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %48.6. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %64.8, hedef %65.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 53753
+        }
+      }
+    },
+    {
+      "step": 10,
+      "target_row_index": 219278,
+      "history_stop_before": 219278,
+      "source_order_id": 32775262,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.280+03:00",
+      "question": 10559,
+      "original_problem_id": 89710,
+      "predicted_before_response": 0.5597714185714722,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 15,
+        "recent_window_count": 15,
+        "observed_recent_correct_ratio": 0.4,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 59.25515294075012,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 46.91356718540192,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 50.807833671569824,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 47.147589921951294,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          81,
+          47
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.4,
+          "active_skill_reference_probability": 0.5110543668270111,
+          "log_median_response_seconds": 2.2273226084934987,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 2.159705003178184,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 295,
+          "skill": 47,
+          "difficulty": 0.0,
+          "predicted_probability": 0.8031737804412842,
+          "target_probability": 0.8,
+          "reference_probability": 0.46913567185401917,
+          "repeat_question": false,
+          "action": "daha erişilebilir soru ile pekiştirme",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %46.9. son üç cevap yanlış; daha erişilebilir başarı hedefi. Seçilen soruda tahmin %80.3, hedef %80.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 48500
+        }
+      }
+    },
+    {
+      "step": 11,
+      "target_row_index": 219279,
+      "history_stop_before": 219279,
+      "source_order_id": 32775350,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.329+03:00",
+      "question": 1598,
+      "original_problem_id": 53987,
+      "predicted_before_response": 0.45592519640922546,
+      "observed_correct": 1,
+      "after": {
+        "history_count": 16,
+        "recent_window_count": 16,
+        "observed_recent_correct_ratio": 0.4375,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 64.11733627319336,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 52.00549364089966,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 56.05722665786743,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 52.797842025756836,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 54.0402889251709,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          81,
+          47
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.4375,
+          "active_skill_reference_probability": 0.5630689064661661,
+          "log_median_response_seconds": 2.2587899329943744,
+          "mean_hint_count": 0.0
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 2.122577507085108,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 704,
+          "skill": 47,
+          "difficulty": 0.16249999403953552,
+          "predicted_probability": 0.6495786309242249,
+          "target_probability": 0.65,
+          "reference_probability": 0.5200549364089966,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %52.0. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 49379
+        }
+      }
+    },
+    {
+      "step": 12,
+      "target_row_index": 219280,
+      "history_stop_before": 219280,
+      "source_order_id": 32775966,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.375+03:00",
+      "question": 8021,
+      "original_problem_id": 86353,
+      "predicted_before_response": 0.5343695282936096,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 17,
+        "recent_window_count": 17,
+        "observed_recent_correct_ratio": 0.4117647058823529,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 59.71484184265137,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 46.779391169548035,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 51.18391513824463,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 47.064781188964844,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 48.46062660217285,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 53.475481271743774,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          81,
+          47
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.4117647058823529,
+          "active_skill_reference_probability": 0.5118633806705475,
+          "log_median_response_seconds": 2.2892971986671102,
+          "mean_hint_count": 0.23529411764705882
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 1.8640344641161566,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 279,
+          "skill": 47,
+          "difficulty": 0.20000000298023224,
+          "predicted_probability": 0.6504672765731812,
+          "target_probability": 0.65,
+          "reference_probability": 0.46779391169548035,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %46.8. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 48482
+        }
+      }
+    },
+    {
+      "step": 13,
+      "target_row_index": 219281,
+      "history_stop_before": 219281,
+      "source_order_id": 32777432,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.422+03:00",
+      "question": 8154,
+      "original_problem_id": 86557,
+      "predicted_before_response": 0.3638729155063629,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 18,
+        "recent_window_count": 18,
+        "observed_recent_correct_ratio": 0.3888888888888889,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 58.691686391830444,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 45.78646719455719,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 50.29430389404297,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 46.200013160705566,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 47.536665201187134,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 52.45790481567383,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          81,
+          47
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.3888888888888889,
+          "active_skill_reference_probability": 0.502260555823644,
+          "log_median_response_seconds": 2.2587899329943744,
+          "mean_hint_count": 0.4444444444444444
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 1.6049730071810429,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 1459,
+          "skill": 47,
+          "difficulty": 0.125,
+          "predicted_probability": 0.6477982401847839,
+          "target_probability": 0.65,
+          "reference_probability": 0.4578646719455719,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %45.8. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %64.8, hedef %65.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 53737
+        }
+      }
+    },
+    {
+      "step": 14,
+      "target_row_index": 219282,
+      "history_stop_before": 219282,
+      "source_order_id": 32777596,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.470+03:00",
+      "question": 8062,
+      "original_problem_id": 86454,
+      "predicted_before_response": 0.45350387692451477,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 19,
+        "recent_window_count": 19,
+        "observed_recent_correct_ratio": 0.3684210526315789,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 57.236915826797485,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 44.33090686798096,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 48.86013865470886,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 44.773802161216736,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 46.03809416294098,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 50.87863802909851,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 3,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          81,
+          47
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.3684210526315789,
+          "active_skill_reference_probability": 0.4878054161866506,
+          "log_median_response_seconds": 2.2273226084934987,
+          "mean_hint_count": 0.631578947368421
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 1.386362670594309,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 312,
+          "skill": 47,
+          "difficulty": 0.0,
+          "predicted_probability": 0.7943849563598633,
+          "target_probability": 0.8,
+          "reference_probability": 0.44330906867980957,
+          "repeat_question": false,
+          "action": "daha erişilebilir soru ile pekiştirme",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %44.3. son üç cevap yanlış; daha erişilebilir başarı hedefi. Seçilen soruda tahmin %79.4, hedef %80.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 48523
+        }
+      }
+    },
+    {
+      "step": 15,
+      "target_row_index": 219283,
+      "history_stop_before": 219283,
+      "source_order_id": 32777660,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.515+03:00",
+      "question": 8002,
+      "original_problem_id": 86325,
+      "predicted_before_response": 0.4073334038257599,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 20,
+        "recent_window_count": 20,
+        "observed_recent_correct_ratio": 0.35,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 55.520617961883545,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 8,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 42.44731068611145,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 47.129836678504944,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 42.94500946998596,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 44.20998692512512,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 48.988860845565796,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          81,
+          47
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.35,
+          "active_skill_reference_probability": 0.4697097937266032,
+          "log_median_response_seconds": 2.2587899329943744,
+          "mean_hint_count": 0.8
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 1.1606574191369434,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 307,
+          "skill": 47,
+          "difficulty": 0.0,
+          "predicted_probability": 0.7969253659248352,
+          "target_probability": 0.8,
+          "reference_probability": 0.4244731068611145,
+          "repeat_question": false,
+          "action": "daha erişilebilir soru ile pekiştirme",
+          "reason": "Beceri 74: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %42.4. son üç cevap yanlış; daha erişilebilir başarı hedefi. Seçilen soruda tahmin %79.7, hedef %80.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Beceri 74",
+          "original_problem_id": 48516
+        }
+      }
+    },
+    {
+      "step": 16,
+      "target_row_index": 219284,
+      "history_stop_before": 219284,
+      "source_order_id": 32777889,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.570+03:00",
+      "question": 8144,
+      "original_problem_id": 86547,
+      "predicted_before_response": 0.36931508779525757,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 21,
+        "recent_window_count": 20,
+        "observed_recent_correct_ratio": 0.35,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 55.58708906173706,
+            "observed_correct_percent": 57.14285714285714,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 42.56126880645752,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 47.251078486442566,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 43.08985471725464,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 44.29440498352051,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 49.09294247627258,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 5,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          57,
+          81,
+          84
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.35,
+          "active_skill_reference_probability": 0.4925662875175476,
+          "log_median_response_seconds": 2.2210496050115274,
+          "mean_hint_count": 1.0
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 1.0340422358511034,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 17005,
+          "skill": 81,
+          "difficulty": 0.0,
+          "predicted_probability": 0.7956580519676208,
+          "target_probability": 0.8,
+          "reference_probability": 0.4308985471725464,
+          "repeat_question": false,
+          "action": "daha erişilebilir soru ile pekiştirme",
+          "reason": "Addition and Subtraction Integers: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %43.1. son üç cevap yanlış; daha erişilebilir başarı hedefi. Seçilen soruda tahmin %79.6, hedef %80.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Addition and Subtraction Integers",
+          "original_problem_id": 189175
+        }
+      }
+    },
+    {
+      "step": 17,
+      "target_row_index": 219285,
+      "history_stop_before": 219285,
+      "source_order_id": 32778029,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.620+03:00",
+      "question": 8126,
+      "original_problem_id": 86529,
+      "predicted_before_response": 0.40827676653862,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 22,
+        "recent_window_count": 20,
+        "observed_recent_correct_ratio": 0.35,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 54.371774196624756,
+            "observed_correct_percent": 66.66666666666666,
+            "recent_skill_answers": 6,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 41.082942485809326,
+            "observed_correct_percent": 66.66666666666666,
+            "recent_skill_answers": 3,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 46.02518677711487,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 41.806769371032715,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 43.01697611808777,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 47.677502036094666,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 6,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          81,
+          57,
+          84
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.35,
+          "active_skill_reference_probability": 0.47952015201250714,
+          "log_median_response_seconds": 2.2210496050115274,
+          "mean_hint_count": 1.2
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 0.8943040509121748,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 17015,
+          "skill": 81,
+          "difficulty": 0.0,
+          "predicted_probability": 0.8006919622421265,
+          "target_probability": 0.8,
+          "reference_probability": 0.41806769371032715,
+          "repeat_question": false,
+          "action": "daha erişilebilir soru ile pekiştirme",
+          "reason": "Addition and Subtraction Integers: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %41.8. son üç cevap yanlış; daha erişilebilir başarı hedefi. Seçilen soruda tahmin %80.1, hedef %80.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Addition and Subtraction Integers",
+          "original_problem_id": 189198
+        }
+      }
+    },
+    {
+      "step": 18,
+      "target_row_index": 219286,
+      "history_stop_before": 219286,
+      "source_order_id": 32778587,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.674+03:00",
+      "question": 7990,
+      "original_problem_id": 86312,
+      "predicted_before_response": 0.47317034006118774,
+      "observed_correct": 0,
+      "after": {
+        "history_count": 23,
+        "recent_window_count": 20,
+        "observed_recent_correct_ratio": 0.35,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 52.56716012954712,
+            "observed_correct_percent": 80.0,
+            "recent_skill_answers": 5,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 39.539942145347595,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 44.4183349609375,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 40.38991332054138,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 41.47076606750488,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 45.92960774898529,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          81,
+          84,
+          57
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.35,
+          "active_skill_reference_probability": 0.46295560399691266,
+          "log_median_response_seconds": 2.2210496050115274,
+          "mean_hint_count": 1.4
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 0.8285602440561695,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 17039,
+          "skill": 81,
+          "difficulty": 0.0,
+          "predicted_probability": 0.7994422912597656,
+          "target_probability": 0.8,
+          "reference_probability": 0.4038991332054138,
+          "repeat_question": false,
+          "action": "daha erişilebilir soru ile pekiştirme",
+          "reason": "Addition and Subtraction Integers: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %40.4. son üç cevap yanlış; daha erişilebilir başarı hedefi. Seçilen soruda tahmin %79.9, hedef %80.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Addition and Subtraction Integers",
+          "original_problem_id": 189232
+        }
+      }
+    },
+    {
+      "step": 19,
+      "target_row_index": 219287,
+      "history_stop_before": 219287,
+      "source_order_id": 33041940,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.721+03:00",
+      "question": 7605,
+      "original_problem_id": 85734,
+      "predicted_before_response": 0.44866785407066345,
+      "observed_correct": 1,
+      "after": {
+        "history_count": 24,
+        "recent_window_count": 20,
+        "observed_recent_correct_ratio": 0.35,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 56.003957986831665,
+            "observed_correct_percent": 75.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 43.67736577987671,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 48.219460248947144,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 44.29253935813904,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 45.49745321273804,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 50.09944438934326,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          81,
+          84,
+          57
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.35,
+          "active_skill_reference_probability": 0.5013198057810465,
+          "log_median_response_seconds": 2.2210496050115274,
+          "mean_hint_count": 1.4
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 0.8680677546178315,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 17018,
+          "skill": 81,
+          "difficulty": 0.0,
+          "predicted_probability": 0.6557770371437073,
+          "target_probability": 0.65,
+          "reference_probability": 0.4429253935813904,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Addition and Subtraction Integers: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %44.3. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.6, hedef %65.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Addition and Subtraction Integers",
+          "original_problem_id": 189201
+        }
+      }
+    },
+    {
+      "step": 20,
+      "target_row_index": 219288,
+      "history_stop_before": 219288,
+      "source_order_id": 33047323,
+      "source_timestamp": null,
+      "display_timestamp": "2026-11-15T14:17:38.764+03:00",
+      "question": 7358,
+      "original_problem_id": 85269,
+      "predicted_before_response": 0.929440438747406,
+      "observed_correct": 1,
+      "after": {
+        "history_count": 25,
+        "recent_window_count": 20,
+        "observed_recent_correct_ratio": 0.4,
+        "skill_scores": [
+          {
+            "skill": 57,
+            "name": "Absolute Value",
+            "predicted_success_percent": 64.01602029800415,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 4,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 47,
+            "name": "Beceri 74",
+            "predicted_success_percent": 50.3644585609436,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 39,
+            "name": "Addition Whole Numbers",
+            "predicted_success_percent": 55.97407817840576,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 51.64005756378174,
+            "observed_correct_percent": 28.57142857142857,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 52.54298448562622,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 57.6357364654541,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 7,
+            "reference_question_count": 32
+          }
+        ],
+        "active_pattern_skills": [
+          81,
+          84,
+          57
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.4,
+          "active_skill_reference_probability": 0.5776393810907999,
+          "log_median_response_seconds": 2.2210496050115274,
+          "mean_hint_count": 1.4
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 1.1679120117701436,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "recommendation": {
+          "available": true,
+          "question": 1498,
+          "skill": 81,
+          "difficulty": 0.20000000298023224,
+          "predicted_probability": 0.6477982401847839,
+          "target_probability": 0.65,
+          "reference_probability": 0.5164005756378174,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Addition and Subtraction Integers: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %51.6. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %64.8, hedef %65.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "skill_name": "Addition and Subtraction Integers",
+          "original_problem_id": 53833
+        }
+      }
+    }
+  ],
+  "integrity": {
+    "model_weights_unchanged": true,
+    "behavior_model_unchanged": true,
+    "reference_bank_unchanged": true,
+    "each_prediction_precedes_target_response": true,
+    "source_calendar_times_fabricated": false
+  },
+  "reference_bank_sha256": "6cdef89ae761d0301631e1eb5c29ecd23e0e90d6b77e89fa620935a590d17caa",
+  "model_selection": {
+    "method": "kmpt",
+    "seed": 2026,
+    "criterion": "minimum validation BCE within the preselected KMPT method",
+    "validation_bce": 0.5659620926586174,
+    "best_epoch": 2,
+    "test_metrics_used_for_selection": false,
+    "checkpoint": "outputs/main/three_seed_v1/seed_2026/kmpt_best.pt"
+  },
+  "note": "Mevcut geçmişin yeniden oynatımıdır; gerçek zamana yayılmış öğrenme kazanımı veya öneri etkisi ölçülmez."
+}

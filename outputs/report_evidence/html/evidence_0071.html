@@ -1,0 +1,114 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:white;color:#111;font-family:Arial,sans-serif}
+#capture{width:1000px;padding:26px 28px;background:white}
+.heading{font-size:20px;line-height:27px;margin:0 0 10px;font-weight:700}
+.sub{font-size:17px;line-height:25px;margin:0 0 14px;color:#444}
+.line{display:grid;grid-template-columns:52px 1fr;align-items:start}
+.line-number{font:17px/27px Consolas,monospace;color:#666;text-align:right;padding-right:14px}
+.code,.plain{font:20px/27px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all}
+.code:empty::before{content:' '}.plain{margin:0}img,svg{display:block;max-width:100%;height:auto;margin:0 auto}
+table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:23px}
+th,td{border:1px solid #ddd;padding:7px 8px;overflow-wrap:anywhere;vertical-align:middle;text-align:left}
+th{background:#edf0f4;font-weight:700}td{background:white}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.code .hll { background-color: #ffffcc }
+.code { background: #f8f8f8; }
+.code .c { color: #3D7B7B; font-style: italic } /* Comment */
+.code .err { border: 1px solid #F00 } /* Error */
+.code .k { color: #008000; font-weight: bold } /* Keyword */
+.code .o { color: #666 } /* Operator */
+.code .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.code .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.code .cp { color: #9C6500 } /* Comment.Preproc */
+.code .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.code .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.code .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.code .gd { color: #A00000 } /* Generic.Deleted */
+.code .ge { font-style: italic } /* Generic.Emph */
+.code .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.code .gr { color: #E40000 } /* Generic.Error */
+.code .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code .gi { color: #008400 } /* Generic.Inserted */
+.code .go { color: #717171 } /* Generic.Output */
+.code .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code .gs { font-weight: bold } /* Generic.Strong */
+.code .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code .gt { color: #04D } /* Generic.Traceback */
+.code .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code .kp { color: #008000 } /* Keyword.Pseudo */
+.code .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code .kt { color: #B00040 } /* Keyword.Type */
+.code .m { color: #666 } /* Literal.Number */
+.code .s { color: #BA2121 } /* Literal.String */
+.code .na { color: #687822 } /* Name.Attribute */
+.code .nb { color: #008000 } /* Name.Builtin */
+.code .nc { color: #00F; font-weight: bold } /* Name.Class */
+.code .no { color: #800 } /* Name.Constant */
+.code .nd { color: #A2F } /* Name.Decorator */
+.code .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.code .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.code .nf { color: #00F } /* Name.Function */
+.code .nl { color: #767600 } /* Name.Label */
+.code .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.code .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code .nv { color: #19177C } /* Name.Variable */
+.code .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.code .w { color: #BBB } /* Text.Whitespace */
+.code .mb { color: #666 } /* Literal.Number.Bin */
+.code .mf { color: #666 } /* Literal.Number.Float */
+.code .mh { color: #666 } /* Literal.Number.Hex */
+.code .mi { color: #666 } /* Literal.Number.Integer */
+.code .mo { color: #666 } /* Literal.Number.Oct */
+.code .sa { color: #BA2121 } /* Literal.String.Affix */
+.code .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code .sc { color: #BA2121 } /* Literal.String.Char */
+.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code .s2 { color: #BA2121 } /* Literal.String.Double */
+.code .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.code .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.code .sx { color: #008000 } /* Literal.String.Other */
+.code .sr { color: #A45A77 } /* Literal.String.Regex */
+.code .s1 { color: #BA2121 } /* Literal.String.Single */
+.code .ss { color: #19177C } /* Literal.String.Symbol */
+.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code .fm { color: #00F } /* Name.Function.Magic */
+.code .vc { color: #19177C } /* Name.Variable.Class */
+.code .vg { color: #19177C } /* Name.Variable.Global */
+.code .vi { color: #19177C } /* Name.Variable.Instance */
+.code .vm { color: #19177C } /* Name.Variable.Magic */
+.code .il { color: #666 } /* Literal.Number.Integer.Long */</style></head><body><main id="capture"><div class="heading">src/kt_project/patterns.py</div><div class="sub">Satır 129–155</div><div class="line"><div class="line-number">129</div><div class="code"><span data-line="129">            <span class="n">row</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"clusters"</span><span class="p">:</span> <span class="n">count</span><span class="p">,</span> <span class="s2">"silhouette"</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span> <span class="s2">"min_cluster_fraction"</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">sizes</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">)),</span>
+</span></div></div><div class="line"><div class="line-number">130</div><div class="code"><span data-line="130">                   <span class="s2">"cluster_sizes"</span><span class="p">:</span> <span class="n">sizes</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="s2">"size_constraint_passed"</span><span class="p">:</span> <span class="n">accepted</span><span class="p">}</span>
+</span></div></div><div class="line"><div class="line-number">131</div><div class="code"><span data-line="131">            <span class="n">candidates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">132</div><div class="code"><span data-line="132">            <span class="k">if</span> <span class="n">accepted</span> <span class="ow">and</span> <span class="p">(</span><span class="n">best</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">score</span> <span class="o">&gt;</span> <span class="n">best</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+</span></div></div><div class="line"><div class="line-number">133</div><div class="code"><span data-line="133">                <span class="n">best</span> <span class="o">=</span> <span class="n">score</span><span class="p">,</span> <span class="n">clusterer</span><span class="p">,</span> <span class="n">labels</span>
+</span></div></div><div class="line"><div class="line-number">134</div><div class="code"><span data-line="134">    <span class="k">if</span> <span class="n">best</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">135</div><div class="code"><span data-line="135">        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Grup büyüklüğü koşulunu sağlayan kümeleme bulunamadı; sessizce farklı kural uygulanmadı."</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">136</div><div class="code"><span data-line="136">    <span class="n">score</span><span class="p">,</span> <span class="n">clusterer</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">best</span>
+</span></div></div><div class="line"><div class="line-number">137</div><div class="code"><span data-line="137">    <span class="n">profiles</span> <span class="o">=</span> <span class="p">[]</span>
+</span></div></div><div class="line"><div class="line-number">138</div><div class="code"><span data-line="138">    <span class="n">global_accuracy</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">features</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]))</span>
+</span></div></div><div class="line"><div class="line-number">139</div><div class="code"><span data-line="139">    <span class="n">global_times</span> <span class="o">=</span> <span class="n">features</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">][</span><span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">features</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">])]</span>
+</span></div></div><div class="line"><div class="line-number">140</div><div class="code"><span data-line="140">    <span class="n">global_time</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">global_times</span><span class="p">))</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">global_times</span><span class="p">)</span> <span class="k">else</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+</span></div></div><div class="line"><div class="line-number">141</div><div class="code"><span data-line="141">    <span class="k">for</span> <span class="n">cluster</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">clusterer</span><span class="o">.</span><span class="n">n_clusters</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">142</div><div class="code"><span data-line="142">        <span class="n">chosen</span> <span class="o">=</span> <span class="n">labels</span> <span class="o">==</span> <span class="n">cluster</span>
+</span></div></div><div class="line"><div class="line-number">143</div><div class="code"><span data-line="143">        <span class="n">group</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="n">chosen</span><span class="p">]</span>
+</span></div></div><div class="line"><div class="line-number">144</div><div class="code"><span data-line="144">        <span class="n">accuracy</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">group</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+</span></div></div><div class="line"><div class="line-number">145</div><div class="code"><span data-line="145">        <span class="n">valid_times</span> <span class="o">=</span> <span class="n">group</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">][</span><span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">group</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">])]</span>
+</span></div></div><div class="line"><div class="line-number">146</div><div class="code"><span data-line="146">        <span class="n">time_value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">valid_times</span><span class="p">))</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">valid_times</span><span class="p">)</span> <span class="k">else</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+</span></div></div><div class="line"><div class="line-number">147</div><div class="code"><span data-line="147">        <span class="n">time_description</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s2">"yanıt süresi görece </span><span class="si">{</span><span class="s1">'uzun'</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">time_value</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">global_time</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">'kısa'</span><span class="si">}</span><span class="s2">"</span>
+</span></div></div><div class="line"><div class="line-number">148</div><div class="code"><span data-line="148">                            <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">time_value</span><span class="p">)</span> <span class="k">else</span> <span class="s2">"yanıt süresi bilgisi eksik"</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">149</div><div class="code"><span data-line="149">        <span class="n">description</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s2">"Doğru cevap oranı görece </span><span class="si">{</span><span class="s1">'yüksek'</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">accuracy</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">global_accuracy</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">'düşük'</span><span class="si">}</span><span class="s2">; "</span>
+</span></div></div><div class="line"><div class="line-number">150</div><div class="code"><span data-line="150">                       <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">time_description</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">151</div><div class="code"><span data-line="151">        <span class="n">profiles</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">"cluster"</span><span class="p">:</span> <span class="n">cluster</span><span class="p">,</span> <span class="s2">"snapshots"</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">chosen</span><span class="o">.</span><span class="n">sum</span><span class="p">()),</span>
+</span></div></div><div class="line"><div class="line-number">152</div><div class="code"><span data-line="152">                         <span class="s2">"students_with_snapshot_in_group"</span><span class="p">:</span> <span class="nb">len</span><span class="p">({</span><span class="n">snapshots</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">student</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">flatnonzero</span><span class="p">(</span><span class="n">chosen</span><span class="p">)}),</span>
+</span></div></div><div class="line"><div class="line-number">153</div><div class="code"><span data-line="153">                         <span class="s2">"mean_observed_accuracy"</span><span class="p">:</span> <span class="n">accuracy</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">154</div><div class="code"><span data-line="154">                         <span class="s2">"mean_reference_probability"</span><span class="p">:</span> <span class="n">_finite</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">group</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])),</span>
+</span></div></div><div class="line"><div class="line-number">155</div><div class="code"><span data-line="155">                         <span class="s2">"median_response_seconds"</span><span class="p">:</span> <span class="n">_finite</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">expm1</span><span class="p">(</span><span class="n">time_value</span><span class="p">)),</span>
+</span></div></div></main></body></html>

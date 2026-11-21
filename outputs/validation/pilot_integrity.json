@@ -1,0 +1,28 @@
+{
+  "device": "cuda",
+  "common_pretrained_state_verified": true,
+  "test_not_evaluated": true,
+  "checks": [
+    {
+      "method": "baseline",
+      "checkpoint_reloaded": true,
+      "validation_metrics_reproduced": true,
+      "target_label_invariance": true,
+      "prompt_gradient_norm": null
+    },
+    {
+      "method": "kpt",
+      "checkpoint_reloaded": true,
+      "validation_metrics_reproduced": true,
+      "target_label_invariance": true,
+      "prompt_gradient_norm": 0.06174500659108162
+    },
+    {
+      "method": "kmpt",
+      "checkpoint_reloaded": true,
+      "validation_metrics_reproduced": true,
+      "target_label_invariance": true,
+      "prompt_gradient_norm": 0.020058955997228622
+    }
+  ]
+}

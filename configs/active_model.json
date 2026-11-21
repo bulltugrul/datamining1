@@ -1,0 +1,6 @@
+{
+  "version": "paper_alignment_v2",
+  "selection_file": "outputs/main/paper_alignment_v2/interpretations/prototype_selection.json",
+  "scope": "scaled method with explicit same-target-step block mask interpretation; strict-token reference retained",
+  "inference_policy": "same_target_step_block"
+}

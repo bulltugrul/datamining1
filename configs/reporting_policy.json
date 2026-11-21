@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-11-15T12:46:06.651410+03:00",
+  "primary_comparison": "all held-out response targets, interaction-weighted ROC AUC",
+  "secondary_metrics": [
+    "accuracy_at_0.5",
+    "binary_cross_entropy"
+  ],
+  "aggregation": "mean and sample standard deviation over seeds 17,42,2026",
+  "uncertainty_note": "seed variability on a fixed student split; not a population confidence interval",
+  "prototype_method": "kmpt",
+  "prototype_seed_selection": "minimum validation BCE among the three KMPT checkpoints",
+  "test_metrics_used_for_prototype_selection": false,
+  "training_configuration": "configs/main.json",
+  "main_run": "outputs/main/three_seed_v1"
+}

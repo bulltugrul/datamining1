@@ -1,0 +1,596 @@
+{
+  "format": "live_session_v1",
+  "session_id": "09e7085d75624ae7b3a2d5dcec574e72",
+  "participant_alias": "Otomatik işlev testi",
+  "response_origin": "automated_smoke_test",
+  "human_learning_study": false,
+  "created_at": "2026-11-15T21:46:48.186805+00:00",
+  "closed_at": "2026-11-15T21:46:51.874250+00:00",
+  "status": "closed",
+  "initial_history_count": 0,
+  "historical_calendar_times_fabricated": false,
+  "tracked_skills": [
+    81,
+    82,
+    84
+  ],
+  "resources": {
+    "model_selection": {
+      "format": "plkt_method_v2",
+      "method": "kmpt",
+      "variant": "kmpt",
+      "layout": "paper_tail",
+      "inference_policy": "same_target_step_block",
+      "seed": 17,
+      "best_epoch": 1,
+      "validation_bce": 0.5549617719345423,
+      "criterion": "minimum block-policy validation BCE among three fixed strict-selected KMPT snapshots",
+      "checkpoint": "outputs/main/paper_alignment_v2/seed_17/kmpt_best.pt",
+      "checkpoint_sha256": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+      "inference_implementation_sha256": "b04aebe91b6e065081736a9cfa605e629c8f9673e4dd5169ee72ba222b546419",
+      "test_metrics_used_for_selection": false,
+      "author_code_verified": false,
+      "note": "Explicit same-step mask interpretation for working prompt access; strict-token reference retained."
+    },
+    "reference_bank_sha256": "6cdef89ae761d0301631e1eb5c29ecd23e0e90d6b77e89fa620935a590d17caa",
+    "pattern_state_sha256": "deb96eda74100f30839fd6f7adb28b50a02d074d702d8491ab0f49a3267a7e6e",
+    "tracking_config_sha256": "060573ba0eed8800f2763222701d57c8877b7a6ffcf418328fb7c6d0d4552ef0"
+  },
+  "pending": null,
+  "events": [
+    {
+      "question_token": "fc0e1847f1114db5a51d037ba7d805b4",
+      "question": {
+        "question": 1498,
+        "skills": [
+          81
+        ],
+        "difficulty": 0.20000000298023224
+      },
+      "original_problem_id": 53833,
+      "history_count_before": 0,
+      "prediction_started_at": "2026-11-15T21:46:49.437869+00:00",
+      "predicted_at": "2026-11-15T21:46:49.463395+00:00",
+      "presented_at": "2026-11-15T21:46:49.463395+00:00",
+      "predicted_correct_probability": 0.8128673434257507,
+      "sequence": 1,
+      "answer_received_at": "2026-11-15T21:46:49.623740+00:00",
+      "correct": 1,
+      "hint_count": 0,
+      "response_duration_seconds": 0.1602687000122387,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "initial",
+      "after": {
+        "history_count": 1,
+        "recent_window_count": 1,
+        "observed_recent_correct_ratio": 1.0,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 75.75133442878723,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 39.25976753234863,
+            "observed_correct_percent": null,
+            "recent_skill_answers": 0,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 46.99816405773163,
+            "observed_correct_percent": null,
+            "recent_skill_answers": 0,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 1.0,
+          "active_skill_reference_probability": 0.7575133442878723,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.0
+        },
+        "behavior": null,
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 1621,
+          "skill": 82,
+          "difficulty": 0.3918918967247009,
+          "predicted_probability": 0.6315943002700806,
+          "target_probability": 0.65,
+          "reference_probability": 0.39259767532348633,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 82: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %39.3. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %63.2, hedef %65.",
+          "behavior_group": null,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 54079
+        }
+      },
+      "state_updated_at": "2026-11-15T21:46:49.653450+00:00",
+      "event_sha256": "67fca8b3f16cc4785db2c3451f8e728828310719fab0888945beda17821868b7"
+    },
+    {
+      "question_token": "9d853528bd6a4052a44fc1356a0d42d7",
+      "question": {
+        "question": 1597,
+        "skills": [
+          82
+        ],
+        "difficulty": 0.5360824465751648
+      },
+      "original_problem_id": 53983,
+      "history_count_before": 1,
+      "prediction_started_at": "2026-11-15T21:46:49.665277+00:00",
+      "predicted_at": "2026-11-15T21:46:49.674575+00:00",
+      "presented_at": "2026-11-15T21:46:49.674575+00:00",
+      "predicted_correct_probability": 0.38676342368125916,
+      "sequence": 2,
+      "answer_received_at": "2026-11-15T21:46:49.985156+00:00",
+      "correct": 0,
+      "hint_count": 1,
+      "response_duration_seconds": 0.3105327000084799,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "67fca8b3f16cc4785db2c3451f8e728828310719fab0888945beda17821868b7",
+      "after": {
+        "history_count": 2,
+        "recent_window_count": 2,
+        "observed_recent_correct_ratio": 0.5,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 69.64462995529175,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 30.512094497680664,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 32.394424080848694,
+            "observed_correct_percent": null,
+            "recent_skill_answers": 0,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.5,
+          "active_skill_reference_probability": 0.5007836222648621,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.5
+        },
+        "behavior": null,
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 15685,
+          "skill": 82,
+          "difficulty": 0.0,
+          "predicted_probability": 0.6627964973449707,
+          "target_probability": 0.65,
+          "reference_probability": 0.30512094497680664,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 82: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %30.5. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %66.3, hedef %65.",
+          "behavior_group": null,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 147290
+        }
+      },
+      "state_updated_at": "2026-11-15T21:46:50.013993+00:00",
+      "event_sha256": "1542dfc12c45c321f3854f00bebc1fbe0e8a9c7bf3ad42e351ddb576f250e065"
+    },
+    {
+      "question_token": "7b5018c597dc4bf99330fe8bca424d34",
+      "question": {
+        "question": 66,
+        "skills": [
+          84
+        ],
+        "difficulty": 0.1428571492433548
+      },
+      "original_problem_id": 42492,
+      "history_count_before": 2,
+      "prediction_started_at": "2026-11-15T21:46:50.026809+00:00",
+      "predicted_at": "2026-11-15T21:46:50.036194+00:00",
+      "presented_at": "2026-11-15T21:46:50.036194+00:00",
+      "predicted_correct_probability": 0.38722676038742065,
+      "sequence": 3,
+      "answer_received_at": "2026-11-15T21:46:50.544799+00:00",
+      "correct": 0,
+      "hint_count": 0,
+      "response_duration_seconds": 0.508605,
+      "duration_clock": "UTC_after_resume",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "1542dfc12c45c321f3854f00bebc1fbe0e8a9c7bf3ad42e351ddb576f250e065",
+      "after": {
+        "history_count": 3,
+        "recent_window_count": 3,
+        "observed_recent_correct_ratio": 0.3333333333333333,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 66.66721701622009,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 28.2684326171875,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 24.448084831237793,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.3333333333333333,
+          "active_skill_reference_probability": 0.39794578154881793,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.3333333333333333
+        },
+        "behavior": null,
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 3216,
+          "skill": 84,
+          "difficulty": 0.1111111119389534,
+          "predicted_probability": 0.6469064354896545,
+          "target_probability": 0.65,
+          "reference_probability": 0.24448084831237793,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 84: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %24.4. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %64.7, hedef %65.",
+          "behavior_group": null,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 58821
+        }
+      },
+      "state_updated_at": "2026-11-15T21:46:50.593962+00:00",
+      "event_sha256": "cd88a00fdaa8fd5b2b85d4e01e1e71d04b0fc426741f63a10949b1609781504e"
+    },
+    {
+      "question_token": "bc26478b588345458ab88ecd8fae6ff6",
+      "question": {
+        "question": 1499,
+        "skills": [
+          81
+        ],
+        "difficulty": 0.2666666805744171
+      },
+      "original_problem_id": 53834,
+      "history_count_before": 3,
+      "prediction_started_at": "2026-11-15T21:46:50.600069+00:00",
+      "predicted_at": "2026-11-15T21:46:50.608493+00:00",
+      "presented_at": "2026-11-15T21:46:50.608493+00:00",
+      "predicted_correct_probability": 0.7122321724891663,
+      "sequence": 4,
+      "answer_received_at": "2026-11-15T21:46:50.769413+00:00",
+      "correct": 1,
+      "hint_count": 1,
+      "response_duration_seconds": 0.16088170002331026,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "cd88a00fdaa8fd5b2b85d4e01e1e71d04b0fc426741f63a10949b1609781504e",
+      "after": {
+        "history_count": 4,
+        "recent_window_count": 4,
+        "observed_recent_correct_ratio": 0.5,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 74.70925450325012,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 35.64477562904358,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 32.372453808784485,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.5,
+          "active_skill_reference_probability": 0.4757549464702606,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.5
+        },
+        "behavior": null,
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 15758,
+          "skill": 84,
+          "difficulty": 0.0,
+          "predicted_probability": 0.6706082820892334,
+          "target_probability": 0.65,
+          "reference_probability": 0.32372453808784485,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 84: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %32.4. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %67.1, hedef %65.",
+          "behavior_group": null,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 147365
+        }
+      },
+      "state_updated_at": "2026-11-15T21:46:50.814752+00:00",
+      "event_sha256": "16a259aa87be26ec7cc7ceb3dc5bbd360c766d13ace6dec0b735605866f9bb16"
+    },
+    {
+      "question_token": "8e84a1331d704108a11a530bc6877415",
+      "question": {
+        "question": 1598,
+        "skills": [
+          82
+        ],
+        "difficulty": 0.4193548262119293
+      },
+      "original_problem_id": 53987,
+      "history_count_before": 4,
+      "prediction_started_at": "2026-11-15T21:46:50.829425+00:00",
+      "predicted_at": "2026-11-15T21:46:50.839174+00:00",
+      "presented_at": "2026-11-15T21:46:50.839174+00:00",
+      "predicted_correct_probability": 0.3665897250175476,
+      "sequence": 5,
+      "answer_received_at": "2026-11-15T21:46:51.149099+00:00",
+      "correct": 1,
+      "hint_count": 0,
+      "response_duration_seconds": 0.3098617999930866,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "16a259aa87be26ec7cc7ceb3dc5bbd360c766d13ace6dec0b735605866f9bb16",
+      "after": {
+        "history_count": 5,
+        "recent_window_count": 5,
+        "observed_recent_correct_ratio": 0.6,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 76.08140707015991,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 43.24612617492676,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 39.380472898483276,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.6,
+          "active_skill_reference_probability": 0.5290266871452332,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.4
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 3.2047721811006356,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 15763,
+          "skill": 84,
+          "difficulty": 0.0,
+          "predicted_probability": 0.6592954993247986,
+          "target_probability": 0.65,
+          "reference_probability": 0.39380472898483276,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 84: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %39.4. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.9, hedef %65.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 147370
+        }
+      },
+      "state_updated_at": "2026-11-15T21:46:51.324534+00:00",
+      "event_sha256": "14c513bf6bd98c6bd46365e9972467a96525858095c7619aa5d3d247951ed1d1"
+    },
+    {
+      "question_token": "75ffefbbd2804d36b15fbe0037628b66",
+      "question": {
+        "question": 68,
+        "skills": [
+          84
+        ],
+        "difficulty": 0.0
+      },
+      "original_problem_id": 44718,
+      "history_count_before": 5,
+      "prediction_started_at": "2026-11-15T21:46:51.338653+00:00",
+      "predicted_at": "2026-11-15T21:46:51.354968+00:00",
+      "presented_at": "2026-11-15T21:46:51.354968+00:00",
+      "predicted_correct_probability": 0.4201236963272095,
+      "sequence": 6,
+      "answer_received_at": "2026-11-15T21:46:51.814383+00:00",
+      "correct": 1,
+      "hint_count": 1,
+      "response_duration_seconds": 0.4593585999973584,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "14c513bf6bd98c6bd46365e9972467a96525858095c7619aa5d3d247951ed1d1",
+      "after": {
+        "history_count": 6,
+        "recent_window_count": 6,
+        "observed_recent_correct_ratio": 0.6666666666666666,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Addition and Subtraction Integers",
+            "predicted_success_percent": 76.32715702056885,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Addition and Subtraction Positive Decimals",
+            "predicted_success_percent": 43.67692470550537,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Addition and Subtraction Fractions",
+            "predicted_success_percent": 46.42797410488129,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.6666666666666666,
+          "active_skill_reference_probability": 0.5547735194365183,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.5
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 3.1884583510084235,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 15689,
+          "skill": 82,
+          "difficulty": 0.23076923191547394,
+          "predicted_probability": 0.5484316945075989,
+          "target_probability": 0.55,
+          "reference_probability": 0.4367692470550537,
+          "repeat_question": false,
+          "action": "daha zorlayıcı soru ile ilerleme",
+          "reason": "Beceri 82: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %43.7. son üç cevap doğru; daha zorlayıcı başarı hedefi. Seçilen soruda tahmin %54.8, hedef %55.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 147294
+        }
+      },
+      "state_updated_at": "2026-11-15T21:46:51.862641+00:00",
+      "event_sha256": "1f2e9ee5758ad1a83a74114f755a63e973ff18813cd846728211d4acfa817f44"
+    }
+  ],
+  "note": "Yeni cevapların sunucu alım saatleri kaydedilir. Tahminler cevaplar arasında son değerinde tutulur; saat modeli veya sürekli öğrenme ölçümü değildir.",
+  "initial_state": {
+    "history_count": 0,
+    "recent_window_count": 0,
+    "observed_recent_correct_ratio": null,
+    "skill_scores": [
+      {
+        "skill": 81,
+        "name": "Addition and Subtraction Integers",
+        "predicted_success_percent": 69.47214007377625,
+        "observed_correct_percent": null,
+        "recent_skill_answers": 0,
+        "reference_question_count": 32
+      },
+      {
+        "skill": 82,
+        "name": "Addition and Subtraction Positive Decimals",
+        "predicted_success_percent": 33.923542499542236,
+        "observed_correct_percent": null,
+        "recent_skill_answers": 0,
+        "reference_question_count": 32
+      },
+      {
+        "skill": 84,
+        "name": "Addition and Subtraction Fractions",
+        "predicted_success_percent": 38.006216287612915,
+        "observed_correct_percent": null,
+        "recent_skill_answers": 0,
+        "reference_question_count": 32
+      }
+    ],
+    "behavior_features": {
+      "recent_correct_ratio": null,
+      "active_skill_reference_probability": null,
+      "log_median_response_seconds": null,
+      "mean_hint_count": null
+    },
+    "behavior": null,
+    "behavior_minimum_answers": 5,
+    "recommendation": {
+      "available": true,
+      "question": 15704,
+      "skill": 82,
+      "difficulty": 0.1818181872367859,
+      "predicted_probability": 0.6504672765731812,
+      "target_probability": 0.65,
+      "reference_probability": 0.33923542499542236,
+      "repeat_question": false,
+      "action": "mevcut düzeyde alıştırma",
+      "reason": "Beceri 82: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %33.9. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+      "behavior_group": null,
+      "rule_is_learned_policy": false,
+      "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+      "original_problem_id": 147309
+    }
+  },
+  "initial_state_recorded_at": "2026-11-15T21:46:49.432075+00:00",
+  "record_sha256": "1196ae4fc0f441590a98660c6c9d39878087e19a317fc6db8944d0a65edb3a55"
+}

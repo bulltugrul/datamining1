@@ -1,0 +1,28 @@
+{
+  "variant": "kmpt_prefix",
+  "method": "kmpt",
+  "layout": "prefix_control",
+  "seed": 42,
+  "best_epoch": 2,
+  "initial_lkm_sha256": "62dfeea5cffec72584f545857e69726882527438448e92f3843c511d5086617f",
+  "initial_validation": {
+    "samples": 38792,
+    "bce": 0.8274570259759785,
+    "accuracy": 0.6704990719736028,
+    "auc": 0.6501516276076055
+  },
+  "validation": {
+    "samples": 38792,
+    "bce": 0.5574924239278405,
+    "accuracy": 0.7200195916683853,
+    "auc": 0.7491566294282141
+  },
+  "test": null,
+  "training_target_count": 194663,
+  "validation_target_count": 38792,
+  "parameters": {
+    "total": 5029808,
+    "trainable": 5029679
+  },
+  "training_seconds": 546.0489055999788
+}

@@ -1,0 +1,123 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:white;color:#111;font-family:Arial,sans-serif}
+#capture{width:1000px;padding:26px 28px;background:white}
+.heading{font-size:20px;line-height:27px;margin:0 0 10px;font-weight:700}
+.sub{font-size:17px;line-height:25px;margin:0 0 14px;color:#444}
+.line{display:grid;grid-template-columns:52px 1fr;align-items:start}
+.line-number{font:17px/27px Consolas,monospace;color:#666;text-align:right;padding-right:14px}
+.code,.plain{font:20px/27px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all}
+.code:empty::before{content:' '}.plain{margin:0}img,svg{display:block;max-width:100%;height:auto;margin:0 auto}
+table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:23px}
+th,td{border:1px solid #ddd;padding:7px 8px;overflow-wrap:anywhere;vertical-align:middle;text-align:left}
+th{background:#edf0f4;font-weight:700}td{background:white}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.code .hll { background-color: #ffffcc }
+.code { background: #f8f8f8; }
+.code .c { color: #3D7B7B; font-style: italic } /* Comment */
+.code .err { border: 1px solid #F00 } /* Error */
+.code .k { color: #008000; font-weight: bold } /* Keyword */
+.code .o { color: #666 } /* Operator */
+.code .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.code .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.code .cp { color: #9C6500 } /* Comment.Preproc */
+.code .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.code .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.code .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.code .gd { color: #A00000 } /* Generic.Deleted */
+.code .ge { font-style: italic } /* Generic.Emph */
+.code .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.code .gr { color: #E40000 } /* Generic.Error */
+.code .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code .gi { color: #008400 } /* Generic.Inserted */
+.code .go { color: #717171 } /* Generic.Output */
+.code .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code .gs { font-weight: bold } /* Generic.Strong */
+.code .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code .gt { color: #04D } /* Generic.Traceback */
+.code .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code .kp { color: #008000 } /* Keyword.Pseudo */
+.code .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code .kt { color: #B00040 } /* Keyword.Type */
+.code .m { color: #666 } /* Literal.Number */
+.code .s { color: #BA2121 } /* Literal.String */
+.code .na { color: #687822 } /* Name.Attribute */
+.code .nb { color: #008000 } /* Name.Builtin */
+.code .nc { color: #00F; font-weight: bold } /* Name.Class */
+.code .no { color: #800 } /* Name.Constant */
+.code .nd { color: #A2F } /* Name.Decorator */
+.code .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.code .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.code .nf { color: #00F } /* Name.Function */
+.code .nl { color: #767600 } /* Name.Label */
+.code .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.code .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code .nv { color: #19177C } /* Name.Variable */
+.code .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.code .w { color: #BBB } /* Text.Whitespace */
+.code .mb { color: #666 } /* Literal.Number.Bin */
+.code .mf { color: #666 } /* Literal.Number.Float */
+.code .mh { color: #666 } /* Literal.Number.Hex */
+.code .mi { color: #666 } /* Literal.Number.Integer */
+.code .mo { color: #666 } /* Literal.Number.Oct */
+.code .sa { color: #BA2121 } /* Literal.String.Affix */
+.code .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code .sc { color: #BA2121 } /* Literal.String.Char */
+.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code .s2 { color: #BA2121 } /* Literal.String.Double */
+.code .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.code .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.code .sx { color: #008000 } /* Literal.String.Other */
+.code .sr { color: #A45A77 } /* Literal.String.Regex */
+.code .s1 { color: #BA2121 } /* Literal.String.Single */
+.code .ss { color: #19177C } /* Literal.String.Symbol */
+.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code .fm { color: #00F } /* Name.Function.Magic */
+.code .vc { color: #19177C } /* Name.Variable.Class */
+.code .vg { color: #19177C } /* Name.Variable.Global */
+.code .vi { color: #19177C } /* Name.Variable.Instance */
+.code .vm { color: #19177C } /* Name.Variable.Magic */
+.code .il { color: #666 } /* Literal.Number.Integer.Long */</style></head><body><main id="capture"><div class="heading">scripts/run_live_session_demo.py</div><div class="sub">Satır 1–36</div><div class="line"><div class="line-number">1</div><div class="code"><span data-line="1"><span class="sd">"""Gerçek saatle çalışan, açıkça otomatik etiketli oturum işlev testi."""</span>
+</span></div></div><div class="line"><div class="line-number">2</div><div class="code"><span data-line="2">
+</span></div></div><div class="line"><div class="line-number">3</div><div class="code"><span data-line="3"><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+</span></div></div><div class="line"><div class="line-number">4</div><div class="code"><span data-line="4"><span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span>
+</span></div></div><div class="line"><div class="line-number">5</div><div class="code"><span data-line="5"><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span></div></div><div class="line"><div class="line-number">6</div><div class="code"><span data-line="6"><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+</span></div></div><div class="line"><div class="line-number">7</div><div class="code"><span data-line="7"><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span></div></div><div class="line"><div class="line-number">8</div><div class="code"><span data-line="8"><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+</span></div></div><div class="line"><div class="line-number">9</div><div class="code"><span data-line="9">
+</span></div></div><div class="line"><div class="line-number">10</div><div class="code"><span data-line="10"><span class="n">ROOT</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span></div></div><div class="line"><div class="line-number">11</div><div class="code"><span data-line="11"><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">ROOT</span><span class="o">/</span><span class="s1">'src'</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">12</div><div class="code"><span data-line="12"><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">'MPLCONFIGDIR'</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">ROOT</span><span class="o">/</span><span class="s1">'.runtime/matplotlib'</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">13</div><div class="code"><span data-line="13"><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+</span></div></div><div class="line"><div class="line-number">14</div><div class="code"><span data-line="14"><span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">'Agg'</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">15</div><div class="code"><span data-line="15"><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span></div></div><div class="line"><div class="line-number">16</div><div class="code"><span data-line="16"><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+</span></div></div><div class="line"><div class="line-number">17</div><div class="code"><span data-line="17"><span class="kn">from</span><span class="w"> </span><span class="nn">kt_project.live_session</span><span class="w"> </span><span class="kn">import</span> <span class="n">LiveResources</span><span class="p">,</span><span class="n">LiveSession</span><span class="p">,</span><span class="n">parse_time</span>
+</span></div></div><div class="line"><div class="line-number">18</div><div class="code"><span data-line="18"><span class="kn">from</span><span class="w"> </span><span class="nn">kt_project.live_ui</span><span class="w"> </span><span class="kn">import</span> <span class="n">timeline_figure</span>
+</span></div></div><div class="line"><div class="line-number">19</div><div class="code"><span data-line="19">
+</span></div></div><div class="line"><div class="line-number">20</div><div class="code"><span data-line="20">
+</span></div></div><div class="line"><div class="line-number">21</div><div class="code"><span data-line="21"><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+</span></div></div><div class="line"><div class="line-number">22</div><div class="code"><span data-line="22">    <span class="n">torch</span><span class="o">.</span><span class="n">set_num_threads</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">23</div><div class="code"><span data-line="23">    <span class="n">resources</span><span class="o">=</span><span class="n">LiveResources</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">ROOT</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">24</div><div class="code"><span data-line="24">    <span class="n">session</span><span class="o">=</span><span class="n">LiveSession</span><span class="p">(</span><span class="n">resources</span><span class="p">,</span><span class="s1">'Otomatik işlev testi'</span><span class="p">,</span><span class="n">origin</span><span class="o">=</span><span class="s1">'automated_smoke_test'</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">25</div><div class="code"><span data-line="25">    <span class="n">initial_prediction</span><span class="o">=</span><span class="p">[]</span>
+</span></div></div><div class="line"><div class="line-number">26</div><div class="code"><span data-line="26">    <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">correct</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]):</span>
+</span></div></div><div class="line"><div class="line-number">27</div><div class="code"><span data-line="27">        <span class="n">skill</span><span class="o">=</span><span class="n">resources</span><span class="o">.</span><span class="n">default_skills</span><span class="p">[</span><span class="n">index</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="n">resources</span><span class="o">.</span><span class="n">default_skills</span><span class="p">)]</span>
+</span></div></div><div class="line"><div class="line-number">28</div><div class="code"><span data-line="28">        <span class="n">candidates</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">q</span> <span class="k">for</span> <span class="n">q</span><span class="p">,</span><span class="n">entry</span> <span class="ow">in</span> <span class="n">resources</span><span class="o">.</span><span class="n">catalog</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">skill</span> <span class="ow">in</span> <span class="n">entry</span><span class="p">[</span><span class="s1">'skills'</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">29</div><div class="code"><span data-line="29">        <span class="n">question</span><span class="o">=</span><span class="n">candidates</span><span class="p">[</span><span class="n">index</span><span class="o">//</span><span class="nb">len</span><span class="p">(</span><span class="n">resources</span><span class="o">.</span><span class="n">default_skills</span><span class="p">)]</span>
+</span></div></div><div class="line"><div class="line-number">30</div><div class="code"><span data-line="30">        <span class="n">pending</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">prepare</span><span class="p">(</span><span class="n">resources</span><span class="o">.</span><span class="n">inverse_questions</span><span class="p">[</span><span class="n">question</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">31</div><div class="code"><span data-line="31">        <span class="n">initial_prediction</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pending</span><span class="p">[</span><span class="s1">'predicted_correct_probability'</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">32</div><div class="code"><span data-line="32">        <span class="c1"># Gerçek işlem beklemesi: geçmiş tarih veya uydurma süre eklenmez.</span>
+</span></div></div><div class="line"><div class="line-number">33</div><div class="code"><span data-line="33">        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">.15</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">index</span><span class="o">%</span><span class="mi">3</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">34</div><div class="code"><span data-line="34">        <span class="k">if</span> <span class="n">index</span><span class="o">==</span><span class="mi">2</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">35</div><div class="code"><span data-line="35">            <span class="n">session</span><span class="o">=</span><span class="n">LiveSession</span><span class="o">.</span><span class="n">resume</span><span class="p">(</span><span class="n">resources</span><span class="p">,</span><span class="n">session</span><span class="o">.</span><span class="n">snapshot</span><span class="p">()[</span><span class="s1">'session_id'</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">36</div><div class="code"><span data-line="36">        <span class="n">event</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">answer</span><span class="p">(</span><span class="n">pending</span><span class="p">[</span><span class="s1">'question_token'</span><span class="p">],</span><span class="n">correct</span><span class="p">,</span><span class="n">index</span><span class="o">%</span><span class="mi">2</span><span class="p">)</span>
+</span></div></div></main></body></html>

@@ -1,0 +1,90 @@
+{
+  "dataset": "ASSISTments 2009-2010 corrected collapsed Skill Builder",
+  "file_name": "skill_builder_data_corrected_collapsed.csv",
+  "file_bytes": 64412812,
+  "sha256": "162ef8d2d28bcbfea6591a282994062bd8d5eaa00636544292a0d268dca6e5da",
+  "text_encoding": "latin-1",
+  "columns": [
+    "",
+    "order_id",
+    "assignment_id",
+    "user_id",
+    "assistment_id",
+    "problem_id",
+    "original",
+    "correct",
+    "attempt_count",
+    "ms_first_response",
+    "tutor_mode",
+    "answer_type",
+    "sequence_id",
+    "student_class_id",
+    "position",
+    "type",
+    "base_sequence_id",
+    "skill_id",
+    "skill_name",
+    "teacher_id",
+    "school_id",
+    "hint_count",
+    "hint_total",
+    "overlap_time",
+    "template_id",
+    "answer_id",
+    "answer_text",
+    "first_action",
+    "bottom_hint",
+    "opportunity",
+    "opportunity_original"
+  ],
+  "raw": {
+    "raw_rows": 346860,
+    "multi_skill_rows": 47037,
+    "valid_ms_first_response_rows": 346853,
+    "valid_hint_count_rows": 346860,
+    "missing_or_invalid_skill_rows": 63755,
+    "conflicting_events": 0,
+    "students": 4217,
+    "questions": 26688,
+    "skills": 123
+  },
+  "eligibility_preview": {
+    "min_interactions": 5,
+    "events_before_minimum": 283105,
+    "retained_events": 281890,
+    "retained_students": 3644,
+    "retained_questions": 17727,
+    "retained_skills": 123,
+    "min_events_per_student": 5,
+    "median_events_per_student": 25.0,
+    "max_events_per_student": 1061
+  },
+  "fields": {
+    "ordering": [
+      "order_id",
+      "position"
+    ],
+    "documented_calendar_timestamp_available": false,
+    "duration_columns_are_not_timestamps": [
+      "ms_first_response",
+      "overlap_time"
+    ],
+    "explicit_difficulty_column_available": false,
+    "full_question_content_available": false
+  },
+  "skill_name_examples": [
+    "Absolute Value",
+    "Addition Whole Numbers",
+    "Addition and Subtraction Fractions",
+    "Addition and Subtraction Integers",
+    "Addition and Subtraction Positive Decimals",
+    "Algebraic Simplification",
+    "Algebraic Solving",
+    "Angles - Obtuse, Acute, and Right",
+    "Angles on Parallel Lines Cut by a Transversal",
+    "Area Circle",
+    "Area Irregular Figure",
+    "Area Parallelogram"
+  ],
+  "note": "Bu çıktı ham veri denetimidir; ayrılmış eğitim veya test sonucu değildir."
+}

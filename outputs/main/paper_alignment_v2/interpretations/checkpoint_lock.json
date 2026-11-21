@@ -1,0 +1,16 @@
+{
+  "checkpoints": {
+    "seed_17/kpt_best.pt": "dabece181df3cafed24fd9d01be0cd063a21066a31a4832260af21a115e6f249",
+    "seed_17/kmpt_best.pt": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+    "seed_42/kpt_best.pt": "dcb9e46ed8cb0cd706be51fe73b6ebb510e705892c43b1a38911ef25768043da",
+    "seed_42/kmpt_best.pt": "df72eb6ff73418271ae20ab3655ebeda523d8865b38032090c1c857ac4af6289",
+    "seed_2026/kpt_best.pt": "51c643a19ea9aa97fd2ce8609e74fb2dd8fd2f9e2b951dd4293a29626f3a4987",
+    "seed_2026/kmpt_best.pt": "54cb1e0a704a9862c42caedfaf4bb378e1787a836e3e8462ccb869e66320629e"
+  },
+  "policy_lock": {
+    "created_utc": "2026-11-15T15:16:43.686336+00:00",
+    "config_sha256": "e823f1e1dc2f44a2a2749bcd19122969766264d4fb267773821558ec79991658",
+    "implementation_sha256": "b04aebe91b6e065081736a9cfa605e629c8f9673e4dd5169ee72ba222b546419",
+    "rule_locked_before_new_v2_test_evaluation": true
+  }
+}

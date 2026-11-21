@@ -1,0 +1,77 @@
+[
+  {
+    "epoch": 1,
+    "train_mixed_objective": 0.494538171362125,
+    "train_response_bce": 0.494538171362125,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5521714546233508,
+      "accuracy": 0.7294287481955042,
+      "auc": 0.7605083157462342
+    },
+    "seconds": 28.66269930000999
+  },
+  {
+    "epoch": 2,
+    "train_mixed_objective": 0.4582031038847385,
+    "train_response_bce": 0.4582031038847385,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5626448448182726,
+      "accuracy": 0.727237574757682,
+      "auc": 0.7587989687677283
+    },
+    "seconds": 28.56559259998903
+  },
+  {
+    "epoch": 3,
+    "train_mixed_objective": 0.42941138118254857,
+    "train_response_bce": 0.42941138118254857,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.586359042928597,
+      "accuracy": 0.7285007217983089,
+      "auc": 0.7564721660727067
+    },
+    "seconds": 28.58523549999518
+  },
+  {
+    "epoch": 4,
+    "train_mixed_objective": 0.39372308053038796,
+    "train_response_bce": 0.39372308053038796,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.654848129829443,
+      "accuracy": 0.7219272014848422,
+      "auc": 0.747486979532109
+    },
+    "seconds": 28.62020360000315
+  },
+  {
+    "epoch": 5,
+    "train_mixed_objective": 0.3547345592630193,
+    "train_response_bce": 0.3547345592630193,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.7099531181179684,
+      "accuracy": 0.7159981439472056,
+      "auc": 0.7428887599093876
+    },
+    "seconds": 28.64745849999599
+  }
+]

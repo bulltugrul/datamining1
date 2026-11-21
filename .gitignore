@@ -1,0 +1,14 @@
+.venv/
+.runtime/
+.cache/
+__pycache__/
+.ipynb_checkpoints/
+data/raw/
+data/processed/
+outputs/checkpoints/
+tmp/
+
+data/models/
+delivery/*.zip
+output/pdf/*-checkpoint.pdf
+outputs/**/*.pt

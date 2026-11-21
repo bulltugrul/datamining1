@@ -1,0 +1,10 @@
+{
+  "src/kt_project/plkt_models.py": "197bce0d47a9f2c79f28e7614a3572b7b6ca6260120cf1f3289cb94244b9e8f6",
+  "src/kt_project/plkt_sequences.py": "e0c9af4fff28db1f2a3c174f479f12de1bc22676f6767c8c2d5439207b5d921e",
+  "src/kt_project/plkt_training.py": "90f45fbd42c41ef840cb46214401724da1fa415149b236b5cdf1a251c8487173",
+  "src/kt_project/models.py": "ef9cc4a6db5b9328297a7ca4f5413da2e090e9004ded3183a5c6d56e8ff47019",
+  "src/kt_project/sequences.py": "87855ca7688c449cedfd61a1c4804c3aa772b01b3a7592a0d008ac228a145058",
+  "src/kt_project/training.py": "fa86398c4180b815759d667507255175c9a0be06cd6fe6716d625fb4bbc6c5eb",
+  "src/kt_project/prepare_data.py": "4f5ad98dc02f5b471d0ed32bba1df46bea55bcea39552faefb80f08941b084e5",
+  "configs/paper_alignment.json": "0045ed9c112390c56036e2a0536b9d17d228c4098a7e741c6e0fcde01e5c2040"
+}

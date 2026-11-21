@@ -1,0 +1,20 @@
+{
+  "browser": "157.0.8103.51",
+  "surface": "actual local JupyterLab notebook with live Python callbacks",
+  "session_id": "a079fbdf57b24c3197195201998f869d",
+  "events": 6,
+  "response_origin": "automated_smoke_test",
+  "closed": true,
+  "buttons_exercised": [
+    "Yeni oturum",
+    "Soruyu başlat",
+    "Doğru cevabı kaydet",
+    "Yanlış cevabı kaydet",
+    "Oturumu kapat"
+  ],
+  "screenshot": "outputs/live/live_controls.png",
+  "implementation_sha256": {
+    "src/kt_project/live_session.py": "eb737a92807011be6aa383dda4f14c556d0f4cc54ae6393abf64c4977397e6b8",
+    "src/kt_project/live_ui.py": "cd8c569ed413ba9e8dcf4ce74ab54a4f0f1a42135c0ffeb6362fd318ac7b8d65"
+  }
+}

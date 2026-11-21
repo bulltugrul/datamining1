@@ -1,0 +1,96 @@
+{
+  "all_checks_passed": true,
+  "conditions": 12,
+  "same_test_targets": true,
+  "test_targets": 44791,
+  "test_lock_verified": true,
+  "common_pretraining_per_seed_verified": true,
+  "source_hashes_verified": true,
+  "prefix_control_common_prompt_initialization_and_auxiliary_draws_verified": true,
+  "checks": [
+    {
+      "seed": 17,
+      "variant": "baseline",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 17,
+      "variant": "kpt",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 17,
+      "variant": "kmpt",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 17,
+      "variant": "kmpt_prefix",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 42,
+      "variant": "baseline",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 42,
+      "variant": "kpt",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 42,
+      "variant": "kmpt",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 42,
+      "variant": "kmpt_prefix",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 2026,
+      "variant": "baseline",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 2026,
+      "variant": "kpt",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 2026,
+      "variant": "kmpt",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    },
+    {
+      "seed": 2026,
+      "variant": "kmpt_prefix",
+      "test_targets": 44791,
+      "metrics_recomputed": true,
+      "validation_selection_verified": true
+    }
+  ]
+}

@@ -1,0 +1,596 @@
+{
+  "format": "live_session_v1",
+  "session_id": "0b18200292ca47faba11ab888f4291cb",
+  "participant_alias": "Otomatik işlev testi",
+  "response_origin": "automated_smoke_test",
+  "human_learning_study": false,
+  "created_at": "2026-11-15T22:13:26.136059+00:00",
+  "closed_at": "2026-11-15T22:13:29.334026+00:00",
+  "status": "closed",
+  "initial_history_count": 0,
+  "historical_calendar_times_fabricated": false,
+  "tracked_skills": [
+    81,
+    82,
+    84
+  ],
+  "resources": {
+    "model_selection": {
+      "format": "plkt_method_v2",
+      "method": "kmpt",
+      "variant": "kmpt",
+      "layout": "paper_tail",
+      "inference_policy": "same_target_step_block",
+      "seed": 17,
+      "best_epoch": 1,
+      "validation_bce": 0.5549617719345423,
+      "criterion": "minimum block-policy validation BCE among three fixed strict-selected KMPT snapshots",
+      "checkpoint": "outputs/main/paper_alignment_v2/seed_17/kmpt_best.pt",
+      "checkpoint_sha256": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+      "inference_implementation_sha256": "b04aebe91b6e065081736a9cfa605e629c8f9673e4dd5169ee72ba222b546419",
+      "test_metrics_used_for_selection": false,
+      "author_code_verified": false,
+      "note": "Explicit same-step mask interpretation for working prompt access; strict-token reference retained."
+    },
+    "reference_bank_sha256": "6cdef89ae761d0301631e1eb5c29ecd23e0e90d6b77e89fa620935a590d17caa",
+    "pattern_state_sha256": "deb96eda74100f30839fd6f7adb28b50a02d074d702d8491ab0f49a3267a7e6e",
+    "tracking_config_sha256": "060573ba0eed8800f2763222701d57c8877b7a6ffcf418328fb7c6d0d4552ef0"
+  },
+  "pending": null,
+  "events": [
+    {
+      "question_token": "f09c7ebe29d34074bc68b499667bd4fe",
+      "question": {
+        "question": 1498,
+        "skills": [
+          81
+        ],
+        "difficulty": 0.20000000298023224
+      },
+      "original_problem_id": 53833,
+      "history_count_before": 0,
+      "prediction_started_at": "2026-11-15T22:13:26.989825+00:00",
+      "predicted_at": "2026-11-15T22:13:27.010464+00:00",
+      "presented_at": "2026-11-15T22:13:27.010464+00:00",
+      "predicted_correct_probability": 0.8128673434257507,
+      "sequence": 1,
+      "answer_received_at": "2026-11-15T22:13:27.170953+00:00",
+      "correct": 1,
+      "hint_count": 0,
+      "response_duration_seconds": 0.16044999999576248,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "initial",
+      "after": {
+        "history_count": 1,
+        "recent_window_count": 1,
+        "observed_recent_correct_ratio": 1.0,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Tam sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 75.75133442878723,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 39.25976753234863,
+            "observed_correct_percent": null,
+            "recent_skill_answers": 0,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Kesirlerde toplama ve çıkarma",
+            "predicted_success_percent": 46.99816405773163,
+            "observed_correct_percent": null,
+            "recent_skill_answers": 0,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 1.0,
+          "active_skill_reference_probability": 0.7575133442878723,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.0
+        },
+        "behavior": null,
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 1621,
+          "skill": 82,
+          "difficulty": 0.3918918967247009,
+          "predicted_probability": 0.6315943002700806,
+          "target_probability": 0.65,
+          "reference_probability": 0.39259767532348633,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 82: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %39.3. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %63.2, hedef %65.",
+          "behavior_group": null,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 54079
+        }
+      },
+      "state_updated_at": "2026-11-15T22:13:27.198032+00:00",
+      "event_sha256": "0206750e6a5537626e3cc854428e49a7187b12591b2bac739369c310fd97d8ab"
+    },
+    {
+      "question_token": "16328c1d267244f091ff0d14ac6b91b5",
+      "question": {
+        "question": 1597,
+        "skills": [
+          82
+        ],
+        "difficulty": 0.5360824465751648
+      },
+      "original_problem_id": 53983,
+      "history_count_before": 1,
+      "prediction_started_at": "2026-11-15T22:13:27.209663+00:00",
+      "predicted_at": "2026-11-15T22:13:27.221167+00:00",
+      "presented_at": "2026-11-15T22:13:27.221167+00:00",
+      "predicted_correct_probability": 0.38676342368125916,
+      "sequence": 2,
+      "answer_received_at": "2026-11-15T22:13:27.530028+00:00",
+      "correct": 0,
+      "hint_count": 1,
+      "response_duration_seconds": 0.3088201000064146,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "0206750e6a5537626e3cc854428e49a7187b12591b2bac739369c310fd97d8ab",
+      "after": {
+        "history_count": 2,
+        "recent_window_count": 2,
+        "observed_recent_correct_ratio": 0.5,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Tam sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 69.64462995529175,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 30.512094497680664,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Kesirlerde toplama ve çıkarma",
+            "predicted_success_percent": 32.394424080848694,
+            "observed_correct_percent": null,
+            "recent_skill_answers": 0,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.5,
+          "active_skill_reference_probability": 0.5007836222648621,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.5
+        },
+        "behavior": null,
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 15685,
+          "skill": 82,
+          "difficulty": 0.0,
+          "predicted_probability": 0.6627964973449707,
+          "target_probability": 0.65,
+          "reference_probability": 0.30512094497680664,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 82: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %30.5. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %66.3, hedef %65.",
+          "behavior_group": null,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 147290
+        }
+      },
+      "state_updated_at": "2026-11-15T22:13:27.559432+00:00",
+      "event_sha256": "b83595b9d5e3f97dc456415b8a8fb66a2391e6bf36c4d01c7750f08d7c07f360"
+    },
+    {
+      "question_token": "98e8596153fe496db060ae7ff77e5820",
+      "question": {
+        "question": 66,
+        "skills": [
+          84
+        ],
+        "difficulty": 0.1428571492433548
+      },
+      "original_problem_id": 42492,
+      "history_count_before": 2,
+      "prediction_started_at": "2026-11-15T22:13:27.571260+00:00",
+      "predicted_at": "2026-11-15T22:13:27.577273+00:00",
+      "presented_at": "2026-11-15T22:13:27.577273+00:00",
+      "predicted_correct_probability": 0.38722676038742065,
+      "sequence": 3,
+      "answer_received_at": "2026-11-15T22:13:28.084116+00:00",
+      "correct": 0,
+      "hint_count": 0,
+      "response_duration_seconds": 0.506843,
+      "duration_clock": "UTC_after_resume",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "b83595b9d5e3f97dc456415b8a8fb66a2391e6bf36c4d01c7750f08d7c07f360",
+      "after": {
+        "history_count": 3,
+        "recent_window_count": 3,
+        "observed_recent_correct_ratio": 0.3333333333333333,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Tam sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 66.66721701622009,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 28.2684326171875,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Kesirlerde toplama ve çıkarma",
+            "predicted_success_percent": 24.448084831237793,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.3333333333333333,
+          "active_skill_reference_probability": 0.39794578154881793,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.3333333333333333
+        },
+        "behavior": null,
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 3216,
+          "skill": 84,
+          "difficulty": 0.1111111119389534,
+          "predicted_probability": 0.6469064354896545,
+          "target_probability": 0.65,
+          "reference_probability": 0.24448084831237793,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 84: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %24.4. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %64.7, hedef %65.",
+          "behavior_group": null,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 58821
+        }
+      },
+      "state_updated_at": "2026-11-15T22:13:28.137484+00:00",
+      "event_sha256": "81d02eb06bf4e0752d5cd1e9f3cd38f1662812813f21fb744fe0d477028a585f"
+    },
+    {
+      "question_token": "0823011d911e47dfa40cdaff8e7f6870",
+      "question": {
+        "question": 1499,
+        "skills": [
+          81
+        ],
+        "difficulty": 0.2666666805744171
+      },
+      "original_problem_id": 53834,
+      "history_count_before": 3,
+      "prediction_started_at": "2026-11-15T22:13:28.143728+00:00",
+      "predicted_at": "2026-11-15T22:13:28.152323+00:00",
+      "presented_at": "2026-11-15T22:13:28.152323+00:00",
+      "predicted_correct_probability": 0.7122321724891663,
+      "sequence": 4,
+      "answer_received_at": "2026-11-15T22:13:28.314870+00:00",
+      "correct": 1,
+      "hint_count": 1,
+      "response_duration_seconds": 0.16250139998737723,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "81d02eb06bf4e0752d5cd1e9f3cd38f1662812813f21fb744fe0d477028a585f",
+      "after": {
+        "history_count": 4,
+        "recent_window_count": 4,
+        "observed_recent_correct_ratio": 0.5,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Tam sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 74.70925450325012,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 35.64477562904358,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Kesirlerde toplama ve çıkarma",
+            "predicted_success_percent": 32.372453808784485,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.5,
+          "active_skill_reference_probability": 0.4757549464702606,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.5
+        },
+        "behavior": null,
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 15758,
+          "skill": 84,
+          "difficulty": 0.0,
+          "predicted_probability": 0.6706082820892334,
+          "target_probability": 0.65,
+          "reference_probability": 0.32372453808784485,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 84: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %32.4. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %67.1, hedef %65.",
+          "behavior_group": null,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 147365
+        }
+      },
+      "state_updated_at": "2026-11-15T22:13:28.354371+00:00",
+      "event_sha256": "20e741702d8265ca07fa5e0960c820179dbc437fa3e81e7979010049363c6ca1"
+    },
+    {
+      "question_token": "099c0cee9b4540aea103c7d9b63c6f2e",
+      "question": {
+        "question": 1598,
+        "skills": [
+          82
+        ],
+        "difficulty": 0.4193548262119293
+      },
+      "original_problem_id": 53987,
+      "history_count_before": 4,
+      "prediction_started_at": "2026-11-15T22:13:28.368441+00:00",
+      "predicted_at": "2026-11-15T22:13:28.376896+00:00",
+      "presented_at": "2026-11-15T22:13:28.376896+00:00",
+      "predicted_correct_probability": 0.3665897250175476,
+      "sequence": 5,
+      "answer_received_at": "2026-11-15T22:13:28.688286+00:00",
+      "correct": 1,
+      "hint_count": 0,
+      "response_duration_seconds": 0.3113258999946993,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "20e741702d8265ca07fa5e0960c820179dbc437fa3e81e7979010049363c6ca1",
+      "after": {
+        "history_count": 5,
+        "recent_window_count": 5,
+        "observed_recent_correct_ratio": 0.6,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Tam sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 76.08140707015991,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 43.24612617492676,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Kesirlerde toplama ve çıkarma",
+            "predicted_success_percent": 39.380472898483276,
+            "observed_correct_percent": 0.0,
+            "recent_skill_answers": 1,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.6,
+          "active_skill_reference_probability": 0.5290266871452332,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.4
+        },
+        "behavior": {
+          "cluster": 1,
+          "description": "Doğru cevap oranı görece düşük; yanıt süresi görece kısa",
+          "distance_to_center": 3.2047721811006356,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 15763,
+          "skill": 84,
+          "difficulty": 0.0,
+          "predicted_probability": 0.6592954993247986,
+          "target_probability": 0.65,
+          "reference_probability": 0.39380472898483276,
+          "repeat_question": false,
+          "action": "mevcut düzeyde alıştırma",
+          "reason": "Beceri 84: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %39.4. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.9, hedef %65.",
+          "behavior_group": 1,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 147370
+        }
+      },
+      "state_updated_at": "2026-11-15T22:13:28.810803+00:00",
+      "event_sha256": "45abe1c3a1a21b324f5b10d5fa6ad00ffd1b75b6ae4a952ad4faf50cf597b5ba"
+    },
+    {
+      "question_token": "e81088ba93d649d88c42c016db439ba6",
+      "question": {
+        "question": 68,
+        "skills": [
+          84
+        ],
+        "difficulty": 0.0
+      },
+      "original_problem_id": 44718,
+      "history_count_before": 5,
+      "prediction_started_at": "2026-11-15T22:13:28.823890+00:00",
+      "predicted_at": "2026-11-15T22:13:28.831766+00:00",
+      "presented_at": "2026-11-15T22:13:28.831766+00:00",
+      "predicted_correct_probability": 0.4201236963272095,
+      "sequence": 6,
+      "answer_received_at": "2026-11-15T22:13:29.291978+00:00",
+      "correct": 1,
+      "hint_count": 1,
+      "response_duration_seconds": 0.46016029999009334,
+      "duration_clock": "monotonic",
+      "response_origin": "automated_smoke_test",
+      "previous_event_sha256": "45abe1c3a1a21b324f5b10d5fa6ad00ffd1b75b6ae4a952ad4faf50cf597b5ba",
+      "after": {
+        "history_count": 6,
+        "recent_window_count": 6,
+        "observed_recent_correct_ratio": 0.6666666666666666,
+        "skill_scores": [
+          {
+            "skill": 81,
+            "name": "Tam sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 76.32715702056885,
+            "observed_correct_percent": 100.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 82,
+            "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+            "predicted_success_percent": 43.67692470550537,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          },
+          {
+            "skill": 84,
+            "name": "Kesirlerde toplama ve çıkarma",
+            "predicted_success_percent": 46.42797410488129,
+            "observed_correct_percent": 50.0,
+            "recent_skill_answers": 2,
+            "reference_question_count": 32
+          }
+        ],
+        "behavior_features": {
+          "recent_correct_ratio": 0.6666666666666666,
+          "active_skill_reference_probability": 0.5547735194365183,
+          "log_median_response_seconds": 0.8792117236327344,
+          "mean_hint_count": 0.5
+        },
+        "behavior": {
+          "cluster": 0,
+          "description": "Doğru cevap oranı görece yüksek; yanıt süresi görece uzun",
+          "distance_to_center": 3.1884583510084235,
+          "note": "En yakın davranış grubudur; güven olasılığı veya kalıcı öğrenme tarzı değildir."
+        },
+        "behavior_minimum_answers": 5,
+        "recommendation": {
+          "available": true,
+          "question": 15689,
+          "skill": 82,
+          "difficulty": 0.23076923191547394,
+          "predicted_probability": 0.5484316945075989,
+          "target_probability": 0.55,
+          "reference_probability": 0.4367692470550537,
+          "repeat_question": false,
+          "action": "daha zorlayıcı soru ile ilerleme",
+          "reason": "Beceri 82: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %43.7. son üç cevap doğru; daha zorlayıcı başarı hedefi. Seçilen soruda tahmin %54.8, hedef %55.",
+          "behavior_group": 0,
+          "rule_is_learned_policy": false,
+          "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+          "original_problem_id": 147294
+        }
+      },
+      "state_updated_at": "2026-11-15T22:13:29.323003+00:00",
+      "event_sha256": "86285eaefb2b6e3934939ec65dd47f1fa06b2b93c93365dfc0de89873686ef62"
+    }
+  ],
+  "note": "Yeni cevapların sunucu alım saatleri kaydedilir. Tahminler cevaplar arasında son değerinde tutulur; saat modeli veya sürekli öğrenme ölçümü değildir.",
+  "initial_state": {
+    "history_count": 0,
+    "recent_window_count": 0,
+    "observed_recent_correct_ratio": null,
+    "skill_scores": [
+      {
+        "skill": 81,
+        "name": "Tam sayılarda toplama ve çıkarma",
+        "predicted_success_percent": 69.47214007377625,
+        "observed_correct_percent": null,
+        "recent_skill_answers": 0,
+        "reference_question_count": 32
+      },
+      {
+        "skill": 82,
+        "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+        "predicted_success_percent": 33.923542499542236,
+        "observed_correct_percent": null,
+        "recent_skill_answers": 0,
+        "reference_question_count": 32
+      },
+      {
+        "skill": 84,
+        "name": "Kesirlerde toplama ve çıkarma",
+        "predicted_success_percent": 38.006216287612915,
+        "observed_correct_percent": null,
+        "recent_skill_answers": 0,
+        "reference_question_count": 32
+      }
+    ],
+    "behavior_features": {
+      "recent_correct_ratio": null,
+      "active_skill_reference_probability": null,
+      "log_median_response_seconds": null,
+      "mean_hint_count": null
+    },
+    "behavior": null,
+    "behavior_minimum_answers": 5,
+    "recommendation": {
+      "available": true,
+      "question": 15704,
+      "skill": 82,
+      "difficulty": 0.1818181872367859,
+      "predicted_probability": 0.6504672765731812,
+      "target_probability": 0.65,
+      "reference_probability": 0.33923542499542236,
+      "repeat_question": false,
+      "action": "mevcut düzeyde alıştırma",
+      "reason": "Beceri 82: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %33.9. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+      "behavior_group": null,
+      "rule_is_learned_policy": false,
+      "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+      "original_problem_id": 147309
+    }
+  },
+  "initial_state_recorded_at": "2026-11-15T22:13:26.984845+00:00",
+  "record_sha256": "71ce105fc44e496d0dec4bb4391f4ead08ac6f8f25d8052c38fdd824b1a9fa71"
+}

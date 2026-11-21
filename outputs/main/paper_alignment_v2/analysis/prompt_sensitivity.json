@@ -1,0 +1,83 @@
+[
+  {
+    "seed": 17,
+    "variant": "kpt",
+    "samples": 16,
+    "training_soft_prompt_gradient_l1": 7.71586799621582,
+    "prediction_max_probability_delta_after_soft_prompt_perturbation": 0.0,
+    "inference_attention": "strict causal in both encoders",
+    "inference_dtype": "float32"
+  },
+  {
+    "seed": 17,
+    "variant": "kmpt",
+    "samples": 16,
+    "training_soft_prompt_gradient_l1": 7.068197250366211,
+    "prediction_max_probability_delta_after_soft_prompt_perturbation": 0.0,
+    "inference_attention": "strict causal in both encoders",
+    "inference_dtype": "float32"
+  },
+  {
+    "seed": 17,
+    "variant": "kmpt_prefix",
+    "samples": 16,
+    "training_soft_prompt_gradient_l1": 8.255409240722656,
+    "prediction_max_probability_delta_after_soft_prompt_perturbation": 0.26328539848327637,
+    "inference_attention": "strict causal in both encoders",
+    "inference_dtype": "float32"
+  },
+  {
+    "seed": 42,
+    "variant": "kpt",
+    "samples": 16,
+    "training_soft_prompt_gradient_l1": 8.21053409576416,
+    "prediction_max_probability_delta_after_soft_prompt_perturbation": 0.0,
+    "inference_attention": "strict causal in both encoders",
+    "inference_dtype": "float32"
+  },
+  {
+    "seed": 42,
+    "variant": "kmpt",
+    "samples": 16,
+    "training_soft_prompt_gradient_l1": 8.036043167114258,
+    "prediction_max_probability_delta_after_soft_prompt_perturbation": 0.0,
+    "inference_attention": "strict causal in both encoders",
+    "inference_dtype": "float32"
+  },
+  {
+    "seed": 42,
+    "variant": "kmpt_prefix",
+    "samples": 16,
+    "training_soft_prompt_gradient_l1": 6.836374282836914,
+    "prediction_max_probability_delta_after_soft_prompt_perturbation": 0.07599204778671265,
+    "inference_attention": "strict causal in both encoders",
+    "inference_dtype": "float32"
+  },
+  {
+    "seed": 2026,
+    "variant": "kpt",
+    "samples": 16,
+    "training_soft_prompt_gradient_l1": 3.9980697631835938,
+    "prediction_max_probability_delta_after_soft_prompt_perturbation": 0.0,
+    "inference_attention": "strict causal in both encoders",
+    "inference_dtype": "float32"
+  },
+  {
+    "seed": 2026,
+    "variant": "kmpt",
+    "samples": 16,
+    "training_soft_prompt_gradient_l1": 10.704839706420898,
+    "prediction_max_probability_delta_after_soft_prompt_perturbation": 0.0,
+    "inference_attention": "strict causal in both encoders",
+    "inference_dtype": "float32"
+  },
+  {
+    "seed": 2026,
+    "variant": "kmpt_prefix",
+    "samples": 16,
+    "training_soft_prompt_gradient_l1": 8.888853073120117,
+    "prediction_max_probability_delta_after_soft_prompt_perturbation": 0.11412298679351807,
+    "inference_attention": "strict causal in both encoders",
+    "inference_dtype": "float32"
+  }
+]

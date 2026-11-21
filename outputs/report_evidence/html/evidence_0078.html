@@ -1,0 +1,120 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:white;color:#111;font-family:Arial,sans-serif}
+#capture{width:1000px;padding:26px 28px;background:white}
+.heading{font-size:20px;line-height:27px;margin:0 0 10px;font-weight:700}
+.sub{font-size:17px;line-height:25px;margin:0 0 14px;color:#444}
+.line{display:grid;grid-template-columns:52px 1fr;align-items:start}
+.line-number{font:17px/27px Consolas,monospace;color:#666;text-align:right;padding-right:14px}
+.code,.plain{font:20px/27px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all}
+.code:empty::before{content:' '}.plain{margin:0}img,svg{display:block;max-width:100%;height:auto;margin:0 auto}
+table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:17px;line-height:23px}
+th,td{border:1px solid #ddd;padding:7px 8px;overflow-wrap:anywhere;vertical-align:middle;text-align:left}
+th{background:#edf0f4;font-weight:700}td{background:white}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.code .hll { background-color: #ffffcc }
+.code { background: #f8f8f8; }
+.code .c { color: #3D7B7B; font-style: italic } /* Comment */
+.code .err { border: 1px solid #F00 } /* Error */
+.code .k { color: #008000; font-weight: bold } /* Keyword */
+.code .o { color: #666 } /* Operator */
+.code .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.code .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.code .cp { color: #9C6500 } /* Comment.Preproc */
+.code .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.code .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.code .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.code .gd { color: #A00000 } /* Generic.Deleted */
+.code .ge { font-style: italic } /* Generic.Emph */
+.code .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.code .gr { color: #E40000 } /* Generic.Error */
+.code .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code .gi { color: #008400 } /* Generic.Inserted */
+.code .go { color: #717171 } /* Generic.Output */
+.code .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code .gs { font-weight: bold } /* Generic.Strong */
+.code .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code .gt { color: #04D } /* Generic.Traceback */
+.code .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code .kp { color: #008000 } /* Keyword.Pseudo */
+.code .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code .kt { color: #B00040 } /* Keyword.Type */
+.code .m { color: #666 } /* Literal.Number */
+.code .s { color: #BA2121 } /* Literal.String */
+.code .na { color: #687822 } /* Name.Attribute */
+.code .nb { color: #008000 } /* Name.Builtin */
+.code .nc { color: #00F; font-weight: bold } /* Name.Class */
+.code .no { color: #800 } /* Name.Constant */
+.code .nd { color: #A2F } /* Name.Decorator */
+.code .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.code .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.code .nf { color: #00F } /* Name.Function */
+.code .nl { color: #767600 } /* Name.Label */
+.code .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.code .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code .nv { color: #19177C } /* Name.Variable */
+.code .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.code .w { color: #BBB } /* Text.Whitespace */
+.code .mb { color: #666 } /* Literal.Number.Bin */
+.code .mf { color: #666 } /* Literal.Number.Float */
+.code .mh { color: #666 } /* Literal.Number.Hex */
+.code .mi { color: #666 } /* Literal.Number.Integer */
+.code .mo { color: #666 } /* Literal.Number.Oct */
+.code .sa { color: #BA2121 } /* Literal.String.Affix */
+.code .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code .sc { color: #BA2121 } /* Literal.String.Char */
+.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code .s2 { color: #BA2121 } /* Literal.String.Double */
+.code .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.code .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.code .sx { color: #008000 } /* Literal.String.Other */
+.code .sr { color: #A45A77 } /* Literal.String.Regex */
+.code .s1 { color: #BA2121 } /* Literal.String.Single */
+.code .ss { color: #19177C } /* Literal.String.Symbol */
+.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code .fm { color: #00F } /* Name.Function.Magic */
+.code .vc { color: #19177C } /* Name.Variable.Class */
+.code .vg { color: #19177C } /* Name.Variable.Global */
+.code .vi { color: #19177C } /* Name.Variable.Instance */
+.code .vm { color: #19177C } /* Name.Variable.Magic */
+.code .il { color: #666 } /* Literal.Number.Integer.Long */</style></head><body><main id="capture"><div class="heading">src/kt_project/replay.py</div><div class="sub">Satır 35–67</div><div class="line"><div class="line-number">35</div><div class="code"><span data-line="35">    <span class="k">return</span> <span class="n">names</span><span class="p">,</span> <span class="n">inverse_questions</span>
+</span></div></div><div class="line"><div class="line-number">36</div><div class="code"><span data-line="36">
+</span></div></div><div class="line"><div class="line-number">37</div><div class="code"><span data-line="37">
+</span></div></div><div class="line"><div class="line-number">38</div><div class="code"><span data-line="38"><span class="k">def</span><span class="w"> </span><span class="nf">choose_replay_student</span><span class="p">(</span><span class="n">store</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">39</div><div class="code"><span data-line="39">    <span class="n">minimum</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">"replay_initial_history"</span><span class="p">]</span> <span class="o">+</span> <span class="n">config</span><span class="p">[</span><span class="s2">"replay_steps"</span><span class="p">]</span>
+</span></div></div><div class="line"><div class="line-number">40</div><div class="code"><span data-line="40">    <span class="n">eligible</span> <span class="o">=</span> <span class="p">[</span><span class="n">student</span> <span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">store</span><span class="o">.</span><span class="n">select_students</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s2">"replay_split"</span><span class="p">])</span>
+</span></div></div><div class="line"><div class="line-number">41</div><div class="code"><span data-line="41">                <span class="k">if</span> <span class="n">store</span><span class="o">.</span><span class="n">spans</span><span class="p">[</span><span class="n">student</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">store</span><span class="o">.</span><span class="n">spans</span><span class="p">[</span><span class="n">student</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">minimum</span><span class="p">]</span>
+</span></div></div><div class="line"><div class="line-number">42</div><div class="code"><span data-line="42">    <span class="k">if</span> <span class="ow">not</span> <span class="n">eligible</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">43</div><div class="code"><span data-line="43">        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Örnek oturum uzunluğunu sağlayan öğrenci yok."</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">44</div><div class="code"><span data-line="44">    <span class="c1"># Sadece kayıt uzunluğu ve sabit başlangıç; sonuç eğrisine göre seçim yok.</span>
+</span></div></div><div class="line"><div class="line-number">45</div><div class="code"><span data-line="45">    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s2">"random_seed"</span><span class="p">])</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">eligible</span><span class="p">))</span>
+</span></div></div><div class="line"><div class="line-number">46</div><div class="code"><span data-line="46">
+</span></div></div><div class="line"><div class="line-number">47</div><div class="code"><span data-line="47">
+</span></div></div><div class="line"><div class="line-number">48</div><div class="code"><span data-line="48"><span class="k">def</span><span class="w"> </span><span class="nf">observed_skill_rates</span><span class="p">(</span><span class="n">store</span><span class="p">,</span> <span class="n">snapshot</span><span class="p">,</span> <span class="n">skills</span><span class="p">,</span> <span class="n">window_size</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">49</div><div class="code"><span data-line="49">    <span class="n">left</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">snapshot</span><span class="o">.</span><span class="n">start</span><span class="p">,</span> <span class="n">snapshot</span><span class="o">.</span><span class="n">stop</span><span class="o">-</span><span class="n">window_size</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">50</div><div class="code"><span data-line="50">    <span class="n">concepts</span> <span class="o">=</span> <span class="n">store</span><span class="o">.</span><span class="n">arrays</span><span class="p">[</span><span class="s2">"skills"</span><span class="p">][</span><span class="n">left</span><span class="p">:</span><span class="n">snapshot</span><span class="o">.</span><span class="n">stop</span><span class="p">]</span>
+</span></div></div><div class="line"><div class="line-number">51</div><div class="code"><span data-line="51">    <span class="n">labels</span> <span class="o">=</span> <span class="n">store</span><span class="o">.</span><span class="n">arrays</span><span class="p">[</span><span class="s2">"correct"</span><span class="p">][</span><span class="n">left</span><span class="p">:</span><span class="n">snapshot</span><span class="o">.</span><span class="n">stop</span><span class="p">]</span>
+</span></div></div><div class="line"><div class="line-number">52</div><div class="code"><span data-line="52">    <span class="n">output</span> <span class="o">=</span> <span class="p">{}</span>
+</span></div></div><div class="line"><div class="line-number">53</div><div class="code"><span data-line="53">    <span class="k">for</span> <span class="n">skill</span> <span class="ow">in</span> <span class="n">skills</span><span class="p">:</span>
+</span></div></div><div class="line"><div class="line-number">54</div><div class="code"><span data-line="54">        <span class="n">selected</span> <span class="o">=</span> <span class="p">(</span><span class="n">concepts</span> <span class="o">==</span> <span class="n">skill</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></div></div><div class="line"><div class="line-number">55</div><div class="code"><span data-line="55">        <span class="n">output</span><span class="p">[</span><span class="n">skill</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"answers"</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">selected</span><span class="o">.</span><span class="n">sum</span><span class="p">()),</span>
+</span></div></div><div class="line"><div class="line-number">56</div><div class="code"><span data-line="56">                         <span class="s2">"ratio"</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">labels</span><span class="p">[</span><span class="n">selected</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="k">if</span> <span class="n">selected</span><span class="o">.</span><span class="n">any</span><span class="p">()</span> <span class="k">else</span> <span class="kc">None</span><span class="p">}</span>
+</span></div></div><div class="line"><div class="line-number">57</div><div class="code"><span data-line="57">    <span class="k">return</span> <span class="n">output</span>
+</span></div></div><div class="line"><div class="line-number">58</div><div class="code"><span data-line="58">
+</span></div></div><div class="line"><div class="line-number">59</div><div class="code"><span data-line="59">
+</span></div></div><div class="line"><div class="line-number">60</div><div class="code"><span data-line="60"><span class="k">def</span><span class="w"> </span><span class="nf">pattern_state_digest</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">61</div><div class="code"><span data-line="61">    <span class="n">digest</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">62</div><div class="code"><span data-line="62">    <span class="k">for</span> <span class="n">array</span> <span class="ow">in</span> <span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">clusterer</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">scaler</span><span class="o">.</span><span class="n">mean_</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">scaler</span><span class="o">.</span><span class="n">scale_</span><span class="p">,</span>
+</span></div></div><div class="line"><div class="line-number">63</div><div class="code"><span data-line="63">                  <span class="n">model</span><span class="o">.</span><span class="n">imputer</span><span class="o">.</span><span class="n">statistics_</span><span class="p">):</span>
+</span></div></div><div class="line"><div class="line-number">64</div><div class="code"><span data-line="64">        <span class="n">digest</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">)</span><span class="o">.</span><span class="n">tobytes</span><span class="p">())</span>
+</span></div></div><div class="line"><div class="line-number">65</div><div class="code"><span data-line="65">    <span class="k">return</span> <span class="n">digest</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+</span></div></div><div class="line"><div class="line-number">66</div><div class="code"><span data-line="66">
+</span></div></div><div class="line"><div class="line-number">67</div><div class="code"><span data-line="67">
+</span></div></div></main></body></html>

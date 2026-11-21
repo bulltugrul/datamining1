@@ -1,0 +1,20 @@
+{"phase": "reference_scores", "snapshots": 512, "total": 9598}
+{"phase": "reference_scores", "snapshots": 1024, "total": 9598}
+{"phase": "reference_scores", "snapshots": 1536, "total": 9598}
+{"phase": "reference_scores", "snapshots": 2048, "total": 9598}
+{"phase": "reference_scores", "snapshots": 2560, "total": 9598}
+{"phase": "reference_scores", "snapshots": 3072, "total": 9598}
+{"phase": "reference_scores", "snapshots": 3584, "total": 9598}
+{"phase": "reference_scores", "snapshots": 4096, "total": 9598}
+{"phase": "reference_scores", "snapshots": 4608, "total": 9598}
+{"phase": "reference_scores", "snapshots": 5120, "total": 9598}
+{"phase": "reference_scores", "snapshots": 5632, "total": 9598}
+{"phase": "reference_scores", "snapshots": 6144, "total": 9598}
+{"phase": "reference_scores", "snapshots": 6656, "total": 9598}
+{"phase": "reference_scores", "snapshots": 7168, "total": 9598}
+{"phase": "reference_scores", "snapshots": 7680, "total": 9598}
+{"phase": "reference_scores", "snapshots": 8192, "total": 9598}
+{"phase": "reference_scores", "snapshots": 8704, "total": 9598}
+{"phase": "reference_scores", "snapshots": 9216, "total": 9598}
+{"phase": "reference_scores", "snapshots": 9598, "total": 9598}
+{"phase": "complete", "snapshots": 9598, "clusters": 2, "silhouette": 0.46469817947039177}

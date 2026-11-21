@@ -1,0 +1,47 @@
+[
+  {
+    "notebook": "01_Gereksinimler_ve_Veri_Kontrolu.ipynb",
+    "executed_code_cells": 7,
+    "errors": 0
+  },
+  {
+    "notebook": "02_Veri_Hazirlama_ve_Ogrenci_Ayrimi.ipynb",
+    "executed_code_cells": 6,
+    "errors": 0
+  },
+  {
+    "notebook": "03_LKM_Modeli_ve_Kucuk_Deneme.ipynb",
+    "executed_code_cells": 8,
+    "errors": 0
+  },
+  {
+    "notebook": "04_Ana_Deneyler_ve_Karsilastirma.ipynb",
+    "executed_code_cells": 10,
+    "errors": 0
+  },
+  {
+    "notebook": "05_Ogrenci_Gostergeleri_ve_Davranis_Gruplari.ipynb",
+    "executed_code_cells": 5,
+    "errors": 0
+  },
+  {
+    "notebook": "06_Ornek_Oturum_ve_Calisma_Onerileri.ipynb",
+    "executed_code_cells": 7,
+    "errors": 0
+  },
+  {
+    "notebook": "07_Metin_Ses_ve_Gorsel_Etkilesimler.ipynb",
+    "executed_code_cells": 9,
+    "errors": 0
+  },
+  {
+    "notebook": "08_Makale_Yontem_Denetimi_ve_Duzeltilmis_Deneyler.ipynb",
+    "executed_code_cells": 7,
+    "errors": 0
+  },
+  {
+    "notebook": "09_Gercek_Zamanli_Oturum_Takibi.ipynb",
+    "executed_code_cells": 5,
+    "errors": 0
+  }
+]

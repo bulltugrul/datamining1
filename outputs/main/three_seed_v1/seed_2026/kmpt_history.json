@@ -1,0 +1,92 @@
+[
+  {
+    "epoch": 1,
+    "train_mixed_objective": 1.7113390801058401,
+    "train_response_bce": 0.5176941197843945,
+    "train_auxiliary_question_ce": 6.498146302757786,
+    "response_samples": 155810,
+    "auxiliary_samples": 38853,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5663231141445784,
+      "accuracy": 0.7163590431016704,
+      "auc": 0.7455116460596183
+    },
+    "seconds": 33.09453499999654
+  },
+  {
+    "epoch": 2,
+    "train_mixed_objective": 1.5212429803124805,
+    "train_response_bce": 0.4824503357128178,
+    "train_auxiliary_question_ce": 5.659340150290189,
+    "response_samples": 155602,
+    "auxiliary_samples": 39061,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5659620926586174,
+      "accuracy": 0.71973602804702,
+      "auc": 0.7506065450161721
+    },
+    "seconds": 32.91503960000409
+  },
+  {
+    "epoch": 3,
+    "train_mixed_objective": 1.401768649816066,
+    "train_response_bce": 0.4638243705498672,
+    "train_auxiliary_question_ce": 5.132154187795004,
+    "response_samples": 155552,
+    "auxiliary_samples": 39111,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5699926881009364,
+      "accuracy": 0.7205093833780161,
+      "auc": 0.7488259160709223
+    },
+    "seconds": 33.12455589999445
+  },
+  {
+    "epoch": 4,
+    "train_mixed_objective": 1.3042995905596053,
+    "train_response_bce": 0.44544075552697876,
+    "train_auxiliary_question_ce": 4.780667983148714,
+    "response_samples": 156098,
+    "auxiliary_samples": 38565,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6115310375507061,
+      "accuracy": 0.7204062693338833,
+      "auc": 0.7411804298991072
+    },
+    "seconds": 32.96773469999607
+  },
+  {
+    "epoch": 5,
+    "train_mixed_objective": 1.2437564964205956,
+    "train_response_bce": 0.42158937153186976,
+    "train_auxiliary_question_ce": 4.515243941517435,
+    "response_samples": 155567,
+    "auxiliary_samples": 39096,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6627794152855947,
+      "accuracy": 0.7040626933388328,
+      "auc": 0.7350449987835382
+    },
+    "seconds": 32.90939210000215
+  },
+  {
+    "epoch": 6,
+    "train_mixed_objective": 1.1754634793880083,
+    "train_response_bce": 0.3961346387539013,
+    "train_auxiliary_question_ce": 4.294541169058368,
+    "response_samples": 155748,
+    "auxiliary_samples": 38915,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6861467009402964,
+      "accuracy": 0.7022066405444422,
+      "auc": 0.7274842300385658
+    },
+    "seconds": 33.00864530001127
+  }
+]

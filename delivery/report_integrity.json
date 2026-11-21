@@ -1,0 +1,41 @@
+{
+  "pdfs": {
+    "Proje_Raporu": {
+      "pages": 19,
+      "sha256": "a7cb51148cf3ff0ad9a12dc1f8080c8d7cd285c976485547f28e084ba0a0879e"
+    },
+    "Kod_ve_Cikti_Aciklamalari": {
+      "pages": 216,
+      "sha256": "4aebe2fef4e903cf880c3f2f7cb59d0ed7f1bbb5de180090394da5febbd5b700"
+    }
+  },
+  "browser_captures": 303,
+  "all_capture_and_current_source_hashes_verified": true,
+  "all_captures_mapped_to_pdf_pages": true,
+  "member_names_and_ids_verified": true,
+  "visual_review": {
+    "main_pages": 19,
+    "main_all_contact_sheets_reviewed": true,
+    "main_full_detail_pages": [
+      1,
+      2,
+      5,
+      13,
+      14,
+      15,
+      17
+    ],
+    "appendix_pages": 216,
+    "appendix_all_contact_sheets_reviewed": true,
+    "appendix_full_detail_pages": [
+      98,
+      110,
+      209,
+      210,
+      216
+    ],
+    "remaining_visual_defects": false
+  },
+  "visual_defects_remaining": false,
+  "live_api_and_real_browser_checks_verified": true
+}

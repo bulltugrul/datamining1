@@ -1,0 +1,114 @@
+{
+  "complete_method_seed_pairs": 9,
+  "all_checks_passed": true,
+  "same_test_targets_for_all_runs": true,
+  "test_targets": 44791,
+  "training_targets": 194663,
+  "validation_targets": 38792,
+  "test_students": 548,
+  "unseen_question_test_targets": 304,
+  "implementation_hashes_verified": true,
+  "checks": [
+    {
+      "method": "baseline",
+      "seed": 17,
+      "samples": 44791,
+      "same_test_targets": true,
+      "ground_truth_verified": true,
+      "auc_recomputed": 0.7689516625448531,
+      "accuracy_recomputed": 0.7353039673148624,
+      "bce_recomputed_from_probabilities": 0.5434490447357313,
+      "validation_selection_verified": true
+    },
+    {
+      "method": "kpt",
+      "seed": 17,
+      "samples": 44791,
+      "same_test_targets": true,
+      "ground_truth_verified": true,
+      "auc_recomputed": 0.761241142166418,
+      "accuracy_recomputed": 0.7298564443749861,
+      "bce_recomputed_from_probabilities": 0.5538161336906602,
+      "validation_selection_verified": true
+    },
+    {
+      "method": "kmpt",
+      "seed": 17,
+      "samples": 44791,
+      "same_test_targets": true,
+      "ground_truth_verified": true,
+      "auc_recomputed": 0.7562114477231285,
+      "accuracy_recomputed": 0.7251456765868143,
+      "bce_recomputed_from_probabilities": 0.5624665484491275,
+      "validation_selection_verified": true
+    },
+    {
+      "method": "baseline",
+      "seed": 42,
+      "samples": 44791,
+      "same_test_targets": true,
+      "ground_truth_verified": true,
+      "auc_recomputed": 0.7638753854718121,
+      "accuracy_recomputed": 0.7300350516844902,
+      "bce_recomputed_from_probabilities": 0.5502244652451821,
+      "validation_selection_verified": true
+    },
+    {
+      "method": "kpt",
+      "seed": 42,
+      "samples": 44791,
+      "same_test_targets": true,
+      "ground_truth_verified": true,
+      "auc_recomputed": 0.7571828861588177,
+      "accuracy_recomputed": 0.7249224174499341,
+      "bce_recomputed_from_probabilities": 0.5477638144804845,
+      "validation_selection_verified": true
+    },
+    {
+      "method": "kmpt",
+      "seed": 42,
+      "samples": 44791,
+      "same_test_targets": true,
+      "ground_truth_verified": true,
+      "auc_recomputed": 0.7531128126184191,
+      "accuracy_recomputed": 0.7211046862092831,
+      "bce_recomputed_from_probabilities": 0.5674627393230592,
+      "validation_selection_verified": true
+    },
+    {
+      "method": "baseline",
+      "seed": 2026,
+      "samples": 44791,
+      "same_test_targets": true,
+      "ground_truth_verified": true,
+      "auc_recomputed": 0.7688796632952875,
+      "accuracy_recomputed": 0.7326471835859882,
+      "bce_recomputed_from_probabilities": 0.5447166709163488,
+      "validation_selection_verified": true
+    },
+    {
+      "method": "kpt",
+      "seed": 2026,
+      "samples": 44791,
+      "same_test_targets": true,
+      "ground_truth_verified": true,
+      "auc_recomputed": 0.757471598202651,
+      "accuracy_recomputed": 0.722176330066308,
+      "bce_recomputed_from_probabilities": 0.5501484742505284,
+      "validation_selection_verified": true
+    },
+    {
+      "method": "kmpt",
+      "seed": 2026,
+      "samples": 44791,
+      "same_test_targets": true,
+      "ground_truth_verified": true,
+      "auc_recomputed": 0.7580380619307909,
+      "accuracy_recomputed": 0.724788461967806,
+      "bce_recomputed_from_probabilities": 0.5596574252704675,
+      "validation_selection_verified": true
+    }
+  ],
+  "saved_checkpoint_metadata_and_finiteness_verified": true,
+  "variability_interpretation": "sample SD across initialization seeds on one fixed student split"
+}

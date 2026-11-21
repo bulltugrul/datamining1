@@ -1,0 +1,99 @@
+{
+  "format": "live_session_v1",
+  "session_id": "293da2a56f9d4fff81706de6fa3d6a93",
+  "participant_alias": "Katılımcı",
+  "response_origin": "automated_smoke_test",
+  "human_learning_study": false,
+  "created_at": "2026-11-15T22:05:56.719178+00:00",
+  "closed_at": null,
+  "status": "open",
+  "initial_history_count": 0,
+  "historical_calendar_times_fabricated": false,
+  "tracked_skills": [
+    81,
+    82,
+    84
+  ],
+  "resources": {
+    "model_selection": {
+      "format": "plkt_method_v2",
+      "method": "kmpt",
+      "variant": "kmpt",
+      "layout": "paper_tail",
+      "inference_policy": "same_target_step_block",
+      "seed": 17,
+      "best_epoch": 1,
+      "validation_bce": 0.5549617719345423,
+      "criterion": "minimum block-policy validation BCE among three fixed strict-selected KMPT snapshots",
+      "checkpoint": "outputs/main/paper_alignment_v2/seed_17/kmpt_best.pt",
+      "checkpoint_sha256": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+      "inference_implementation_sha256": "b04aebe91b6e065081736a9cfa605e629c8f9673e4dd5169ee72ba222b546419",
+      "test_metrics_used_for_selection": false,
+      "author_code_verified": false,
+      "note": "Explicit same-step mask interpretation for working prompt access; strict-token reference retained."
+    },
+    "reference_bank_sha256": "6cdef89ae761d0301631e1eb5c29ecd23e0e90d6b77e89fa620935a590d17caa",
+    "pattern_state_sha256": "deb96eda74100f30839fd6f7adb28b50a02d074d702d8491ab0f49a3267a7e6e",
+    "tracking_config_sha256": "060573ba0eed8800f2763222701d57c8877b7a6ffcf418328fb7c6d0d4552ef0"
+  },
+  "pending": null,
+  "events": [],
+  "note": "Yeni cevapların sunucu alım saatleri kaydedilir. Tahminler cevaplar arasında son değerinde tutulur; saat modeli veya sürekli öğrenme ölçümü değildir.",
+  "initial_state": {
+    "history_count": 0,
+    "recent_window_count": 0,
+    "observed_recent_correct_ratio": null,
+    "skill_scores": [
+      {
+        "skill": 81,
+        "name": "Tam sayılarda toplama ve çıkarma",
+        "predicted_success_percent": 69.47214007377625,
+        "observed_correct_percent": null,
+        "recent_skill_answers": 0,
+        "reference_question_count": 32
+      },
+      {
+        "skill": 82,
+        "name": "Pozitif ondalık sayılarda toplama ve çıkarma",
+        "predicted_success_percent": 33.923542499542236,
+        "observed_correct_percent": null,
+        "recent_skill_answers": 0,
+        "reference_question_count": 32
+      },
+      {
+        "skill": 84,
+        "name": "Kesirlerde toplama ve çıkarma",
+        "predicted_success_percent": 38.006216287612915,
+        "observed_correct_percent": null,
+        "recent_skill_answers": 0,
+        "reference_question_count": 32
+      }
+    ],
+    "behavior_features": {
+      "recent_correct_ratio": null,
+      "active_skill_reference_probability": null,
+      "log_median_response_seconds": null,
+      "mean_hint_count": null
+    },
+    "behavior": null,
+    "behavior_minimum_answers": 5,
+    "recommendation": {
+      "available": true,
+      "question": 15704,
+      "skill": 82,
+      "difficulty": 0.1818181872367859,
+      "predicted_probability": 0.6504672765731812,
+      "target_probability": 0.65,
+      "reference_probability": 0.33923542499542236,
+      "repeat_question": false,
+      "action": "mevcut düzeyde alıştırma",
+      "reason": "Beceri 82: izlenen beceriler arasında referans başarı tahmini en düşük olan beceri; sabit referans başarı tahmini %33.9. orta düzeyde zorlayıcı başarı hedefi. Seçilen soruda tahmin %65.0, hedef %65.",
+      "behavior_group": null,
+      "rule_is_learned_policy": false,
+      "note": "Seçim kuralıdır; önerinin öğrenme kazanımı sağladığı ölçülmemiştir.",
+      "original_problem_id": 147309
+    }
+  },
+  "initial_state_recorded_at": "2026-11-15T22:05:57.784746+00:00",
+  "record_sha256": "34f3c1b64692b31f57484a67979e307b34e7ec19cc435e14782cf2cda56a027a"
+}

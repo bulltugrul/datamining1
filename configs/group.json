@@ -1,0 +1,10 @@
+{
+  "members": [
+    {"name": "Eren Hasan Katırcıoğlu", "student_id": "240201037", "email": "erenhasan.katircioglu@st.uskudar.edu.tr"},
+    {"name": "Mehmet Ertuğrul Ünal", "student_id": "240201010", "email": "mehmetertugrul.unal@st.uskudar.edu.tr"},
+    {"name": "Hasan Yunus Zengin", "student_id": "240201038", "email": "hasanyunus.zengin@st.uskudar.edu.tr"},
+    {"name": "Ömer Gökalp", "student_id": "240201053", "email": "omer.gokalp@st.uskudar.edu.tr"},
+    {"name": "Mustafa Kemal Bozkurt", "student_id": "240201018", "email": "mustafakemal.bozkurt@st.uskudar.edu.tr"}
+  ],
+  "source": "user-provided group membership and contact information"
+}

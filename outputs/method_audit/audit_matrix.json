@@ -1,0 +1,155 @@
+{
+  "paper_path": "C:\\Users\\unalm\\OneDrive\\Belgeler\\ChatGPT\\Prompt tuning for Knowledge tracing\\references\\paper_plkt.pdf",
+  "paper_sha256": "79b79028d74116b3a25f654558032a36e7065cfe4c9597753a51143faefc92ef",
+  "paper_doi": "10.1007/s10618-026-01208-9",
+  "reviewed_pdf_pages": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    18,
+    22
+  ],
+  "matrix": [
+    {
+      "component": "Dikkat eğitimde",
+      "paper_location": "3.2,3.4; s.8,13–14",
+      "legacy": "LKM nedensel, PromEnc iki yönlü",
+      "corrected": "İki modül de iki yönlü",
+      "decision": "Düzeltildi"
+    },
+    {
+      "component": "Dikkat tahminde",
+      "paper_location": "3.5; s.14",
+      "legacy": "LKM nedensel, PromEnc iki yönlü",
+      "corrected": "İki modül de nedensel",
+      "decision": "Düzeltildi"
+    },
+    {
+      "component": "Şablon sırası",
+      "paper_location": "Denklem10–13; Şekil6–7",
+      "legacy": "Pseudo tokenlar başta; maske sonda",
+      "corrected": "e,c,MASK_r,T ve MASK_e,c,r,T",
+      "decision": "Düzeltildi; başta prompt düzeni ayrı kontrol"
+    },
+    {
+      "component": "Çıktı konumu",
+      "paper_location": "3.4–3.5; s.14",
+      "legacy": "Daima son konum",
+      "corrected": "Cevapta şablonun 2., soruda 0. indisi",
+      "decision": "Düzeltildi; indisler sıfır tabanlı"
+    },
+    {
+      "component": "Şablonun soru temsili",
+      "paper_location": "Denklem12–13",
+      "legacy": "Soru temsiline hedef zorluğu ekleniyor",
+      "corrected": "Şablonda e,c,r; geçmişte zorluk korunuyor",
+      "decision": "Düzeltildi"
+    },
+    {
+      "component": "FBO negatifleri",
+      "paper_location": "3.2; s.9",
+      "legacy": "Başka öğrencinin ikinci yarısı",
+      "corrected": "Bütün yarım parça havuzundan özgün doğru çift hariç rastgele çift",
+      "decision": "Düzeltildi"
+    },
+    {
+      "component": "RTM bozulması",
+      "paper_location": "3.2; s.9",
+      "legacy": "Seçilen konumda soru ve cevap bağımsız bozuluyor",
+      "corrected": "Konum başına ortak 80/10/10 işlemi; eşlenmiş soru ve cevap",
+      "decision": "Konum temelli tarifin açık uygulaması"
+    },
+    {
+      "component": "Kayıp ölçekleme",
+      "paper_location": "Denklem3–7",
+      "legacy": "RTM token ortalaması ve FBO dizi ortalaması toplanıyor",
+      "corrected": "Bütün kayıp toplamı aynı dizi sayısına bölünüyor",
+      "decision": "Denklem toplam ölçeği uygulandı; yazarın kod ölçeği doğrulanmadı"
+    },
+    {
+      "component": "BERT katman düzeni",
+      "paper_location": "3.2; s.8–9",
+      "legacy": "Ön normalizasyon ve son ek normalizasyon",
+      "corrected": "BERT tarzı son normalizasyon; son ek norm yok",
+      "decision": "Düzeltildi"
+    },
+    {
+      "component": "En uzun geçmiş, dropout, optimizer",
+      "paper_location": "4.2; s.18",
+      "legacy": "128,0.2,AdamW",
+      "corrected": "200,0.4,Adam",
+      "decision": "Düzeltildi"
+    },
+    {
+      "component": "LKM parametre güncellemesi",
+      "paper_location": "Algoritma1 adım24; s.15",
+      "legacy": "LKM ve prompt eğitiliyor",
+      "corrected": "LKM ve prompt eğitiliyor",
+      "decision": "Korundu; makale LKM dondurma şartı koymuyor"
+    },
+    {
+      "component": "KMPT örnek oranı",
+      "paper_location": "3.4; s.14",
+      "legacy": "80% cevap,20% soru",
+      "corrected": "80% cevap,20% soru",
+      "decision": "Korundu; gerçek sayımlar kaydediliyor"
+    },
+    {
+      "component": "Çok kavramlı olay",
+      "paper_location": "Denklem2 ile 4.2",
+      "legacy": "Tek gerçek cevap, kavram ortalaması",
+      "corrected": "Tek gerçek cevap, kavram ortalaması",
+      "decision": "Kasıtlı veri işleme farkı; kopya cevap sızıntısı önleniyor"
+    },
+    {
+      "component": "Zorluk kaynağı",
+      "paper_location": "4.2; s.18",
+      "legacy": "Yalnızca eğitim hata oranı",
+      "corrected": "Yalnızca eğitim hata oranı",
+      "decision": "Kasıtlı koruma; tutulmuş cevaplar özellik hesabına alınmıyor"
+    },
+    {
+      "component": "Model kapasitesi",
+      "paper_location": "4.2; s.18",
+      "legacy": "LKM2/128/4,PromEnc1",
+      "corrected": "LKM2/128/4,PromEnc1",
+      "decision": "Ölçekli uygulama; makale8/256/8,PromEnc4"
+    },
+    {
+      "component": "Değerlendirme",
+      "paper_location": "4.2; s.18",
+      "legacy": "Öğrenci bazlı70/15/15,üç başlangıç",
+      "corrected": "Aynı öğrenci ayrımı ve üç başlangıç",
+      "decision": "Kasıtlı proje düzeni; makale80/20 ve5kat"
+    },
+    {
+      "component": "Promptsuz karşılaştırma",
+      "paper_location": "3.4;4.1",
+      "legacy": "Ortak LKM ve yeni MLP başlığı",
+      "corrected": "Tam hedef etkileşimi ve yeni MLP kullanan proje içi kontrol",
+      "decision": "Hedef zorluğunu da görür; makaledeki12model benchmarkının birebir karşılığı değil"
+    },
+    {
+      "component": "Belirtilmeyen alt ayrıntılar",
+      "paper_location": "3.2–3.4",
+      "legacy": "Yerel Transformer,konum temsilleri ve doğrusal RTM başlıkları",
+      "corrected": "Açık kaynak yerel uygulama tercihleri",
+      "decision": "Yazar kodu doğrulanmadığı için tam yazılım eşitliği iddia edilmez"
+    },
+    {
+      "component": "Uyarlama örneklerinin kaynağı",
+      "paper_location": "Algoritma1 adım22; s.15",
+      "legacy": "Gerçek öğrenci geçmişlerinin her hedef ön eki",
+      "corrected": "Gerçek öğrenci ön ekleri korunuyor",
+      "decision": "Algoritma artırılmış X' kümesine işaret eder; hedef ve geçmiş kurma ayrıntısı açıklanmıyor. Tam Algoritma1 tekrarı değil"
+    }
+  ],
+  "critical_ambiguity": "With Eq12–13 tail pseudo tokens and strict causal masks in BOTH encoders at prediction, response MASK cannot depend on tail pseudo tokens. Tested as a literal reading, not silently repaired.",
+  "freeze_interpretation": "Algorithm1 step24 tunes the pre-trained LKM; the article does not specify a PEFT-only frozen-LKM requirement.",
+  "test_limitation": "The fixed test holdout was viewed in v1. V2 is a methodological re-evaluation, not a new untouched confirmatory experiment."
+}

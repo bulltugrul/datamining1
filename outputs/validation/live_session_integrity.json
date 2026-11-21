@@ -1,0 +1,24 @@
+{
+  "source": "actual local wall-clock calls with explicitly automated response inputs",
+  "human_learning_study": false,
+  "record_file": "outputs/live/sessions/0b18200292ca47faba11ab888f4291cb.json",
+  "events": 6,
+  "initial_history_count": 0,
+  "resume_verified": true,
+  "source_event_times_fabricated": false,
+  "timestamped_response_recording_implemented": true,
+  "elapsed_session_seconds": 3.197967,
+  "each_prediction_precedes_answer": true,
+  "all_resource_checks": {
+    "model_weights_unchanged": true,
+    "source_store_unmodified": true,
+    "references_and_pattern_state_unchanged": true
+  },
+  "time_used_as_model_feature": false,
+  "between_event_semantics": "last estimate held; no interpolated learning",
+  "implementation_sha256": {
+    "src/kt_project/live_session.py": "eb737a92807011be6aa383dda4f14c556d0f4cc54ae6393abf64c4977397e6b8",
+    "src/kt_project/live_ui.py": "cd8c569ed413ba9e8dcf4ce74ab54a4f0f1a42135c0ffeb6362fd318ac7b8d65",
+    "scripts/run_live_session_demo.py": "5e10336949bbea5205beabb775a6ed69568a9f9c190909bb554dcafac0d43758"
+  }
+}

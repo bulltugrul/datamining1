@@ -1,0 +1,354 @@
+{
+  "purpose": "main_three_seed_comparison",
+  "device": "cuda",
+  "precision": "bfloat16",
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "source_sha256": "162ef8d2d28bcbfea6591a282994062bd8d5eaa00636544292a0d268dca6e5da",
+  "model_config": {
+    "question_vocabulary_size": 17070,
+    "skill_vocabulary_size": 125,
+    "hidden_size": 128,
+    "layers": 2,
+    "attention_heads": 4,
+    "feedforward_size": 512,
+    "max_history": 128,
+    "prompt_length": 8,
+    "prompt_layers": 1,
+    "dropout": 0.2
+  },
+  "test_evaluated": true,
+  "runs": [
+    {
+      "method": "baseline",
+      "seed": 17,
+      "parameters": {
+        "total": 4836529,
+        "trainable": 2634241
+      },
+      "initial_lkm_sha256": "5b9ccd59596cf0def629fcc323a8e58da5df1853d3e0dc8ccf615fcec1b9ddc1",
+      "best_epoch": 1,
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6921827395347301,
+        "accuracy": 0.515003093421324,
+        "auc": 0.5518172567262992
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5500916929239095,
+        "accuracy": 0.729145184574139,
+        "auc": 0.7612131468412784
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5434490506284025,
+        "accuracy": 0.7353039673148624,
+        "auc": 0.7689516625448531,
+        "known_question_subset": {
+          "samples": 44487,
+          "accuracy": 0.7354732843302538,
+          "auc": 0.7693531325563425
+        }
+      },
+      "training_seconds": 150.28584349999437,
+      "training_target_count": 194663,
+      "validation_target_count": 38792
+    },
+    {
+      "method": "kpt",
+      "seed": 17,
+      "parameters": {
+        "total": 5021104,
+        "trainable": 2818945
+      },
+      "initial_lkm_sha256": "5b9ccd59596cf0def629fcc323a8e58da5df1853d3e0dc8ccf615fcec1b9ddc1",
+      "best_epoch": 1,
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 1.163908995606526,
+        "accuracy": 0.6556764281295112,
+        "auc": 0.6398762277554941
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5636037176332417,
+        "accuracy": 0.7228036708599711,
+        "auc": 0.751948726728555
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5538161375009963,
+        "accuracy": 0.7298564443749861,
+        "auc": 0.761241142166418,
+        "known_question_subset": {
+          "samples": 44487,
+          "accuracy": 0.7299885359768022,
+          "auc": 0.7616651998356698
+        }
+      },
+      "training_seconds": 161.46155309997266,
+      "training_target_count": 194663,
+      "validation_target_count": 38792
+    },
+    {
+      "method": "kmpt",
+      "seed": 17,
+      "parameters": {
+        "total": 5021104,
+        "trainable": 5020975
+      },
+      "initial_lkm_sha256": "5b9ccd59596cf0def629fcc323a8e58da5df1853d3e0dc8ccf615fcec1b9ddc1",
+      "best_epoch": 1,
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 1.163908995606526,
+        "accuracy": 0.6556764281295112,
+        "auc": 0.6398762277554941
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5714964737816431,
+        "accuracy": 0.7200195916683853,
+        "auc": 0.7483244771491876
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5624665550754345,
+        "accuracy": 0.7251456765868143,
+        "auc": 0.7562114477231285,
+        "known_question_subset": {
+          "samples": 44487,
+          "accuracy": 0.7253130127902533,
+          "auc": 0.7567358562719257
+        }
+      },
+      "training_seconds": 171.17530689999694,
+      "training_target_count": 194663,
+      "validation_target_count": 38792
+    },
+    {
+      "method": "baseline",
+      "seed": 42,
+      "parameters": {
+        "total": 4836529,
+        "trainable": 2634241
+      },
+      "initial_lkm_sha256": "38208853029f569ac62ef0ff2b82a51216631204f7821b4a384a5975f4275bc5",
+      "best_epoch": 1,
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6939172412371188,
+        "accuracy": 0.48161992163332645,
+        "auc": 0.5090512512101517
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5561966159511385,
+        "accuracy": 0.7257939781398226,
+        "auc": 0.7568978224649869
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5502244689114268,
+        "accuracy": 0.7300350516844902,
+        "auc": 0.7638753854718121,
+        "known_question_subset": {
+          "samples": 44487,
+          "accuracy": 0.7302133207453863,
+          "auc": 0.76432994839749
+        }
+      },
+      "training_seconds": 151.82295529999828,
+      "training_target_count": 194663,
+      "validation_target_count": 38792
+    },
+    {
+      "method": "kpt",
+      "seed": 42,
+      "parameters": {
+        "total": 5021104,
+        "trainable": 2818945
+      },
+      "initial_lkm_sha256": "38208853029f569ac62ef0ff2b82a51216631204f7821b4a384a5975f4275bc5",
+      "best_epoch": 1,
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6764542112942454,
+        "accuracy": 0.6792637657248918,
+        "auc": 0.6472378282038669
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5539935795049811,
+        "accuracy": 0.7228036708599711,
+        "auc": 0.749704663449819
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.547763817734729,
+        "accuracy": 0.7249224174499341,
+        "auc": 0.7571828861588177,
+        "known_question_subset": {
+          "samples": 44487,
+          "accuracy": 0.725020792591094,
+          "auc": 0.7574981696834261
+        }
+      },
+      "training_seconds": 164.89377150000655,
+      "training_target_count": 194663,
+      "validation_target_count": 38792
+    },
+    {
+      "method": "kmpt",
+      "seed": 42,
+      "parameters": {
+        "total": 5021104,
+        "trainable": 5020975
+      },
+      "initial_lkm_sha256": "38208853029f569ac62ef0ff2b82a51216631204f7821b4a384a5975f4275bc5",
+      "best_epoch": 2,
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.6764542112942454,
+        "accuracy": 0.6792637657248918,
+        "auc": 0.6472378282038669
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5744766712090383,
+        "accuracy": 0.7184728810063931,
+        "auc": 0.7454224736938209
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5674627398228826,
+        "accuracy": 0.7211046862092831,
+        "auc": 0.7531128126184191,
+        "known_question_subset": {
+          "samples": 44487,
+          "accuracy": 0.7214467147706072,
+          "auc": 0.753622794684587
+        }
+      },
+      "training_seconds": 206.75519749999512,
+      "training_target_count": 194663,
+      "validation_target_count": 38792
+    },
+    {
+      "method": "baseline",
+      "seed": 2026,
+      "parameters": {
+        "total": 4836529,
+        "trainable": 2634241
+      },
+      "initial_lkm_sha256": "58d609496edd8ffa91e3210ba5edb2d69aec5c768b0f8bdd3e4438cff96e4d55",
+      "best_epoch": 1,
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 0.682625071784594,
+        "accuracy": 0.6443596617859353,
+        "auc": 0.6389042048162821
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5521714546233508,
+        "accuracy": 0.7294287481955042,
+        "auc": 0.7605083157462342
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5447166735673871,
+        "accuracy": 0.7326471835859882,
+        "auc": 0.7688796632952875,
+        "known_question_subset": {
+          "samples": 44487,
+          "accuracy": 0.7327533886303864,
+          "auc": 0.7692442276089075
+        }
+      },
+      "training_seconds": 143.08118949999334,
+      "training_target_count": 194663,
+      "validation_target_count": 38792
+    },
+    {
+      "method": "kpt",
+      "seed": 2026,
+      "parameters": {
+        "total": 5021104,
+        "trainable": 2818945
+      },
+      "initial_lkm_sha256": "58d609496edd8ffa91e3210ba5edb2d69aec5c768b0f8bdd3e4438cff96e4d55",
+      "best_epoch": 1,
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 1.0604558045113301,
+        "accuracy": 0.6563466694163745,
+        "auc": 0.6451089840400597
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5580997777786617,
+        "accuracy": 0.7184213239843267,
+        "auc": 0.7494912311068533
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5501484803735487,
+        "accuracy": 0.722176330066308,
+        "auc": 0.757471598202651,
+        "known_question_subset": {
+          "samples": 44487,
+          "accuracy": 0.7225706386135275,
+          "auc": 0.7579233243944807
+        }
+      },
+      "training_seconds": 155.06663709998247,
+      "training_target_count": 194663,
+      "validation_target_count": 38792
+    },
+    {
+      "method": "kmpt",
+      "seed": 2026,
+      "parameters": {
+        "total": 5021104,
+        "trainable": 5020975
+      },
+      "initial_lkm_sha256": "58d609496edd8ffa91e3210ba5edb2d69aec5c768b0f8bdd3e4438cff96e4d55",
+      "best_epoch": 2,
+      "initial_validation": {
+        "samples": 38792,
+        "bce": 1.0604558045113301,
+        "accuracy": 0.6563466694163745,
+        "auc": 0.6451089840400597
+      },
+      "validation": {
+        "samples": 38792,
+        "bce": 0.5659620926586174,
+        "accuracy": 0.71973602804702,
+        "auc": 0.7506065450161721
+      },
+      "test": {
+        "samples": 44791,
+        "bce": 0.5596574341864115,
+        "accuracy": 0.724788461967806,
+        "auc": 0.7580380619307909,
+        "known_question_subset": {
+          "samples": 44487,
+          "accuracy": 0.7249308786836604,
+          "auc": 0.7585785444228608
+        }
+      },
+      "training_seconds": 198.01990260000457,
+      "training_target_count": 194663,
+      "validation_target_count": 38792
+    }
+  ],
+  "implementation_sha256": {
+    "src/kt_project/models.py": "ef9cc4a6db5b9328297a7ca4f5413da2e090e9004ded3183a5c6d56e8ff47019",
+    "src/kt_project/sequences.py": "87855ca7688c449cedfd61a1c4804c3aa772b01b3a7592a0d008ac228a145058",
+    "src/kt_project/training.py": "fa86398c4180b815759d667507255175c9a0be06cd6fe6716d625fb4bbc6c5eb",
+    "src/kt_project/prepare_data.py": "4f5ad98dc02f5b471d0ed32bba1df46bea55bcea39552faefb80f08941b084e5"
+  },
+  "total_seconds": 1638.8766720999993,
+  "peak_allocated_gpu_mb": 1315.25146484375
+}

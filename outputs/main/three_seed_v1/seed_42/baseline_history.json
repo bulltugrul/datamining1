@@ -1,0 +1,77 @@
+[
+  {
+    "epoch": 1,
+    "train_mixed_objective": 0.49511870108589034,
+    "train_response_bce": 0.49511870108589034,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5561966159511385,
+      "accuracy": 0.7257939781398226,
+      "auc": 0.7568978224649869
+    },
+    "seconds": 30.719268600005307
+  },
+  {
+    "epoch": 2,
+    "train_mixed_objective": 0.4586179628878294,
+    "train_response_bce": 0.4586179628878294,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5710985813467349,
+      "accuracy": 0.7282429366879769,
+      "auc": 0.7566730371655969
+    },
+    "seconds": 29.266596999994363
+  },
+  {
+    "epoch": 3,
+    "train_mixed_objective": 0.4291564846144394,
+    "train_response_bce": 0.4291564846144394,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.5850702393150841,
+      "accuracy": 0.7267735615590843,
+      "auc": 0.7578046843793489
+    },
+    "seconds": 29.772070199993323
+  },
+  {
+    "epoch": 4,
+    "train_mixed_objective": 0.39169004371085114,
+    "train_response_bce": 0.39169004371085114,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6427439667805369,
+      "accuracy": 0.7207156114662817,
+      "auc": 0.7449266214745218
+    },
+    "seconds": 31.62991200000397
+  },
+  {
+    "epoch": 5,
+    "train_mixed_objective": 0.3505969896427946,
+    "train_response_bce": 0.3505969896427946,
+    "train_auxiliary_question_ce": null,
+    "response_samples": 194663,
+    "auxiliary_samples": 0,
+    "validation": {
+      "samples": 38792,
+      "bce": 0.6775779208834084,
+      "accuracy": 0.7194266859146216,
+      "auc": 0.7407807363671179
+    },
+    "seconds": 30.435107500001322
+  }
+]

@@ -1,0 +1,78 @@
+{"status": "waiting_training"}
+{"status": "running", "step": "record_method_audit.py"}
+{"reviewed_components": 19, "paper_sha256": "79b79028d74116b3a25f654558032a36e7065cfe4c9597753a51143faefc92ef"}
+{"status": "running", "step": "analyze_paper_alignment.py"}
+{"conditions": 12, "prototype_seed": 17, "summary": {"baseline": {"auc": {"mean": 0.7585230093621611, "sample_sd": 0.0032407732152768902}, "accuracy": {"mean": 0.7258749897672896, "sample_sd": 0.0030523968727741136}, "bce": {"mean": 0.5787669015301732, "sample_sd": 0.00506718171074959}}, "kpt": {"auc": {"mean": 0.7489216330547873, "sample_sd": 0.0009583915274552384}, "accuracy": {"mean": 0.7146897070095927, "sample_sd": 0.007715285785858238}, "bce": {"mean": 0.5595562244678249, "sample_sd": 0.009845846393985204}}, "kmpt": {"auc": {"mean": 0.7521846540878728, "sample_sd": 0.004331260228848474}, "accuracy": {"mean": 0.7227121519948203, "sample_sd": 0.002880302457702681}, "bce": {"mean": 0.5522383488127788, "sample_sd": 0.0034709058307586804}}, "kmpt_prefix": {"auc": {"mean": 0.7568854598873059, "sample_sd": 0.0026867714881138602}, "accuracy": {"mean": 0.7246842743705953, "sample_sd": 0.002604615509493289}, "bce": {"mean": 0.546023663291878, "sample_sd": 0.0036429589327066705}}}}
+{"phase": "temporal_block_test", "seed": 17, "method": "kpt", "auc": 0.7549842279016158}
+{"phase": "temporal_block_test", "seed": 17, "method": "kmpt", "auc": 0.7522370646879142}
+{"phase": "temporal_block_test", "seed": 42, "method": "kpt", "auc": 0.7514194018151317}
+{"phase": "temporal_block_test", "seed": 42, "method": "kmpt", "auc": 0.7480464514315598}
+{"phase": "temporal_block_test", "seed": 2026, "method": "kpt", "auc": 0.7523795791094137}
+{"phase": "temporal_block_test", "seed": 2026, "method": "kmpt", "auc": 0.7587191268608291}
+{"phase": "attention_interpretation_complete", "prototype_seed": 17, "prompt_delta": 0.22996896505355835}
+{"status": "running", "step": "draw_prompt_visibility.py"}
+{"status": "running", "step": "refresh_corrected_tracking.py"}
+{"phase": "refresh_patterns", "seed": 17}
+{"phase": "reference_scores", "done": 512, "total": 9598}
+{"phase": "reference_scores", "done": 1024, "total": 9598}
+{"phase": "reference_scores", "done": 1536, "total": 9598}
+{"phase": "reference_scores", "done": 2048, "total": 9598}
+{"phase": "reference_scores", "done": 2560, "total": 9598}
+{"phase": "reference_scores", "done": 3072, "total": 9598}
+{"phase": "reference_scores", "done": 3584, "total": 9598}
+{"phase": "reference_scores", "done": 4096, "total": 9598}
+{"phase": "reference_scores", "done": 4608, "total": 9598}
+{"phase": "reference_scores", "done": 5120, "total": 9598}
+{"phase": "reference_scores", "done": 5632, "total": 9598}
+{"phase": "reference_scores", "done": 6144, "total": 9598}
+{"phase": "reference_scores", "done": 6656, "total": 9598}
+{"phase": "reference_scores", "done": 7168, "total": 9598}
+{"phase": "reference_scores", "done": 7680, "total": 9598}
+{"phase": "reference_scores", "done": 8192, "total": 9598}
+{"phase": "reference_scores", "done": 8704, "total": 9598}
+{"phase": "reference_scores", "done": 9216, "total": 9598}
+{"phase": "reference_scores", "done": 9598, "total": 9598}
+{"phase": "replay", "step": 5, "total": 20}
+{"phase": "replay", "step": 10, "total": 20}
+{"phase": "replay", "step": 15, "total": 20}
+{"phase": "replay", "step": 20, "total": 20}
+{"phase": "complete", "steps": 20, "integrity": {"model_weights_unchanged": true, "behavior_model_unchanged": true, "reference_bank_unchanged": true, "each_prediction_precedes_target_response": true, "source_calendar_times_fabricated": false}}
+{"training_only_pattern_snapshots_verified": true, "snapshots_checked": 9598, "selected_clusters": 2, "feature_values_recomputed": true, "scaler_training_statistics_verified": true, "group_selection_verified": true, "real_replay_outcomes_verified": true, "replay_steps": 20, "recommendation_rules_verified": true, "model_and_reference_immutability_verified": true, "source_calendar_timestamps_not_fabricated": true, "main_experiment_source_hashes_unchanged": true}
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\unalm\\.matplotlib\\fontlist-v3.11.0.json.matplotlib-lock'
+Tracking figures generated from saved pattern and replay outputs.
+Student tracking method and results report generated.
+{"phase": "example", "sample": "text_integers", "text": "Negatif ve pozitif tam say�larda toplama ve ��karma al��t�rmas� yapal�m.", "accepted": true, "label": "integers"}
+{"phase": "example", "sample": "text_decimals", "text": "Ondal�k say�larda toplama ve ��karma �al��mak istiyorum.", "accepted": true, "label": "decimals"}
+{"phase": "example", "sample": "text_fractions", "text": "Paydalar� farkl� kesirlerde toplama ve ��karma yaparken zorlan�yorum.", "accepted": true, "label": "fractions"}
+{"phase": "example", "sample": "audio_integers", "text": "Negatif ve pozitif tam say�larda toplama ve ��karma al��t�rmas�n yapal�m.", "accepted": true, "label": "integers"}
+{"phase": "example", "sample": "audio_decimals", "text": "10 dal�k say�larda toplama ve ��karmak �al��mak istiyorum.", "accepted": true, "label": "decimals"}
+{"phase": "example", "sample": "audio_fractions", "text": "Paydalar� farkl� kesirlerde toplama ve ��karma yaparken zorlan�yorum.", "accepted": true, "label": "fractions"}
+{"phase": "example", "sample": "image_integers", "text": "Negatif ve pozitif tam say�larda toplama ve ��karma al��t�rmas� yapal�m.", "accepted": true, "label": "integers"}
+{"phase": "example", "sample": "image_decimals", "text": "Ondal�k say�larda toplama ve ��karma �al��mak istiyorum.", "accepted": true, "label": "decimals"}
+{"phase": "example", "sample": "image_fractions", "text": "Paydalar� farkl� kesirlerde toplama ve ��karma yaparken zorlan�yorum.", "accepted": true, "label": "fractions"}
+{"phase": "complete", "examples": 9, "integrity": {"knowledge_model_unchanged": true, "patterns_unchanged": true, "references_unchanged": true, "history_unchanged": true, "main_experiment_source_hashes_unchanged": true, "rejected_requests_have_no_recommendation": true}}
+{"input_hashes_verified": true, "asr_weights_and_revision_verified": true, "corpus_and_demo_expressions_disjoint": true, "test_metrics_recomputed": true, "recognition_error_metrics_recomputed": true, "routing_from_actual_recognized_text_verified": true, "recommendations_are_known_training_questions": true, "requests_do_not_append_answers": true, "unchanged_state_hashes_verified": true, "main_experiment_sources_unchanged": true, "examples_checked": 9}
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\unalm\\.matplotlib\\fontlist-v3.11.0.json.matplotlib-lock'
+docs/metin_ses_gorsel_ornekleri.md
+{"phase": "corrected_tracking_complete"}
+{"status": "running", "step": "build_tracking_notebooks.py"}
+05_Ogrenci_Gostergeleri_ve_Davranis_Gruplari.ipynb
+06_Ornek_Oturum_ve_Calisma_Onerileri.ipynb
+{"status": "running", "step": "build_interaction_notebook.py"}
+07_Metin_Ses_ve_Gorsel_Etkilesimler.ipynb
+{"status": "running", "step": "build_method_audit_notebook.py"}
+08_Makale_Yontem_Denetimi_ve_Duzeltilmis_Deneyler.ipynb
+{"status": "running", "step": "finalize_method_revision.py"}
+Current and historical method documentation marked.
+{"status": "running", "step": "execute_corrected_notebooks"}
+C:\Users\unalm\OneDrive\Belgeler\ChatGPT\Prompt tuning for Knowledge tracing\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+{"notebook": "05_Ogrenci_Gostergeleri_ve_Davranis_Gruplari.ipynb", "executed_code_cells": 5, "errors": 0}
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+{"notebook": "06_Ornek_Oturum_ve_Calisma_Onerileri.ipynb", "executed_code_cells": 7, "errors": 0}
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+{"notebook": "07_Metin_Ses_ve_Gorsel_Etkilesimler.ipynb", "executed_code_cells": 9, "errors": 0}
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+{"notebook": "08_Makale_Yontem_Denetimi_ve_Duzeltilmis_Deneyler.ipynb", "executed_code_cells": 7, "errors": 0}
+{"status": "complete", "steps": 9}

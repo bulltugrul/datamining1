@@ -1,0 +1,13 @@
+{
+  "format": "plkt_method_v2",
+  "method": "kmpt",
+  "variant": "kmpt",
+  "layout": "paper_tail",
+  "seed": 17,
+  "best_epoch": 1,
+  "validation_bce": 0.5540185717116387,
+  "criterion": "minimum validation BCE within preselected literal KMPT",
+  "checkpoint": "outputs/main/paper_alignment_v2/seed_17/kmpt_best.pt",
+  "checkpoint_sha256": "5f913ec2fd02e63b967eef93d52c3842260f65b1e7faf73061284f65a3996c9c",
+  "test_metrics_used_for_selection": false
+}

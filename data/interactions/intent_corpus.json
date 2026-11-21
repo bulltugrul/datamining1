@@ -1,0 +1,618 @@
+[
+  {
+    "id": "integers_train_01",
+    "split": "train",
+    "label": "integers",
+    "text": "Tam sayılarda toplama yapmak istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_02",
+    "split": "train",
+    "label": "integers",
+    "text": "Tam sayılarda çıkarma konusunda yardım lazım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_03",
+    "split": "train",
+    "label": "integers",
+    "text": "Negatif tam sayıları toplarken zorlanıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_04",
+    "split": "train",
+    "label": "integers",
+    "text": "Pozitif ve negatif tam sayılarla çıkarma çalışalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_05",
+    "split": "train",
+    "label": "integers",
+    "text": "Tam sayıların toplamını bulmayı öğrenmek istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_06",
+    "split": "train",
+    "label": "integers",
+    "text": "İşaretli tam sayılarda çıkarma alıştırması arıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_07",
+    "split": "train",
+    "label": "integers",
+    "text": "Eksi işaretli tam sayıları toplama konusunu anlat.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_08",
+    "split": "train",
+    "label": "integers",
+    "text": "Tam sayılarda toplama ve çıkarma için soru öner.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_09",
+    "split": "train",
+    "label": "integers",
+    "text": "İki negatif tam sayıyı nasıl toplarım?",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_10",
+    "split": "train",
+    "label": "integers",
+    "text": "Bir tam sayıdan başka bir tam sayıyı çıkarma.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_11",
+    "split": "train",
+    "label": "integers",
+    "text": "Tam sayılarla toplama işleminde işaretleri karıştırıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_12",
+    "split": "train",
+    "label": "integers",
+    "text": "Negatif bir tam sayıdan pozitif tam sayı çıkarma.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_13",
+    "split": "train",
+    "label": "integers",
+    "text": "Tam sayılarda toplama egzersizi yapabilir miyiz?",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_14",
+    "split": "train",
+    "label": "integers",
+    "text": "Tam sayı çıkarma işlemine yeniden bakalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_15",
+    "split": "train",
+    "label": "integers",
+    "text": "Artı ve eksi tam sayılarla toplama pratiği istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_train_16",
+    "split": "train",
+    "label": "integers",
+    "text": "Tam sayılarda çıkarma soruları çözmek istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_validation_01",
+    "split": "validation",
+    "label": "integers",
+    "text": "Tam sayılarda toplama becerimi geliştirelim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_validation_02",
+    "split": "validation",
+    "label": "integers",
+    "text": "Negatif tam sayılarla çıkarma örneği göster.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_validation_03",
+    "split": "validation",
+    "label": "integers",
+    "text": "İşaretli tam sayıların toplamında hata yapıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_validation_04",
+    "split": "validation",
+    "label": "integers",
+    "text": "Tam sayılarla toplama ve çıkarma tekrarına ihtiyacım var.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_test_01",
+    "split": "test",
+    "label": "integers",
+    "text": "Eksi ve artı tam sayılarda toplama pratiği yapalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_test_02",
+    "split": "test",
+    "label": "integers",
+    "text": "Tam sayıların çıkarma işlemi için alıştırma seç.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_test_03",
+    "split": "test",
+    "label": "integers",
+    "text": "Negatif tam sayılarda toplama konusunu pekiştirelim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "integers_test_04",
+    "split": "test",
+    "label": "integers",
+    "text": "Tam sayılarla çıkarma işlemini tekrar etmek isterim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_01",
+    "split": "train",
+    "label": "decimals",
+    "text": "Ondalık sayılarda toplama yapmak istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_02",
+    "split": "train",
+    "label": "decimals",
+    "text": "Ondalık sayılarda çıkarma konusunu anlat.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_03",
+    "split": "train",
+    "label": "decimals",
+    "text": "Pozitif ondalık sayıları toplamakta zorlanıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_04",
+    "split": "train",
+    "label": "decimals",
+    "text": "Virgüllü sayılarda çıkarma çalışalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_05",
+    "split": "train",
+    "label": "decimals",
+    "text": "Ondalık sayıların toplamını bulmayı öğrenelim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_06",
+    "split": "train",
+    "label": "decimals",
+    "text": "Ondalık sayılarda toplama ve çıkarma için soru öner.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_07",
+    "split": "train",
+    "label": "decimals",
+    "text": "Virgüllü sayıların toplama işleminde yardım lazım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_08",
+    "split": "train",
+    "label": "decimals",
+    "text": "Pozitif ondalık sayılarda çıkarma alıştırması istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_09",
+    "split": "train",
+    "label": "decimals",
+    "text": "İki ondalık sayıyı toplarken virgülü nereye koyarım?",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_10",
+    "split": "train",
+    "label": "decimals",
+    "text": "Ondalık bir sayıdan başka bir ondalık sayı çıkarma.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_11",
+    "split": "train",
+    "label": "decimals",
+    "text": "Ondalık sayılarda toplama işleminde basamakları hizalayamıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_12",
+    "split": "train",
+    "label": "decimals",
+    "text": "Virgüllü sayıların farkını çıkarma ile bulalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_13",
+    "split": "train",
+    "label": "decimals",
+    "text": "Pozitif ondalıklarla toplama pratiği yapalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_14",
+    "split": "train",
+    "label": "decimals",
+    "text": "Ondalık çıkarma işleminde hata yapıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_15",
+    "split": "train",
+    "label": "decimals",
+    "text": "Virgülden sonraki basamaklarla toplama çalışması istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_train_16",
+    "split": "train",
+    "label": "decimals",
+    "text": "Ondalık sayılarla çıkarma soruları çözmek istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_validation_01",
+    "split": "validation",
+    "label": "decimals",
+    "text": "Pozitif ondalık sayılarla toplama örneği arıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_validation_02",
+    "split": "validation",
+    "label": "decimals",
+    "text": "Virgüllü sayılarda çıkarma pratiğine ihtiyacım var.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_validation_03",
+    "split": "validation",
+    "label": "decimals",
+    "text": "Ondalık sayıların toplamında virgülleri karıştırıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_validation_04",
+    "split": "validation",
+    "label": "decimals",
+    "text": "Ondalık toplama ve çıkarma becerimi geliştirelim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_test_01",
+    "split": "test",
+    "label": "decimals",
+    "text": "Virgüllü sayıların toplama işlemini pekiştirelim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_test_02",
+    "split": "test",
+    "label": "decimals",
+    "text": "Ondalık sayılarla çıkarma alıştırması seçer misin?",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_test_03",
+    "split": "test",
+    "label": "decimals",
+    "text": "Pozitif ondalıklarla toplama konusunu yeniden çalışalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "decimals_test_04",
+    "split": "test",
+    "label": "decimals",
+    "text": "Ondalık sayı çıkarma işlemi için yardım istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_01",
+    "split": "train",
+    "label": "fractions",
+    "text": "Kesirlerde toplama yapmak istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_02",
+    "split": "train",
+    "label": "fractions",
+    "text": "Kesirlerde çıkarma konusunda yardım lazım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_03",
+    "split": "train",
+    "label": "fractions",
+    "text": "Paydası farklı kesirleri toplarken zorlanıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_04",
+    "split": "train",
+    "label": "fractions",
+    "text": "Kesirlerle toplama ve çıkarma için soru öner.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_05",
+    "split": "train",
+    "label": "fractions",
+    "text": "Paydaları eşit kesirlerde çıkarma çalışalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_06",
+    "split": "train",
+    "label": "fractions",
+    "text": "Kesirlerin toplamını bulmayı öğrenmek istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_07",
+    "split": "train",
+    "label": "fractions",
+    "text": "Payda eşitleyerek kesirleri toplama konusunu anlat.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_08",
+    "split": "train",
+    "label": "fractions",
+    "text": "Bir kesirden başka bir kesri çıkarma alıştırması istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_09",
+    "split": "train",
+    "label": "fractions",
+    "text": "Basit kesirlerde toplama egzersizi yapalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_10",
+    "split": "train",
+    "label": "fractions",
+    "text": "Kesir çıkarma işleminde paydaları karıştırıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_11",
+    "split": "train",
+    "label": "fractions",
+    "text": "İki kesri nasıl toplarım?",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_12",
+    "split": "train",
+    "label": "fractions",
+    "text": "Paydaları eşitleyip kesirlerde çıkarma yapalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_13",
+    "split": "train",
+    "label": "fractions",
+    "text": "Kesirlerde toplama becerimi tekrar etmek isterim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_14",
+    "split": "train",
+    "label": "fractions",
+    "text": "Farklı paydalı kesirlerde çıkarma sorusu çözmek istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_15",
+    "split": "train",
+    "label": "fractions",
+    "text": "Kesir toplarken payı ve paydayı nasıl kullanırım?",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_train_16",
+    "split": "train",
+    "label": "fractions",
+    "text": "Kesirlerin farkını çıkarma işlemiyle bulalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_validation_01",
+    "split": "validation",
+    "label": "fractions",
+    "text": "Kesirlerle toplama pratiğine ihtiyacım var.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_validation_02",
+    "split": "validation",
+    "label": "fractions",
+    "text": "Eşit paydalı kesirlerde çıkarma örneği göster.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_validation_03",
+    "split": "validation",
+    "label": "fractions",
+    "text": "Kesirlerin toplamında payda eşitlemeyi unutuyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_validation_04",
+    "split": "validation",
+    "label": "fractions",
+    "text": "Kesir toplama ve çıkarma alıştırması seçer misin?",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_test_01",
+    "split": "test",
+    "label": "fractions",
+    "text": "Farklı paydalı kesirlerle toplama örneği çözelim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_test_02",
+    "split": "test",
+    "label": "fractions",
+    "text": "Kesirlerin çıkarma işlemini pekiştirelim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_test_03",
+    "split": "test",
+    "label": "fractions",
+    "text": "Kesirlerde toplama için yeni bir alıştırma seç.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "fractions_test_04",
+    "split": "test",
+    "label": "fractions",
+    "text": "Kesir çıkarma yaparken paydaları eşitlemede zorlanıyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_validation_01",
+    "split": "validation",
+    "label": "out_of_scope",
+    "text": "Üçgenlerin alanını hesaplamak istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_validation_02",
+    "split": "validation",
+    "label": "out_of_scope",
+    "text": "Kesirlerde çarpma yapmak istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_validation_03",
+    "split": "validation",
+    "label": "out_of_scope",
+    "text": "Bugün hava nasıl?",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_validation_04",
+    "split": "validation",
+    "label": "out_of_scope",
+    "text": "Matematik çalışmak istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_validation_05",
+    "split": "validation",
+    "label": "out_of_scope",
+    "text": "Denklem çözmeyi öğrenmek istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_validation_06",
+    "split": "validation",
+    "label": "out_of_scope",
+    "text": "Kesirler ve tam sayılarda toplama çalışalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_validation_07",
+    "split": "validation",
+    "label": "out_of_scope",
+    "text": "Ondalık sayılarla bölme işlemi yapalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_validation_08",
+    "split": "validation",
+    "label": "out_of_scope",
+    "text": "Bir konu seçemedim, yardım eder misin?",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_test_01",
+    "split": "test",
+    "label": "out_of_scope",
+    "text": "Daire çevresi hesaplama alıştırması öner.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_test_02",
+    "split": "test",
+    "label": "out_of_scope",
+    "text": "Kesirlerle bölme pratiği yapalım.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_test_03",
+    "split": "test",
+    "label": "out_of_scope",
+    "text": "Tarih sınavına hazırlanmak istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_test_04",
+    "split": "test",
+    "label": "out_of_scope",
+    "text": "Hangi konuyu anlamadığımı bilmiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_test_05",
+    "split": "test",
+    "label": "out_of_scope",
+    "text": "Tam sayılarda çarpma konusunu anlat.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_test_06",
+    "split": "test",
+    "label": "out_of_scope",
+    "text": "Kesirlerle ve ondalık sayılarla toplama yapmak isterim.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_test_07",
+    "split": "test",
+    "label": "out_of_scope",
+    "text": "Negatif ondalık sayılarda çıkarma çalışmak istiyorum.",
+    "origin": "authored demonstration expression, not a real student statement"
+  },
+  {
+    "id": "out_of_scope_test_08",
+    "split": "test",
+    "label": "out_of_scope",
+    "text": "Bana bir müzik önerir misin?",
+    "origin": "authored demonstration expression, not a real student statement"
+  }
+]
